@@ -28,7 +28,7 @@
 :Piece a rdfs:Class ;
 	rdfs:subClassOf :ColoredElement .
 
-:possibleMovements a rdfs:Property ;
+:possibleMoves a rdfs:Property ;
 	rdfs:domain :Piece ;
 	rdfs:range xsd:string .
 
