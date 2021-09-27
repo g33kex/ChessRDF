@@ -1,6 +1,7 @@
 @prefix : <http://localhost#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix schema: <https://schema.org/> .
 @prefix foaf: <http://xmlns.com/foaf/spec/#> .
@@ -10,22 +11,26 @@
 
 :Chess {
 
-# Game element that has a color
+# ColoredElement Class
 :ColoredElement a rdfs:Class .
 
-# Colors
+:color a rdfs:Property ;
+	rdfs:domain :ColoredElement ;
+	rdfs:range :Color .
 
+
+# Color Class
 :Color a rdfs:Class .
 :White a :Color .
 :Black a :Color .
 
-:color a rdfs:Property ;
-	rdfs:range :Color ;
-	rdfs:domain :ColoredElement .
-
-# Pieces
+# Piece Class
 :Piece a rdfs:Class ;
 	rdfs:subClassOf :ColoredElement .
+
+:possibleMovements a rdfs:Property ;
+	rdfs:domain :Piece ;
+	rdfs:range xsd:string .
 
 :Knight a rdfs:Class ;
 	rdfs:subClassOf :Piece .
@@ -40,46 +45,46 @@
 :King a rdfs:Class;
 	rdfs:subClassOf :Piece .
 
-# Squares
+# Square Class
 :Square a rdfs:Class ;
 	rdfs:subClassOf :ColoredElement .
 
 :hasPiece a rdfs:Property ;
-	rdfs:range :Piece ;
-	rdfs:domain :Square .
+	rdfs:domain :Square ;
+	rdfs:range :Piece .
 
 :left a rdfs:Property ;
-	rdfs:range :Square;
-	rdfs:domain :Square .
+	rdfs:domain :Square ;
+	rdfs:range :Square .
 
 :right a rdfs:Property ;
-	rdfs:range :Square ;
-	rdfs:domain :Square .
+	rdfs:domain :Square ;
+	rdfs:range :Square .
 
 :top a rdfs:Property ;
-	rdfs:range :Square ;
-	rdfs:domain :Square .
+	rdfs:domain :Square ;
+	rdfs:range :Square .
 
 :bottom a rdfs:Property ;
-	rdfs:range :Square ;
-	rdfs:domain :Square .
+	rdfs:domain :Square ;
+	rdfs:range :Square .
 
 :coordinates a rdfs:Property ;
-	rdfs:range schema:Text ;
-	rdfs:domain :Square .
+	rdfs:domain :Square ;
+	rdfs:range xsd:string .
 
-# Game
-
+# Game Class
 :Game a rdfs:Class .
 
 :white a rdfs:Property ;
-	rdfs:range :Player ;
-	rdfs:domain :Game .
+	rdfs:domain :Game ;
+	rdfs:range :Player .
 
 :black a rdfs:Property ;
-	rdfs:range :Player ;
-	rdfs:domain :Game .
+	rdfs:domain :Game ;
+	rdfs:range :Player .
 
+# Player Class
 :Player a rdfs:Class ;
 	rdfs:subClassOf foaf:Agent ;
 	rdfs:subClassOf :ColoredElement .
