@@ -84,10 +84,71 @@
 	rdfs:domain :Game ;
 	rdfs:range :Player .
 
+:moves a rdfs:Property ;
+	rdfs:domain :Game ;
+	rdfs:range :ListOfMoves .
+
+:winner a rdfs:Property ;
+	rdfs:domain :Game ;
+	rdfs:range :Player .
+
+:draw a rdfs:Property ;
+	rdfs:domain :Game ;
+	rdfs:range xsd:boolean .
+
 # Player Class
 :Player a rdfs:Class ;
 	rdfs:subClassOf foaf:Agent ;
 	rdfs:subClassOf :ColoredElement .
+
+# ListOfMoves class
+:ListOfMoves a rdfs:Class ;
+	rdfs:subClassOf rdf:List .
+
+# Move class
+:Move a rdfs:Class ;
+	rdfs:subClassOf :ColoredElement .
+
+:notation a rdfs:Property ;
+	rdfs:domain :Move ;
+	rdfs:range xsd:string .
+
+:check a rdfs:Property ;
+	rdfs:domain :Move ;
+	rdfs:range xsd:boolean .
+
+:checkmate a rdfs:Property ;
+	rdfs:domain :Move ;
+	rdfs:range xsd:boolean .
+
+:castle a rdfs:Property ;
+	rdfs:domain :Move ;
+	rdfs:range xsd:boolean .
+
+:castleQueenSide a rdfs:Property ;
+	rdfs:subPropertyOf :castle .
+
+:castleKingSide a rdfs:Property ;
+	rdfs:subPropertyOf :castle .
+
+:pieceTaken a rdfs:Property ;
+	rdfs:domain :Move ;
+	rdfs:range xsd:boolean .
+
+:pieceTakenEnPassant a rdfs:Property ;
+	rdfs:subPropertyOf :pieceTaken .
+
+:pawnPromotion a rdfs:Property ;
+	rdfs:domain :Move ;
+	rdfs:range :Piece .
+
+:piece a rdfs:Property ;
+	rdfs:domain :Move ;
+	rdfs:range :Piece .
+
+:newSquare a rdfs:Property ;
+	rdfs:domain :Move ;
+	rdfs:range :Square .
 
 }
 
@@ -96,29 +157,34 @@
 :StartingBoard {
 
 _:a1 a :Square ;
+	:color :Black ;
 	:hasPiece [ a :Rook ; :color :White ] ;
 	:coordinates "a1" ;
 	:right _:b1 .
 
 _:b1 a :Square ;
+	:color :White ;
 	:hasPiece [ a :Knight; :color :White ] ;
 	:coordinates "b1" ;
 	:left _:a1 ;
 	:right _:c1 .
 
 _:c1 a :Square ;
+	:color :Black ;
 	:hasPiece [ a :Bishop; :color :White ] ;
 	:coordinates "c1" ;
 	:left _:b1 ;
 	:right _:d1 .
 	
 _:d1 a :Square ;
+	:color :White ;
 	:hasPiece [ a :Queen; :color :White ] ;
 	:coordinates "d1" ;
 	:left _:c1 ;
 	:right _:e1 .
 
 _:e1 a :Square ;
+	:color :Black ;
 	:hasPiece [ a :King; :color :White ];
 	:coordinates "e1" ;
 	:left _:d1 .
