@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns="http://www.example.com/"
+	xmlns:dbo="https://dbpedia.org/ontology/"
+	xmlns:schema="https://schema.org/">
+
+	<rdf:Description rdf:about="https://www.wikidata.org/wiki/Q273619">
+		<rdf:type rdf:resource="https://www.wikidata.org/wiki/Q1663017"/>
+		<schema:sameAs rdf:resource="https://dbpedia.org/page/Polytechnique_Montréal"/>
+		<dbo:formerName xml:lang="fr">École Polytechnique de Montréal</dbo:formerName>
+		<hasProgramOfLevel rdf:resource="https://www.wikidata.org/wiki/Q183816"/>
+		<hasProgramOfLevel rdf:resource="https://www.wikidata.org/wiki/Q163727"/>
+		<hasProgramOfLevel rdf:resource="https://www.wikidata.org/wiki/Q849697"/>
+	</rdf:Description>
+</rdf:RDF>

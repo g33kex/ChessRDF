@@ -1,0 +1,13 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://www.example.org/> .
+@prefix wikidata: <https://www.wikidata.org/wiki/> .
+@prefix dbo: <https://dbpedia.org/ontology/> .
+@prefix dbpedia: <https://dbpedia.org/page/> .
+@prefix schema: <https://schema.org/> .
+
+wikidata:Q273619 a wikidata:Q1663017 ;
+	schema:sameAs dbpedia:Polytechnique_Montréal ;
+	dbo:formerName "École Polytechnique de Montréal"@fr ;
+	:hasProgramOfLevel wikidata:Q183816, wikidata:Q163727, wikidata:Q849697 .
+	
+

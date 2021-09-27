@@ -1,0 +1,26 @@
+@prefix : <www.exemple.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix wikidata: <https://www.wikidata.org/wiki/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+:B1 a schema:Book ;
+	:inLanguage wikidata:Q1860 ;
+	schema:author :A1, :A2 ;
+	schema:translationOfWork [ a schema:Book ;
+														:inLanguage wikidata:Q150 ;
+														dcterms:title "Les joies du web sémantique"@fr ] ;
+	schema:translator :T1 ;
+	schema:contentRating [ a schema:Rating ; 
+												schema:ratingValue 9 ] .
+
+:A2 a schema:Person ;
+	schema:hasOccupation wikidata:Q36180 ;
+	schema:name "Michel Gagnon" .
+
+:A1 a schema:Person ;
+	schema:hasOccupation wikidata:Q82955, wikidata:Q36180 ;
+ 	schema:name "Michelle Tremblay" .
+

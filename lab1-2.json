@@ -1,0 +1,16 @@
+{
+	"@id": "https://www.wikidata.org/wiki/Q273619",
+	"@type": "https://www.wikidata.org/wiki/Q1663017",
+	"https://schema.org/sameAs": {
+		"@id": "https://dbpedia.org/page/Polytechnique_Montréal"
+	},
+	"https://dbpedia.org/ontology/formerName": {
+		"@language": "fr",
+		"@value": "École Polytechnique de Montréal"
+	},
+	"http://www.example.com/hasProgramOfLevel": [
+			{ "@id": "https://www.wikidata.org/wiki/Q183816" },
+			{ "@id": "https://www.wikidata.org/wiki/Q163727" },
+			{ "@id": "https://www.wikidata.org/wiki/Q849697" }
+		]
+}

@@ -1,0 +1,115 @@
+@prefix : <http://localhost#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix foaf: <http://xmlns.com/foaf/spec/#> .
+
+:Chess rdfs:comment "Describes the ontology of a game of chess."@en .
+:StartingBoard rdfs:comment "Describes a board with pieces at starting positions."@en .
+
+:Chess {
+
+# Game element that has a color
+:ColoredElement a rdfs:Class .
+
+# Colors
+
+:Color a rdfs:Class .
+:White a :Color .
+:Black a :Color .
+
+:color a rdfs:Property ;
+	rdfs:range :Color ;
+	rdfs:domain :ColoredElement .
+
+# Pieces
+:Piece a rdfs:Class ;
+	rdfs:subClassOf :ColoredElement .
+
+:Knight a rdfs:Class ;
+	rdfs:subClassOf :Piece .
+:Pawn a rdfs:Class ;
+	rdfs:subClassOf :Piece .
+:Bishop a rdfs:Class ;
+	rdfs:subClassOf :Piece .
+:Rook a rdfs:Class ;
+	rdfs:subClassOf :Piece .
+:Queen a rdfs:Class;
+	rdfs:subClassOf :Piece .
+:King a rdfs:Class;
+	rdfs:subClassOf :Piece .
+
+# Squares
+:Square a rdfs:Class ;
+	rdfs:subClassOf :ColoredElement .
+
+:hasPiece a rdfs:Property ;
+	rdfs:range :Piece ;
+	rdfs:domain :Square .
+
+:left a rdfs:Property ;
+	rdfs:range :Square;
+	rdfs:domain :Square .
+
+:right a rdfs:Property ;
+	rdfs:range :Square ;
+	rdfs:domain :Square .
+
+:top a rdfs:Property ;
+	rdfs:range :Square ;
+	rdfs:domain :Square .
+
+:bottom a rdfs:Property ;
+	rdfs:range :Square ;
+	rdfs:domain :Square .
+
+:coordinates a rdfs:Property ;
+	rdfs:range schema:Text ;
+	rdfs:domain :Square .
+
+# Game
+
+:Game a rdfs:Class .
+
+:white a rdfs:Property ;
+	rdfs:range :Player ;
+	rdfs:domain :Game .
+
+:black a rdfs:Property ;
+	rdfs:range :Player ;
+	rdfs:domain :Game .
+
+:Player a rdfs:Class ;
+	rdfs:subClassOf foaf:Agent ;
+	rdfs:subClassOf :ColoredElement .
+
+}
+
+# Starting Board
+
+:StartingBoard {
+
+_:a1 a :Square ;
+	:hasPiece [ a :Rook ; :color :White ] ;
+	:coordinates "a1" ;
+	:right _:b1 .
+
+_:b1 a :Square ;
+	:hasPiece [ a :Knight; :color :White ] ;
+	:coordinates "b1" ;
+	:left _:a1 ;
+	:right _:c1 .
+
+_:c1 a :Square ;
+	:hasPiece [ a :Bishop; :color :White ] ;
+	:coordinates "c1" ;
+	:left _:b1 ;
+	:right _:d1 .
+	
+_:d1 a :Square ;
+	:hasPiece [ a :Queen; :color :White ] ;
+	:coordinates "d1" ;
+	:left _:c1 .
+
+}
