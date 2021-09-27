@@ -110,6 +110,12 @@ _:c1 a :Square ;
 _:d1 a :Square ;
 	:hasPiece [ a :Queen; :color :White ] ;
 	:coordinates "d1" ;
-	:left _:c1 .
+	:left _:c1 ;
+	:right _:e1 .
+
+_:e1 a :Square ;
+	:hasPiece [ a :King; :color :White ];
+	:coordinates "e1" ;
+	:left _:d1 .
 
 }
