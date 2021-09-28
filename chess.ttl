@@ -6,11 +6,26 @@
 @prefix schema: <https://schema.org/> .
 @prefix foaf: <http://xmlns.com/foaf/spec/#> .
 
+
+# Main Graph
+
 :Chess rdfs:comment "Describes the ontology of a game of chess."@en .
 :ExampleBoard a :Board ;
 	rdfs:comment "Describes an example board with only 6 squares."@en .
 :ExampleSequence a :Sequence ;
-	rdfs:comment "Describes an example sequence of two moves that finishes by the checkmate of white"@en .
+	rdfs:comment "Describes an example sequence of two moves on the example board."@en .
+
+:ExampleGame a :Game ;
+	:whitePlayer [ a foaf:Person ; 
+								foaf:name "Pierre" ;
+								:color :White ] ;
+	:blackPlayer [ a foaf:Person ;
+								foaf:name "Michel" ;
+								:color :Black ]  ;
+	:moves :ExampleSequence .
+
+
+# Chess Ontology
 
 :Chess {
 
@@ -234,3 +249,4 @@ _:m2 a :Sequence ;
 	rdf:rest rdf:nil .
 
 }
+
