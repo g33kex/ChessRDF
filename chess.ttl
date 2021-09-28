@@ -88,14 +88,6 @@
 	rdfs:domain :Game ;
 	rdfs:range :ListOfMoves .
 
-:winner a rdfs:Property ;
-	rdfs:domain :Game ;
-	rdfs:range :Player .
-
-:draw a rdfs:Property ;
-	rdfs:domain :Game ;
-	rdfs:range xsd:boolean .
-
 # Player Class
 :Player a rdfs:Class ;
 	rdfs:subClassOf foaf:Agent ;
