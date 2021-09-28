@@ -76,11 +76,11 @@
 # Game Class
 :Game a rdfs:Class .
 
-:white a rdfs:Property ;
+:whitePlayer a rdfs:Property ;
 	rdfs:domain :Game ;
 	rdfs:range :Player .
 
-:black a rdfs:Property ;
+:blackPlayer a rdfs:Property ;
 	rdfs:domain :Game ;
 	rdfs:range :Player .
 
@@ -133,7 +133,7 @@
 
 :pieceTaken a rdfs:Property ;
 	rdfs:domain :Move ;
-	rdfs:range xsd:boolean .
+	rdfs:range :Piece .
 
 :pieceTakenEnPassant a rdfs:Property ;
 	rdfs:subPropertyOf :pieceTaken .
@@ -146,7 +146,7 @@
 	rdfs:domain :Move ;
 	rdfs:range :Piece .
 
-:newSquare a rdfs:Property ;
+:destinationSquare a rdfs:Property ;
 	rdfs:domain :Move ;
 	rdfs:range :Square .
 
