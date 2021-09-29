@@ -1,0 +1,611 @@
+@prefix : <http://localhost/> .
+
+_:N0a50652429e34b8fbdbcca8832be12e4 a :Rook ;
+    :color :White .
+
+_:N1cf762229f6f4bd9808bcdefd4702c69 a :Pawn ;
+    :color :Black .
+
+_:N21b9bd9669f649ad9706b857780ed4ba a :Rook ;
+    :color :Black .
+
+_:N2359e581d1a64606af89ae59d00d2853 a :Pawn ;
+    :color :Black .
+
+_:N31e2316d038d457590650bc092aa012c a :Bishop ;
+    :color :Black .
+
+_:N3309252171b547f388023fa6f05b4dfc a :King ;
+    :color :Black .
+
+_:N3d3b2d83c90e423999f0c2247d76b2b6 a :Pawn ;
+    :color :Black .
+
+_:N480e4c7b07e040089e608f7159a7ea9c a :Pawn ;
+    :color :White .
+
+_:N4cbbc222b2204811af60247855fa0e61 a :Knight ;
+    :color :Black .
+
+_:N57a3fe6a7aed4af2a919bcadc2e6e13e a :Pawn ;
+    :color :White .
+
+_:N5a4caf4797ac4df3995886a4dc58fd42 a :Pawn ;
+    :color :White .
+
+_:N5c311bb22c824ce7a90cad94e1c800d8 a :Queen ;
+    :color :Black .
+
+_:N61736a59ec304f538d9581341159202b a :Bishop ;
+    :color :White .
+
+_:N692e0512226542e987ea80f9a2b8b046 a :Pawn ;
+    :color :White .
+
+_:N81d41a7f6e48474bba5574a2e2b28a7a a :Pawn ;
+    :color :White .
+
+_:N82405de6915b489caae978863f3944a9 a :Pawn ;
+    :color :White .
+
+_:Na189fe637a3840738568a12403db0d4b a :Rook ;
+    :color :White .
+
+_:Na60fd415f3ce476487b53f4ee990c498 a :Knight ;
+    :color :White .
+
+_:Nac467bd1307b474da2a5acca62dc4cbe a :Knight ;
+    :color :White .
+
+_:Nac90095c2b604454bb08c5a23b0b1666 a :Queen ;
+    :color :White .
+
+_:Nad5bf6e2b9e94ecdbdb6145275146a94 a :Pawn ;
+    :color :Black .
+
+_:Nb915aa3532ce4738ac509007c34991c7 a :Pawn ;
+    :color :Black .
+
+_:Nc086e1c6bc3d4711b127d7cdc9c02b36 a :Bishop ;
+    :color :White .
+
+_:Nc4b5cd83794e4d7a970f0b889c44a5f1 a :King ;
+    :color :White .
+
+_:Nca9a319bcdeb42de988fb7c662c52acc a :Bishop ;
+    :color :Black .
+
+_:Nd010f6a51dc64f0fa5cbbdf8499956d3 a :Rook ;
+    :color :Black .
+
+_:Nd190ddd7188e41959641a45d3cc71384 a :Pawn ;
+    :color :White .
+
+_:Nd21c0035c6764cebbea5c009274e1cf1 a :Pawn ;
+    :color :Black .
+
+_:Nd371a49f706a460faa464199de549378 a :Knight ;
+    :color :Black .
+
+_:Nda5a787d162f4fbcad421c54413bdd78 a :Pawn ;
+    :color :Black .
+
+_:Nde677bccbefa4ef99119dd6a48d9122e a :Pawn ;
+    :color :Black .
+
+_:Ne079219715f84c55bcb99811a6ae580e a :Pawn ;
+    :color :White .
+
+_:a1 a :Square ;
+    :color :Black ;
+    :coordinates "a1" ;
+    :hasPiece _:N0a50652429e34b8fbdbcca8832be12e4 ;
+    :left _:b1 ;
+    :top _:a2 .
+
+_:a8 a :Square ;
+    :bottom _:a7 ;
+    :color :White ;
+    :coordinates "a8" ;
+    :hasPiece _:Nd010f6a51dc64f0fa5cbbdf8499956d3 ;
+    :left _:b8 .
+
+_:h1 a :Square ;
+    :color :White ;
+    :coordinates "h1" ;
+    :hasPiece _:Na189fe637a3840738568a12403db0d4b ;
+    :right _:g1 ;
+    :top _:h2 .
+
+_:h8 a :Square ;
+    :bottom _:h7 ;
+    :color :Black ;
+    :coordinates "h8" ;
+    :hasPiece _:N21b9bd9669f649ad9706b857780ed4ba ;
+    :right _:g8 .
+
+_:a2 a :Square ;
+    :bottom _:a1 ;
+    :color :White ;
+    :coordinates "a2" ;
+    :hasPiece _:N57a3fe6a7aed4af2a919bcadc2e6e13e ;
+    :left _:b2 ;
+    :top _:a3 .
+
+_:a3 a :Square ;
+    :bottom _:a2 ;
+    :color :Black ;
+    :coordinates "a3" ;
+    :left _:b3 ;
+    :top _:a4 .
+
+_:a4 a :Square ;
+    :bottom _:a3 ;
+    :color :White ;
+    :coordinates "a4" ;
+    :left _:b4 ;
+    :top _:a5 .
+
+_:a5 a :Square ;
+    :bottom _:a4 ;
+    :color :Black ;
+    :coordinates "a5" ;
+    :left _:b5 ;
+    :top _:a6 .
+
+_:a6 a :Square ;
+    :bottom _:a5 ;
+    :color :White ;
+    :coordinates "a6" ;
+    :left _:b6 ;
+    :top _:a7 .
+
+_:a7 a :Square ;
+    :bottom _:a6 ;
+    :color :Black ;
+    :coordinates "a7" ;
+    :hasPiece _:N3d3b2d83c90e423999f0c2247d76b2b6 ;
+    :left _:b7 ;
+    :top _:a8 .
+
+_:b1 a :Square ;
+    :color :White ;
+    :coordinates "b1" ;
+    :hasPiece _:Na60fd415f3ce476487b53f4ee990c498 ;
+    :left _:c1 ;
+    :right _:a1 ;
+    :top _:b2 .
+
+_:b8 a :Square ;
+    :bottom _:b7 ;
+    :color :Black ;
+    :coordinates "b8" ;
+    :hasPiece _:Nd371a49f706a460faa464199de549378 ;
+    :left _:c8 ;
+    :right _:a8 .
+
+_:c1 a :Square ;
+    :color :Black ;
+    :coordinates "c1" ;
+    :hasPiece _:N61736a59ec304f538d9581341159202b ;
+    :left _:d1 ;
+    :right _:b1 ;
+    :top _:c2 .
+
+_:c8 a :Square ;
+    :bottom _:c7 ;
+    :color :White ;
+    :coordinates "c8" ;
+    :hasPiece _:Nca9a319bcdeb42de988fb7c662c52acc ;
+    :left _:d8 ;
+    :right _:b8 .
+
+_:d1 a :Square ;
+    :color :White ;
+    :coordinates "d1" ;
+    :hasPiece _:Nac90095c2b604454bb08c5a23b0b1666 ;
+    :left _:e1 ;
+    :right _:c1 ;
+    :top _:d2 .
+
+_:d8 a :Square ;
+    :bottom _:d7 ;
+    :color :Black ;
+    :coordinates "d8" ;
+    :hasPiece _:N5c311bb22c824ce7a90cad94e1c800d8 ;
+    :left _:e8 ;
+    :right _:c8 .
+
+_:e1 a :Square ;
+    :color :Black ;
+    :coordinates "e1" ;
+    :hasPiece _:Nc4b5cd83794e4d7a970f0b889c44a5f1 ;
+    :left _:f1 ;
+    :right _:d1 ;
+    :top _:e2 .
+
+_:e8 a :Square ;
+    :bottom _:e7 ;
+    :color :White ;
+    :coordinates "e8" ;
+    :hasPiece _:N3309252171b547f388023fa6f05b4dfc ;
+    :left _:f8 ;
+    :right _:d8 .
+
+_:f1 a :Square ;
+    :color :White ;
+    :coordinates "f1" ;
+    :hasPiece _:Nc086e1c6bc3d4711b127d7cdc9c02b36 ;
+    :left _:g1 ;
+    :right _:e1 ;
+    :top _:f2 .
+
+_:f8 a :Square ;
+    :bottom _:f7 ;
+    :color :Black ;
+    :coordinates "f8" ;
+    :hasPiece _:N31e2316d038d457590650bc092aa012c ;
+    :left _:g8 ;
+    :right _:e8 .
+
+_:g1 a :Square ;
+    :color :Black ;
+    :coordinates "g1" ;
+    :hasPiece _:Nac467bd1307b474da2a5acca62dc4cbe ;
+    :left _:h1 ;
+    :right _:f1 ;
+    :top _:g2 .
+
+_:g8 a :Square ;
+    :bottom _:g7 ;
+    :color :White ;
+    :coordinates "g8" ;
+    :hasPiece _:N4cbbc222b2204811af60247855fa0e61 ;
+    :left _:h8 ;
+    :right _:f8 .
+
+_:h2 a :Square ;
+    :bottom _:h1 ;
+    :color :Black ;
+    :coordinates "h2" ;
+    :hasPiece _:N81d41a7f6e48474bba5574a2e2b28a7a ;
+    :right _:g2 ;
+    :top _:h3 .
+
+_:h3 a :Square ;
+    :bottom _:h2 ;
+    :color :White ;
+    :coordinates "h3" ;
+    :right _:g3 ;
+    :top _:h4 .
+
+_:h4 a :Square ;
+    :bottom _:h3 ;
+    :color :Black ;
+    :coordinates "h4" ;
+    :right _:g4 ;
+    :top _:h5 .
+
+_:h5 a :Square ;
+    :bottom _:h4 ;
+    :color :White ;
+    :coordinates "h5" ;
+    :right _:g5 ;
+    :top _:h6 .
+
+_:h6 a :Square ;
+    :bottom _:h5 ;
+    :color :Black ;
+    :coordinates "h6" ;
+    :right _:g6 ;
+    :top _:h7 .
+
+_:h7 a :Square ;
+    :bottom _:h6 ;
+    :color :White ;
+    :coordinates "h7" ;
+    :hasPiece _:N2359e581d1a64606af89ae59d00d2853 ;
+    :right _:g7 ;
+    :top _:h8 .
+
+_:b2 a :Square ;
+    :bottom _:b1 ;
+    :color :Black ;
+    :coordinates "b2" ;
+    :hasPiece _:N692e0512226542e987ea80f9a2b8b046 ;
+    :left _:c2 ;
+    :right _:a2 ;
+    :top _:b3 .
+
+_:b3 a :Square ;
+    :bottom _:b2 ;
+    :color :White ;
+    :coordinates "b3" ;
+    :left _:c3 ;
+    :right _:a3 ;
+    :top _:b4 .
+
+_:b4 a :Square ;
+    :bottom _:b3 ;
+    :color :Black ;
+    :coordinates "b4" ;
+    :left _:c4 ;
+    :right _:a4 ;
+    :top _:b5 .
+
+_:b5 a :Square ;
+    :bottom _:b4 ;
+    :color :White ;
+    :coordinates "b5" ;
+    :left _:c5 ;
+    :right _:a5 ;
+    :top _:b6 .
+
+_:b6 a :Square ;
+    :bottom _:b5 ;
+    :color :Black ;
+    :coordinates "b6" ;
+    :left _:c6 ;
+    :right _:a6 ;
+    :top _:b7 .
+
+_:b7 a :Square ;
+    :bottom _:b6 ;
+    :color :White ;
+    :coordinates "b7" ;
+    :hasPiece _:Nda5a787d162f4fbcad421c54413bdd78 ;
+    :left _:c7 ;
+    :right _:a7 ;
+    :top _:b8 .
+
+_:c2 a :Square ;
+    :bottom _:c1 ;
+    :color :White ;
+    :coordinates "c2" ;
+    :hasPiece _:N82405de6915b489caae978863f3944a9 ;
+    :left _:d2 ;
+    :right _:b2 ;
+    :top _:c3 .
+
+_:c3 a :Square ;
+    :bottom _:c2 ;
+    :color :Black ;
+    :coordinates "c3" ;
+    :left _:d3 ;
+    :right _:b3 ;
+    :top _:c4 .
+
+_:c4 a :Square ;
+    :bottom _:c3 ;
+    :color :White ;
+    :coordinates "c4" ;
+    :left _:d4 ;
+    :right _:b4 ;
+    :top _:c5 .
+
+_:c5 a :Square ;
+    :bottom _:c4 ;
+    :color :Black ;
+    :coordinates "c5" ;
+    :left _:d5 ;
+    :right _:b5 ;
+    :top _:c6 .
+
+_:c6 a :Square ;
+    :bottom _:c5 ;
+    :color :White ;
+    :coordinates "c6" ;
+    :left _:d6 ;
+    :right _:b6 ;
+    :top _:c7 .
+
+_:c7 a :Square ;
+    :bottom _:c6 ;
+    :color :Black ;
+    :coordinates "c7" ;
+    :hasPiece _:N1cf762229f6f4bd9808bcdefd4702c69 ;
+    :left _:d7 ;
+    :right _:b7 ;
+    :top _:c8 .
+
+_:d2 a :Square ;
+    :bottom _:d1 ;
+    :color :Black ;
+    :coordinates "d2" ;
+    :hasPiece _:Ne079219715f84c55bcb99811a6ae580e ;
+    :left _:e2 ;
+    :right _:c2 ;
+    :top _:d3 .
+
+_:d3 a :Square ;
+    :bottom _:d2 ;
+    :color :White ;
+    :coordinates "d3" ;
+    :left _:e3 ;
+    :right _:c3 ;
+    :top _:d4 .
+
+_:d4 a :Square ;
+    :bottom _:d3 ;
+    :color :Black ;
+    :coordinates "d4" ;
+    :left _:e4 ;
+    :right _:c4 ;
+    :top _:d5 .
+
+_:d5 a :Square ;
+    :bottom _:d4 ;
+    :color :White ;
+    :coordinates "d5" ;
+    :left _:e5 ;
+    :right _:c5 ;
+    :top _:d6 .
+
+_:d6 a :Square ;
+    :bottom _:d5 ;
+    :color :Black ;
+    :coordinates "d6" ;
+    :left _:e6 ;
+    :right _:c6 ;
+    :top _:d7 .
+
+_:d7 a :Square ;
+    :bottom _:d6 ;
+    :color :White ;
+    :coordinates "d7" ;
+    :hasPiece _:Nde677bccbefa4ef99119dd6a48d9122e ;
+    :left _:e7 ;
+    :right _:c7 ;
+    :top _:d8 .
+
+_:e2 a :Square ;
+    :bottom _:e1 ;
+    :color :White ;
+    :coordinates "e2" ;
+    :hasPiece _:N480e4c7b07e040089e608f7159a7ea9c ;
+    :left _:f2 ;
+    :right _:d2 ;
+    :top _:e3 .
+
+_:e3 a :Square ;
+    :bottom _:e2 ;
+    :color :Black ;
+    :coordinates "e3" ;
+    :left _:f3 ;
+    :right _:d3 ;
+    :top _:e4 .
+
+_:e4 a :Square ;
+    :bottom _:e3 ;
+    :color :White ;
+    :coordinates "e4" ;
+    :left _:f4 ;
+    :right _:d4 ;
+    :top _:e5 .
+
+_:e5 a :Square ;
+    :bottom _:e4 ;
+    :color :Black ;
+    :coordinates "e5" ;
+    :left _:f5 ;
+    :right _:d5 ;
+    :top _:e6 .
+
+_:e6 a :Square ;
+    :bottom _:e5 ;
+    :color :White ;
+    :coordinates "e6" ;
+    :left _:f6 ;
+    :right _:d6 ;
+    :top _:e7 .
+
+_:e7 a :Square ;
+    :bottom _:e6 ;
+    :color :Black ;
+    :coordinates "e7" ;
+    :hasPiece _:Nb915aa3532ce4738ac509007c34991c7 ;
+    :left _:f7 ;
+    :right _:d7 ;
+    :top _:e8 .
+
+_:f2 a :Square ;
+    :bottom _:f1 ;
+    :color :Black ;
+    :coordinates "f2" ;
+    :hasPiece _:N5a4caf4797ac4df3995886a4dc58fd42 ;
+    :left _:g2 ;
+    :right _:e2 ;
+    :top _:f3 .
+
+_:f3 a :Square ;
+    :bottom _:f2 ;
+    :color :White ;
+    :coordinates "f3" ;
+    :left _:g3 ;
+    :right _:e3 ;
+    :top _:f4 .
+
+_:f4 a :Square ;
+    :bottom _:f3 ;
+    :color :Black ;
+    :coordinates "f4" ;
+    :left _:g4 ;
+    :right _:e4 ;
+    :top _:f5 .
+
+_:f5 a :Square ;
+    :bottom _:f4 ;
+    :color :White ;
+    :coordinates "f5" ;
+    :left _:g5 ;
+    :right _:e5 ;
+    :top _:f6 .
+
+_:f6 a :Square ;
+    :bottom _:f5 ;
+    :color :Black ;
+    :coordinates "f6" ;
+    :left _:g6 ;
+    :right _:e6 ;
+    :top _:f7 .
+
+_:f7 a :Square ;
+    :bottom _:f6 ;
+    :color :White ;
+    :coordinates "f7" ;
+    :hasPiece _:Nad5bf6e2b9e94ecdbdb6145275146a94 ;
+    :left _:g7 ;
+    :right _:e7 ;
+    :top _:f8 .
+
+_:g2 a :Square ;
+    :bottom _:g1 ;
+    :color :White ;
+    :coordinates "g2" ;
+    :hasPiece _:Nd190ddd7188e41959641a45d3cc71384 ;
+    :left _:h2 ;
+    :right _:f2 ;
+    :top _:g3 .
+
+_:g3 a :Square ;
+    :bottom _:g2 ;
+    :color :Black ;
+    :coordinates "g3" ;
+    :left _:h3 ;
+    :right _:f3 ;
+    :top _:g4 .
+
+_:g4 a :Square ;
+    :bottom _:g3 ;
+    :color :White ;
+    :coordinates "g4" ;
+    :left _:h4 ;
+    :right _:f4 ;
+    :top _:g5 .
+
+_:g5 a :Square ;
+    :bottom _:g4 ;
+    :color :Black ;
+    :coordinates "g5" ;
+    :left _:h5 ;
+    :right _:f5 ;
+    :top _:g6 .
+
+_:g6 a :Square ;
+    :bottom _:g5 ;
+    :color :White ;
+    :coordinates "g6" ;
+    :left _:h6 ;
+    :right _:f6 ;
+    :top _:g7 .
+
+_:g7 a :Square ;
+    :bottom _:g6 ;
+    :color :Black ;
+    :coordinates "g7" ;
+    :hasPiece _:Nd21c0035c6764cebbea5c009274e1cf1 ;
+    :left _:h7 ;
+    :right _:f7 ;
+    :top _:g8 .
+
+
