@@ -47,16 +47,16 @@
 :Piece a rdfs:Class ;
 	rdfs:subClassOf :ColoredElement ; 
 	schema:sameAs wiki:Q208440;
-	rdfs:lablel  "Chess piece."@en.
+	rdfs:label  "Chess piece."@en.
 
 :Knight a rdfs:Class ;
 	rdfs:subClassOf :Piece ; 
 	schema:sameAs wiki:Q136 ;
-	rdfs:lablel "Knight."@en .
+	rdfs:label "Knight."@en .
 :Pawn a rdfs:Class ;
 	rdfs:subClassOf :Piece ;
 	schema:sameAs wiki:Q135 ;
-	rdfs:lablel "Pawn."@en .
+	rdfs:label "Pawn."@en .
 :Bishop a rdfs:Class ;
 	rdfs:subClassOf :Piece .
 :Rook a rdfs:Class ;
