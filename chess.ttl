@@ -62,7 +62,7 @@
 :Rook a rdfs:Class ;
 	rdfs:subClassOf :Piece; 
 	schema:sameAs wiki:Q137 ; 
-	redfs:label "Rook."@en .
+	rdfs:label "Rook."@en .
 :Queen a rdfs:Class;
 	rdfs:subClassOf :Piece .
 :King a rdfs:Class;
