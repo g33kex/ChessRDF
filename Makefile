@@ -1,5 +1,5 @@
 SOURCE=chess.ttl
-SITE=chess.html
+SITE=chess.json
 OUT=out.png
 FORMAT=trig
 
@@ -8,8 +8,8 @@ default:
 
 publish: ${SITE}
 
-%.html: %.ttl
-	cp $< docs/$@
+%.json: %.ttl
+	 rapper $< -i ${FORMAT} -o json > docs/$@
 
 clean:
 	rm ${OUT}
