@@ -1,3 +1,4 @@
+# Generates the turtle code for a RDF representation of the starting board of a game of chess
 from rdflib import Graph, URIRef, Literal, BNode, Namespace
 from rdflib.namespace import RDF
 
