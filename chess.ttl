@@ -4,6 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix schema: <https://schema.org/> .
+@prefix wiki: <https://www.wikidata.org/wiki/>.
 @prefix foaf: <http://xmlns.com/foaf/spec/#> .
 
 
@@ -44,16 +45,24 @@
 
 # Piece Class
 :Piece a rdfs:Class ;
-	rdfs:subClassOf :ColoredElement .
+	rdfs:subClassOf :ColoredElement ; 
+	schema:sameAs wiki:Q208440;
+	rdfs:lablel  "Chess piece."@en.
 
 :Knight a rdfs:Class ;
-	rdfs:subClassOf :Piece .
+	rdfs:subClassOf :Piece ; 
+	schema:sameAs wiki:Q136 ;
+	rdfs:lablel "Knight."@en .
 :Pawn a rdfs:Class ;
-	rdfs:subClassOf :Piece .
+	rdfs:subClassOf :Piece ;
+	schema:sameAs wiki:Q135 ;
+	rdfs:lablel "Pawn."@en .
 :Bishop a rdfs:Class ;
 	rdfs:subClassOf :Piece .
 :Rook a rdfs:Class ;
-	rdfs:subClassOf :Piece .
+	rdfs:subClassOf :Piece; 
+	schema:sameAs wiki:Q137; 
+	redfs:label "Rook."@en .
 :Queen a rdfs:Class;
 	rdfs:subClassOf :Piece .
 :King a rdfs:Class;
