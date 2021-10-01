@@ -1,11 +1,14 @@
 @prefix chess: <https://g33kex.github.io/ChessRDF/Chess.json#> .
 @prefix example: <https://g33kex.github.io/ChessRDF/Example.json#> .
+@prefix startingBoard: <https://g33kex.github.io/ChessRDF/StartingBoard.json#> .
 @prefix : <https://g33kex.github.io/ChessRDF/Index.json#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix foaf: <http://xmlns.com/foaf/spec/#> .
 
 chess:Chess rdfs:comment "Describes the ontology of a game of chess."@en .
+startingBoard:StartingBoard a chess:Board;
+	rdfs:comment "Describes the board with all pieces at their starting positions"@en .
 example:ExampleBoard a chess:Board ;
 	rdfs:comment "Describes an example board with only 6 squares."@en .
 example:ExampleSequence a chess:Sequence ;
@@ -20,3 +23,4 @@ example:ExampleSequence a chess:Sequence ;
 								foaf:name "Michel Gagnon" ;
 								chess:color chess:Black ]  ;
 	chess:moves example:ExampleSequence .
+

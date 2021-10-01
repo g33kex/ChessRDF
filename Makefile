@@ -1,5 +1,5 @@
 SOURCE=Chess.ttl
-SITE=Chess.json Example.json Index.json
+SITE=Chess.json Example.json StartingBoard.json Index.json
 OUT=out.png
 FORMAT=trig
 

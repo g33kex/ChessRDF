@@ -1,0 +1,614 @@
+@prefix chess: <https://g33kex.github.io/ChessRDF/Chess.json#> .
+@prefix startingBoard: <https://g33kex.github.io/ChessRDF/StartingBoard.json#> .
+
+startingBoard:StartingBoard {
+    _:N03c8f3d3ef3f4d758df2c011445db9b6 a chess:Pawn ;
+        chess:color chess:White .
+
+    _:N0a0ef1b02a8540efb27e36659538a44c a chess:King ;
+        chess:color chess:White .
+
+    _:N1cdcf3025ffa4ad79cd08b4937753643 a chess:Pawn ;
+        chess:color chess:White .
+
+    _:N1f43b700b3964b1ab6e07a0598a2882b a chess:Knight ;
+        chess:color chess:White .
+
+    _:N3e9520a1dfb442fcac676defc46f8415 a chess:Pawn ;
+        chess:color chess:Black .
+
+    _:N42c7eca1a4864fc89ce7e606d7c15330 a chess:Pawn ;
+        chess:color chess:Black .
+
+    _:N473e1c4ef9e44d70aeb4106314b070cb a chess:Pawn ;
+        chess:color chess:White .
+
+    _:N484eef4bdc9345c299695a0cb85fc578 a chess:Queen ;
+        chess:color chess:White .
+
+    _:N53af3deef19e416b97110093e8c76254 a chess:Pawn ;
+        chess:color chess:White .
+
+    _:N5fbe6aea64484c49bc1e158755050e14 a chess:Bishop ;
+        chess:color chess:Black .
+
+    _:N66da4c0e9f03413680039f29bda801d5 a chess:Knight ;
+        chess:color chess:Black .
+
+    _:N7d6e875a02844ed6b3f07cf971b260b1 a chess:Pawn ;
+        chess:color chess:White .
+
+    _:N82230d21086d49fbbb0e7732d93a8ae9 a chess:Pawn ;
+        chess:color chess:Black .
+
+    _:N8d89ab2f6328421099c12967b6836364 a chess:Knight ;
+        chess:color chess:White .
+
+    _:Nb26d1bb4f8dc4900ab3ee6b0dd777cbb a chess:Rook ;
+        chess:color chess:White .
+
+    _:Nba321ca12baa476c8137e2065eeed6cf a chess:Queen ;
+        chess:color chess:Black .
+
+    _:Nbb15c2cc301e462092d63e409533f112 a chess:Pawn ;
+        chess:color chess:White .
+
+    _:Nc01a1784e4954299a30a45f3e0109ebd a chess:Knight ;
+        chess:color chess:Black .
+
+    _:Nc0a36ff66f264832805892f46a8aa21b a chess:Pawn ;
+        chess:color chess:Black .
+
+    _:Nc6aa7b970cd84cf4b4106ce7d72f29cb a chess:Pawn ;
+        chess:color chess:White .
+
+    _:Nc84b081aa25b407681273f489c4fa07d a chess:Bishop ;
+        chess:color chess:White .
+
+    _:Ncb4f684ec3cb467eb3df14ff46820937 a chess:Pawn ;
+        chess:color chess:Black .
+
+    _:Nd17b740be2f84069a531a200e333a07a a chess:Pawn ;
+        chess:color chess:Black .
+
+    _:Nda93c64690114b118288a4f144bfb235 a chess:Bishop ;
+        chess:color chess:Black .
+
+    _:Ndc6ffe891a0443cbade894dbc92f6f89 a chess:Rook ;
+        chess:color chess:White .
+
+    _:Ne01845e8410a4f71a6b311cc8dd3fd5c a chess:Rook ;
+        chess:color chess:Black .
+
+    _:Ne21758994adb4211978fcf96cb04b0d4 a chess:Pawn ;
+        chess:color chess:Black .
+
+    _:Ne4fe3424d3034ac1bd9905ade9bd602d a chess:Bishop ;
+        chess:color chess:White .
+
+    _:Ne5b0267f60ef4087b727d97c6b64dde9 a chess:Rook ;
+        chess:color chess:Black .
+
+    _:Ne8b3b6df24054a46a7144a07c911f56c a chess:Pawn ;
+        chess:color chess:White .
+
+    _:Nf447e4fd7a7d49cebb4ee6f9743306a9 a chess:King ;
+        chess:color chess:Black .
+
+    _:Nf69d6c2576a9493094fd52d8edb7bd1e a chess:Pawn ;
+        chess:color chess:Black .
+
+    _:a1 a chess:Square ;
+        chess:color chess:Black ;
+        chess:coordinates "a1" ;
+        chess:hasPiece _:Nb26d1bb4f8dc4900ab3ee6b0dd777cbb ;
+        chess:left _:b1 ;
+        chess:top _:a2 .
+
+    _:a8 a chess:Square ;
+        chess:bottom _:a7 ;
+        chess:color chess:White ;
+        chess:coordinates "a8" ;
+        chess:hasPiece _:Ne5b0267f60ef4087b727d97c6b64dde9 ;
+        chess:left _:b8 .
+
+    _:h1 a chess:Square ;
+        chess:color chess:White ;
+        chess:coordinates "h1" ;
+        chess:hasPiece _:Ndc6ffe891a0443cbade894dbc92f6f89 ;
+        chess:right _:g1 ;
+        chess:top _:h2 .
+
+    _:h8 a chess:Square ;
+        chess:bottom _:h7 ;
+        chess:color chess:Black ;
+        chess:coordinates "h8" ;
+        chess:hasPiece _:Ne01845e8410a4f71a6b311cc8dd3fd5c ;
+        chess:right _:g8 .
+
+    _:a2 a chess:Square ;
+        chess:bottom _:a1 ;
+        chess:color chess:White ;
+        chess:coordinates "a2" ;
+        chess:hasPiece _:Ne8b3b6df24054a46a7144a07c911f56c ;
+        chess:left _:b2 ;
+        chess:top _:a3 .
+
+    _:a3 a chess:Square ;
+        chess:bottom _:a2 ;
+        chess:color chess:Black ;
+        chess:coordinates "a3" ;
+        chess:left _:b3 ;
+        chess:top _:a4 .
+
+    _:a4 a chess:Square ;
+        chess:bottom _:a3 ;
+        chess:color chess:White ;
+        chess:coordinates "a4" ;
+        chess:left _:b4 ;
+        chess:top _:a5 .
+
+    _:a5 a chess:Square ;
+        chess:bottom _:a4 ;
+        chess:color chess:Black ;
+        chess:coordinates "a5" ;
+        chess:left _:b5 ;
+        chess:top _:a6 .
+
+    _:a6 a chess:Square ;
+        chess:bottom _:a5 ;
+        chess:color chess:White ;
+        chess:coordinates "a6" ;
+        chess:left _:b6 ;
+        chess:top _:a7 .
+
+    _:a7 a chess:Square ;
+        chess:bottom _:a6 ;
+        chess:color chess:Black ;
+        chess:coordinates "a7" ;
+        chess:hasPiece _:Ncb4f684ec3cb467eb3df14ff46820937 ;
+        chess:left _:b7 ;
+        chess:top _:a8 .
+
+    _:b1 a chess:Square ;
+        chess:color chess:White ;
+        chess:coordinates "b1" ;
+        chess:hasPiece _:N1f43b700b3964b1ab6e07a0598a2882b ;
+        chess:left _:c1 ;
+        chess:right _:a1 ;
+        chess:top _:b2 .
+
+    _:b8 a chess:Square ;
+        chess:bottom _:b7 ;
+        chess:color chess:Black ;
+        chess:coordinates "b8" ;
+        chess:hasPiece _:N66da4c0e9f03413680039f29bda801d5 ;
+        chess:left _:c8 ;
+        chess:right _:a8 .
+
+    _:c1 a chess:Square ;
+        chess:color chess:Black ;
+        chess:coordinates "c1" ;
+        chess:hasPiece _:Nc84b081aa25b407681273f489c4fa07d ;
+        chess:left _:d1 ;
+        chess:right _:b1 ;
+        chess:top _:c2 .
+
+    _:c8 a chess:Square ;
+        chess:bottom _:c7 ;
+        chess:color chess:White ;
+        chess:coordinates "c8" ;
+        chess:hasPiece _:Nda93c64690114b118288a4f144bfb235 ;
+        chess:left _:d8 ;
+        chess:right _:b8 .
+
+    _:d1 a chess:Square ;
+        chess:color chess:White ;
+        chess:coordinates "d1" ;
+        chess:hasPiece _:N484eef4bdc9345c299695a0cb85fc578 ;
+        chess:left _:e1 ;
+        chess:right _:c1 ;
+        chess:top _:d2 .
+
+    _:d8 a chess:Square ;
+        chess:bottom _:d7 ;
+        chess:color chess:Black ;
+        chess:coordinates "d8" ;
+        chess:hasPiece _:Nba321ca12baa476c8137e2065eeed6cf ;
+        chess:left _:e8 ;
+        chess:right _:c8 .
+
+    _:e1 a chess:Square ;
+        chess:color chess:Black ;
+        chess:coordinates "e1" ;
+        chess:hasPiece _:N0a0ef1b02a8540efb27e36659538a44c ;
+        chess:left _:f1 ;
+        chess:right _:d1 ;
+        chess:top _:e2 .
+
+    _:e8 a chess:Square ;
+        chess:bottom _:e7 ;
+        chess:color chess:White ;
+        chess:coordinates "e8" ;
+        chess:hasPiece _:Nf447e4fd7a7d49cebb4ee6f9743306a9 ;
+        chess:left _:f8 ;
+        chess:right _:d8 .
+
+    _:f1 a chess:Square ;
+        chess:color chess:White ;
+        chess:coordinates "f1" ;
+        chess:hasPiece _:Ne4fe3424d3034ac1bd9905ade9bd602d ;
+        chess:left _:g1 ;
+        chess:right _:e1 ;
+        chess:top _:f2 .
+
+    _:f8 a chess:Square ;
+        chess:bottom _:f7 ;
+        chess:color chess:Black ;
+        chess:coordinates "f8" ;
+        chess:hasPiece _:N5fbe6aea64484c49bc1e158755050e14 ;
+        chess:left _:g8 ;
+        chess:right _:e8 .
+
+    _:g1 a chess:Square ;
+        chess:color chess:Black ;
+        chess:coordinates "g1" ;
+        chess:hasPiece _:N8d89ab2f6328421099c12967b6836364 ;
+        chess:left _:h1 ;
+        chess:right _:f1 ;
+        chess:top _:g2 .
+
+    _:g8 a chess:Square ;
+        chess:bottom _:g7 ;
+        chess:color chess:White ;
+        chess:coordinates "g8" ;
+        chess:hasPiece _:Nc01a1784e4954299a30a45f3e0109ebd ;
+        chess:left _:h8 ;
+        chess:right _:f8 .
+
+    _:h2 a chess:Square ;
+        chess:bottom _:h1 ;
+        chess:color chess:Black ;
+        chess:coordinates "h2" ;
+        chess:hasPiece _:N7d6e875a02844ed6b3f07cf971b260b1 ;
+        chess:right _:g2 ;
+        chess:top _:h3 .
+
+    _:h3 a chess:Square ;
+        chess:bottom _:h2 ;
+        chess:color chess:White ;
+        chess:coordinates "h3" ;
+        chess:right _:g3 ;
+        chess:top _:h4 .
+
+    _:h4 a chess:Square ;
+        chess:bottom _:h3 ;
+        chess:color chess:Black ;
+        chess:coordinates "h4" ;
+        chess:right _:g4 ;
+        chess:top _:h5 .
+
+    _:h5 a chess:Square ;
+        chess:bottom _:h4 ;
+        chess:color chess:White ;
+        chess:coordinates "h5" ;
+        chess:right _:g5 ;
+        chess:top _:h6 .
+
+    _:h6 a chess:Square ;
+        chess:bottom _:h5 ;
+        chess:color chess:Black ;
+        chess:coordinates "h6" ;
+        chess:right _:g6 ;
+        chess:top _:h7 .
+
+    _:h7 a chess:Square ;
+        chess:bottom _:h6 ;
+        chess:color chess:White ;
+        chess:coordinates "h7" ;
+        chess:hasPiece _:Nf69d6c2576a9493094fd52d8edb7bd1e ;
+        chess:right _:g7 ;
+        chess:top _:h8 .
+
+    _:b2 a chess:Square ;
+        chess:bottom _:b1 ;
+        chess:color chess:Black ;
+        chess:coordinates "b2" ;
+        chess:hasPiece _:Nc6aa7b970cd84cf4b4106ce7d72f29cb ;
+        chess:left _:c2 ;
+        chess:right _:a2 ;
+        chess:top _:b3 .
+
+    _:b3 a chess:Square ;
+        chess:bottom _:b2 ;
+        chess:color chess:White ;
+        chess:coordinates "b3" ;
+        chess:left _:c3 ;
+        chess:right _:a3 ;
+        chess:top _:b4 .
+
+    _:b4 a chess:Square ;
+        chess:bottom _:b3 ;
+        chess:color chess:Black ;
+        chess:coordinates "b4" ;
+        chess:left _:c4 ;
+        chess:right _:a4 ;
+        chess:top _:b5 .
+
+    _:b5 a chess:Square ;
+        chess:bottom _:b4 ;
+        chess:color chess:White ;
+        chess:coordinates "b5" ;
+        chess:left _:c5 ;
+        chess:right _:a5 ;
+        chess:top _:b6 .
+
+    _:b6 a chess:Square ;
+        chess:bottom _:b5 ;
+        chess:color chess:Black ;
+        chess:coordinates "b6" ;
+        chess:left _:c6 ;
+        chess:right _:a6 ;
+        chess:top _:b7 .
+
+    _:b7 a chess:Square ;
+        chess:bottom _:b6 ;
+        chess:color chess:White ;
+        chess:coordinates "b7" ;
+        chess:hasPiece _:N82230d21086d49fbbb0e7732d93a8ae9 ;
+        chess:left _:c7 ;
+        chess:right _:a7 ;
+        chess:top _:b8 .
+
+    _:c2 a chess:Square ;
+        chess:bottom _:c1 ;
+        chess:color chess:White ;
+        chess:coordinates "c2" ;
+        chess:hasPiece _:Nbb15c2cc301e462092d63e409533f112 ;
+        chess:left _:d2 ;
+        chess:right _:b2 ;
+        chess:top _:c3 .
+
+    _:c3 a chess:Square ;
+        chess:bottom _:c2 ;
+        chess:color chess:Black ;
+        chess:coordinates "c3" ;
+        chess:left _:d3 ;
+        chess:right _:b3 ;
+        chess:top _:c4 .
+
+    _:c4 a chess:Square ;
+        chess:bottom _:c3 ;
+        chess:color chess:White ;
+        chess:coordinates "c4" ;
+        chess:left _:d4 ;
+        chess:right _:b4 ;
+        chess:top _:c5 .
+
+    _:c5 a chess:Square ;
+        chess:bottom _:c4 ;
+        chess:color chess:Black ;
+        chess:coordinates "c5" ;
+        chess:left _:d5 ;
+        chess:right _:b5 ;
+        chess:top _:c6 .
+
+    _:c6 a chess:Square ;
+        chess:bottom _:c5 ;
+        chess:color chess:White ;
+        chess:coordinates "c6" ;
+        chess:left _:d6 ;
+        chess:right _:b6 ;
+        chess:top _:c7 .
+
+    _:c7 a chess:Square ;
+        chess:bottom _:c6 ;
+        chess:color chess:Black ;
+        chess:coordinates "c7" ;
+        chess:hasPiece _:N3e9520a1dfb442fcac676defc46f8415 ;
+        chess:left _:d7 ;
+        chess:right _:b7 ;
+        chess:top _:c8 .
+
+    _:d2 a chess:Square ;
+        chess:bottom _:d1 ;
+        chess:color chess:Black ;
+        chess:coordinates "d2" ;
+        chess:hasPiece _:N53af3deef19e416b97110093e8c76254 ;
+        chess:left _:e2 ;
+        chess:right _:c2 ;
+        chess:top _:d3 .
+
+    _:d3 a chess:Square ;
+        chess:bottom _:d2 ;
+        chess:color chess:White ;
+        chess:coordinates "d3" ;
+        chess:left _:e3 ;
+        chess:right _:c3 ;
+        chess:top _:d4 .
+
+    _:d4 a chess:Square ;
+        chess:bottom _:d3 ;
+        chess:color chess:Black ;
+        chess:coordinates "d4" ;
+        chess:left _:e4 ;
+        chess:right _:c4 ;
+        chess:top _:d5 .
+
+    _:d5 a chess:Square ;
+        chess:bottom _:d4 ;
+        chess:color chess:White ;
+        chess:coordinates "d5" ;
+        chess:left _:e5 ;
+        chess:right _:c5 ;
+        chess:top _:d6 .
+
+    _:d6 a chess:Square ;
+        chess:bottom _:d5 ;
+        chess:color chess:Black ;
+        chess:coordinates "d6" ;
+        chess:left _:e6 ;
+        chess:right _:c6 ;
+        chess:top _:d7 .
+
+    _:d7 a chess:Square ;
+        chess:bottom _:d6 ;
+        chess:color chess:White ;
+        chess:coordinates "d7" ;
+        chess:hasPiece _:N42c7eca1a4864fc89ce7e606d7c15330 ;
+        chess:left _:e7 ;
+        chess:right _:c7 ;
+        chess:top _:d8 .
+
+    _:e2 a chess:Square ;
+        chess:bottom _:e1 ;
+        chess:color chess:White ;
+        chess:coordinates "e2" ;
+        chess:hasPiece _:N473e1c4ef9e44d70aeb4106314b070cb ;
+        chess:left _:f2 ;
+        chess:right _:d2 ;
+        chess:top _:e3 .
+
+    _:e3 a chess:Square ;
+        chess:bottom _:e2 ;
+        chess:color chess:Black ;
+        chess:coordinates "e3" ;
+        chess:left _:f3 ;
+        chess:right _:d3 ;
+        chess:top _:e4 .
+
+    _:e4 a chess:Square ;
+        chess:bottom _:e3 ;
+        chess:color chess:White ;
+        chess:coordinates "e4" ;
+        chess:left _:f4 ;
+        chess:right _:d4 ;
+        chess:top _:e5 .
+
+    _:e5 a chess:Square ;
+        chess:bottom _:e4 ;
+        chess:color chess:Black ;
+        chess:coordinates "e5" ;
+        chess:left _:f5 ;
+        chess:right _:d5 ;
+        chess:top _:e6 .
+
+    _:e6 a chess:Square ;
+        chess:bottom _:e5 ;
+        chess:color chess:White ;
+        chess:coordinates "e6" ;
+        chess:left _:f6 ;
+        chess:right _:d6 ;
+        chess:top _:e7 .
+
+    _:e7 a chess:Square ;
+        chess:bottom _:e6 ;
+        chess:color chess:Black ;
+        chess:coordinates "e7" ;
+        chess:hasPiece _:Nc0a36ff66f264832805892f46a8aa21b ;
+        chess:left _:f7 ;
+        chess:right _:d7 ;
+        chess:top _:e8 .
+
+    _:f2 a chess:Square ;
+        chess:bottom _:f1 ;
+        chess:color chess:Black ;
+        chess:coordinates "f2" ;
+        chess:hasPiece _:N1cdcf3025ffa4ad79cd08b4937753643 ;
+        chess:left _:g2 ;
+        chess:right _:e2 ;
+        chess:top _:f3 .
+
+    _:f3 a chess:Square ;
+        chess:bottom _:f2 ;
+        chess:color chess:White ;
+        chess:coordinates "f3" ;
+        chess:left _:g3 ;
+        chess:right _:e3 ;
+        chess:top _:f4 .
+
+    _:f4 a chess:Square ;
+        chess:bottom _:f3 ;
+        chess:color chess:Black ;
+        chess:coordinates "f4" ;
+        chess:left _:g4 ;
+        chess:right _:e4 ;
+        chess:top _:f5 .
+
+    _:f5 a chess:Square ;
+        chess:bottom _:f4 ;
+        chess:color chess:White ;
+        chess:coordinates "f5" ;
+        chess:left _:g5 ;
+        chess:right _:e5 ;
+        chess:top _:f6 .
+
+    _:f6 a chess:Square ;
+        chess:bottom _:f5 ;
+        chess:color chess:Black ;
+        chess:coordinates "f6" ;
+        chess:left _:g6 ;
+        chess:right _:e6 ;
+        chess:top _:f7 .
+
+    _:f7 a chess:Square ;
+        chess:bottom _:f6 ;
+        chess:color chess:White ;
+        chess:coordinates "f7" ;
+        chess:hasPiece _:Ne21758994adb4211978fcf96cb04b0d4 ;
+        chess:left _:g7 ;
+        chess:right _:e7 ;
+        chess:top _:f8 .
+
+    _:g2 a chess:Square ;
+        chess:bottom _:g1 ;
+        chess:color chess:White ;
+        chess:coordinates "g2" ;
+        chess:hasPiece _:N03c8f3d3ef3f4d758df2c011445db9b6 ;
+        chess:left _:h2 ;
+        chess:right _:f2 ;
+        chess:top _:g3 .
+
+    _:g3 a chess:Square ;
+        chess:bottom _:g2 ;
+        chess:color chess:Black ;
+        chess:coordinates "g3" ;
+        chess:left _:h3 ;
+        chess:right _:f3 ;
+        chess:top _:g4 .
+
+    _:g4 a chess:Square ;
+        chess:bottom _:g3 ;
+        chess:color chess:White ;
+        chess:coordinates "g4" ;
+        chess:left _:h4 ;
+        chess:right _:f4 ;
+        chess:top _:g5 .
+
+    _:g5 a chess:Square ;
+        chess:bottom _:g4 ;
+        chess:color chess:Black ;
+        chess:coordinates "g5" ;
+        chess:left _:h5 ;
+        chess:right _:f5 ;
+        chess:top _:g6 .
+
+    _:g6 a chess:Square ;
+        chess:bottom _:g5 ;
+        chess:color chess:White ;
+        chess:coordinates "g6" ;
+        chess:left _:h6 ;
+        chess:right _:f6 ;
+        chess:top _:g7 .
+
+    _:g7 a chess:Square ;
+        chess:bottom _:g6 ;
+        chess:color chess:Black ;
+        chess:coordinates "g7" ;
+        chess:hasPiece _:Nd17b740be2f84069a531a200e333a07a ;
+        chess:left _:h7 ;
+        chess:right _:f7 ;
+        chess:top _:g8 .
+}
+
+
