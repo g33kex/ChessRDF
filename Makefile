@@ -1,5 +1,5 @@
 SOURCE=Chess.ttl
-SITE=Chess.json Example.json StartingBoard.json Index.json
+SITE=Chess.xml Example.xml StartingBoard.xml Index.xml
 OUT=out.png
 FORMAT=trig
 
@@ -8,8 +8,8 @@ default:
 
 publish: ${SITE}
 
-%.json: %.ttl
-	 rapper $< -i ${FORMAT} -o json > docs/$@
+%.xml: %.ttl
+	 rapper $< -i ${FORMAT} -o rdfxml > docs/$@
 
 clean:
 	rm ${OUT}

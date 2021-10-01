@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:chess="https://g33kex.github.io/ChessRDF/Chess.xml#" xmlns:example="https://g33kex.github.io/ChessRDF/Example.xml#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdf:Description rdf:nodeID="a1">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a1">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a1">
+    <chess:hasPiece rdf:nodeID="KW"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a1">
+    <chess:coordinates>a1</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a1">
+    <chess:right rdf:nodeID="b1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a1">
+    <chess:top rdf:nodeID="a2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="KW">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#King"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="KW">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b1">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b1">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b1">
+    <chess:coordinates>b1</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b1">
+    <chess:left rdf:nodeID="a1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b1">
+    <chess:right rdf:nodeID="c1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b1">
+    <chess:top rdf:nodeID="b2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c1">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c1">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c1">
+    <chess:hasPiece rdf:nodeID="NB"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c1">
+    <chess:coordinates>c1</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c1">
+    <chess:left rdf:nodeID="b1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="NB">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Knight"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="NB">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a2">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a2">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a2">
+    <chess:coordinates>a2</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a2">
+    <chess:bottom rdf:nodeID="a1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a2">
+    <chess:right rdf:nodeID="b2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a3">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a3">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a3">
+    <chess:hasPiece rdf:nodeID="QB"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a3">
+    <chess:coordinates>a3</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a3">
+    <chess:bottom rdf:nodeID="a2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="QB">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Queen"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="QB">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b2">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b2">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b2">
+    <chess:hasPiece rdf:nodeID="RW"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b2">
+    <chess:coordinates>b2</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b2">
+    <chess:left rdf:nodeID="a2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b2">
+    <chess:bottom rdf:nodeID="b1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="RW">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Rook"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="RW">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid1">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Move"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid1">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid1">
+    <chess:piece rdf:nodeID="RW"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid1">
+    <chess:destinationSquare rdf:nodeID="a2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="m1">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Sequence"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="m1">
+    <chess:startingBoard rdf:resource="https://g33kex.github.io/ChessRDF/Example.xml#ExampleBoard"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="m1">
+    <rdf:first rdf:nodeID="genid1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="m1">
+    <rdf:rest rdf:nodeID="m2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid2">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Move"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid2">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid2">
+    <chess:piece rdf:nodeID="QB"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid2">
+    <chess:destinationSquare rdf:nodeID="a2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid2">
+    <chess:pieceTaken rdf:nodeID="KW"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid2">
+    <chess:checkmate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</chess:checkmate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="m2">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Sequence"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="m2">
+    <rdf:first rdf:nodeID="genid2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="m2">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+</rdf:RDF>

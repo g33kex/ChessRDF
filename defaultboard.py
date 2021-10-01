@@ -2,8 +2,8 @@
 from rdflib import Graph, URIRef, Literal, BNode, Namespace
 from rdflib.namespace import RDF
 
-chess = Namespace("https://g33kex.github.io/ChessRDF/Chess.json#")
-startingBoard = Namespace("https://g33kex.github.io/ChessRDF/StartingBoard.json#")
+chess = Namespace("https://g33kex.github.io/ChessRDF/Chess.xml#")
+startingBoard = Namespace("https://g33kex.github.io/ChessRDF/StartingBoard.xml#")
 g = Graph(identifier=startingBoard.StartingBoard)
 g.bind('chess', chess)
 g.bind('startingBoard', startingBoard)

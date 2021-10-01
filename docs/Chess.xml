@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:chess="https://g33kex.github.io/ChessRDF/Chess.xml#" xmlns:foaf="http://xmlns.com/foaf/spec/#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="https://schema.org/" xmlns:wiki="https://www.wikidata.org/wiki/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#ColoredElement">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#ColoredElement">
+    <rdfs:comment xml:lang="en">The ColoredElement class contains colors that can be associated with squares, pieces or players.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#color">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#color">
+    <rdfs:comment xml:lang="en">The color property allows you to assign a color to an element in the chess game (square, piece or player).The color can be black or white.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#color">
+    <rdfs:domain rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#ColoredElement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#color">
+    <rdfs:range rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Color"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Color">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Color">
+    <rdfs:comment xml:lang="en">The Color class represents the color of an element of the chess game (square, piece or player).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#White">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Color"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Black">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Color"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Piece">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Piece">
+    <rdfs:comment xml:lang="en">The Piece class represents the pieces available in the chess set. There are six pieces in the chess game which are (Knight, Pawn, Bishop, Rook, Queen, King).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Piece">
+    <rdfs:subClassOf rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#ColoredElement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Piece">
+    <schema:sameAs rdf:resource="https://www.wikidata.org/wiki/Q208440"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Piece">
+    <rdfs:label xml:lang="en">Chess piece.</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Knight">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Knight">
+    <rdfs:comment xml:lang="en">The Knight class represents a piece of the chess game. Each player has two knights who are placed at b1 and g1 for white and b8 and g8 for black. The Knight can only move in L, i.e. 2 cases in one direction combined with one case perpendicularly.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Knight">
+    <rdfs:subClassOf rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Piece"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Knight">
+    <schema:sameAs rdf:resource="https://www.wikidata.org/wiki/Q136"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Knight">
+    <rdfs:label xml:lang="en">Knight.</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Pawn">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Pawn">
+    <rdfs:comment xml:lang="en">The Pawn class represents a type of piece in a chess game. Each player has eight pawns placed in the second row in front of the other pieces. From its initial position, the pawn can advance one or two squares. Then, the pawn can only advance one space. The pawn can only move forward and take a diagonal grip forward.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Pawn">
+    <rdfs:subClassOf rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Piece"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Pawn">
+    <schema:sameAs rdf:resource="https://www.wikidata.org/wiki/Q135"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Pawn">
+    <rdfs:label xml:lang="en">Pawn.</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Bishop">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Bishop">
+    <rdfs:comment xml:lang="en">The Bishop class represents a type of piece in chess games. The Bishop only moves diagonally.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Bishop">
+    <rdfs:subClassOf rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Piece"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Rook">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Rook">
+    <rdfs:comment xml:lang="en">The Rook class represents a type of chess piece. Each player has two rounds placed at a1 and h1 for white and a8 and h8 for black. A rook can move horizontally or vertically.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Rook">
+    <rdfs:subClassOf rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Piece"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Rook">
+    <schema:sameAs rdf:resource="https://www.wikidata.org/wiki/Q137"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Rook">
+    <rdfs:label xml:lang="en">Rook.</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Queen">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Queen">
+    <rdfs:comment xml:lang="en">The Queen class represents a type of chess piece. Each player has a single queen placed at d1 for white and d8 for black. The queen can move vertically, horizontally or diagonally on any number of empty spaces.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Queen">
+    <rdfs:subClassOf rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Piece"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#King">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#King">
+    <rdfs:comment xml:lang="en">The King class represents a type of chess piece. Each day has a single king placed at a1 for white and e8 for black. The object of the game is to protect your King. When the king is threatened with being caught in the next turn, it is a failure. However, if the king is unquestionably taken on the next turn, it is a checkmate. The King can only move one square in any direction.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#King">
+    <rdfs:subClassOf rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Piece"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Square">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Square">
+    <rdfs:comment xml:lang="en">The Square class represents a square of the chess game. Each box is alternated color between white and black.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Square">
+    <rdfs:subClassOf rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#ColoredElement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#hasPiece">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#hasPiece">
+    <rdfs:comment xml:lang="en">The hasPiece property is used to indicate whether the box is video or contains a part.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#hasPiece">
+    <rdfs:domain rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#hasPiece">
+    <rdfs:range rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Piece"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#left">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#left">
+    <rdfs:comment xml:lang="en">The left property indicates the box to the left of a box.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#left">
+    <rdfs:domain rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#left">
+    <rdfs:range rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#right">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#right">
+    <rdfs:comment xml:lang="en">The right property indicates the box to the right of a box.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#right">
+    <rdfs:domain rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#right">
+    <rdfs:range rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#top">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#top">
+    <rdfs:comment xml:lang="en">The top property indicates the box to the top of a box.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#top">
+    <rdfs:domain rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#top">
+    <rdfs:range rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#bottom">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#bottom">
+    <rdfs:comment xml:lang="en">The bottom property indicates the box to the bottom of a box.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#bottom">
+    <rdfs:domain rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#bottom">
+    <rdfs:range rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#coordinates">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#coordinates">
+    <rdfs:comment xml:lang="en">The coordinates property indicates the position of the box in the chess set. The first letter is a letter located from a to h and a second a number from 1 to 8.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#coordinates">
+    <rdfs:domain rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#coordinates">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Game">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Game">
+    <rdfs:comment xml:lang="en">The Game class represents a game of chess. Each game is played between two people who can be humans or computers. Each player takes turns playing with 16 pieces each. The object of the game is to take the king from the other player.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#whitePlayer">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#whitePlayer">
+    <rdfs:comment xml:lang="en">The whitePlayer property represents the player who plays with the white pieces</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#whitePlayer">
+    <rdfs:domain rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Game"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#whitePlayer">
+    <rdfs:range rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Player"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#blackPlayer">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#blackPlayer">
+    <rdfs:comment xml:lang="en">The blackPlayer property represents the player who plays with the black pieces</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#blackPlayer">
+    <rdfs:domain rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Game"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#blackPlayer">
+    <rdfs:range rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Player"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#moves">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#moves">
+    <rdfs:comment xml:lang="en">The moves property represents several sequences.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#moves">
+    <rdfs:domain rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Game"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#moves">
+    <rdfs:range rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Sequence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Player">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Player">
+    <rdfs:comment xml:lang="en">The Player class represents a player in the chess game. A player can be a human or a computer. Each player has a color (white or black) which defines which color of the piece he plays with.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Player">
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/spec/#Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Player">
+    <rdfs:subClassOf rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#ColoredElement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Sequence">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Sequence">
+    <rdfs:comment xml:lang="en">The Sequence class represents a sequence of motion.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Sequence">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#startingBoard">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#startingBoard">
+    <rdfs:comment xml:lang="en">The startingBoard property represents a board with the starting positions of the parts.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#startingBoard">
+    <rdfs:domain rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Sequence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#startingBoard">
+    <rdfs:range rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Board"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Board">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Board">
+    <rdfs:comment xml:lang="en">The class Board represents the chessboard</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Move">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Move">
+    <rdfs:comment xml:lang="en">The class Move represents the movement of a piece in the chess game.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Move">
+    <rdfs:subClassOf rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#ColoredElement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#notation">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#notation">
+    <rdfs:comment xml:lang="en">The rating property is a sequence of letters that designates the move in the chess standards.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#notation">
+    <rdfs:domain rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Move"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#notation">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#check">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#check">
+    <rdfs:comment xml:lang="en">The check property is a boolean that indicates whether there is a check in the game.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#check">
+    <rdfs:domain rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Move"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#check">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#checkmate">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#checkmate">
+    <rdfs:comment xml:lang="en">The check property is a boolean which indicates if there is a checkmate in the game.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#checkmate">
+    <rdfs:domain rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Move"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#checkmate">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#castle">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#castle">
+    <rdfs:comment xml:lang="en">The castle property is a boolean which indicates whether there has been a castle movement.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#castle">
+    <rdfs:domain rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Move"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#castle">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#castleQueenSide">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#castleQueenSide">
+    <rdfs:comment xml:lang="en">The castleQueenSide property is a boolean that indicates whether there is a castleQueenSide in the game. A castleQueenSide is a special move that moves a queen move and one of the towers. In one hit, the Queen and the tower are moved.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#castleQueenSide">
+    <rdfs:subPropertyOf rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#castle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#castleKingSide">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#castleKingSide">
+    <rdfs:comment xml:lang="en">The castleKingSide property is a boolean that indicates whether there is a castleKingSide in the game. A castleKingSide is a special move that moves a king move and one of the rooks. In one hit, the king and the rook are moved.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#castleKingSide">
+    <rdfs:subPropertyOf rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#castle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#pieceTaken">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#pieceTaken">
+    <rdfs:comment xml:lang="en">The pieceTaken property represents the pieces that were taken during the game.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#pieceTaken">
+    <rdfs:domain rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Move"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#pieceTaken">
+    <rdfs:range rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Piece"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#pieceTakenEnPassant">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#pieceTakenEnPassant">
+    <rdfs:comment xml:lang="en">The pieceTakenEnPassant property represents the pieces that were taken through a pawns.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#pieceTakenEnPassant">
+    <rdfs:subPropertyOf rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#pieceTaken"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#pawnPromotion">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#pawnPromotion">
+    <rdfs:comment xml:lang="en">The pawnPromotion property represents when a pawn arrives from the other side and is replaced by another piece from the game.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#pawnPromotion">
+    <rdfs:domain rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Move"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#pawnPromotion">
+    <rdfs:range rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Piece"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#piece">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#piece">
+    <rdfs:comment xml:lang="en">The piece property represents the piece that has moved in the game.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#piece">
+    <rdfs:domain rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Move"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#piece">
+    <rdfs:range rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Piece"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#destinationSquare">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#destinationSquare">
+    <rdfs:comment xml:lang="en">The destinationSquare property represents the final square of the part that has to move.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#destinationSquare">
+    <rdfs:domain rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Move"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#destinationSquare">
+    <rdfs:range rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+</rdf:RDF>

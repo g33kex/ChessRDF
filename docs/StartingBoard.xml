@@ -1,0 +1,1539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:chess="https://g33kex.github.io/ChessRDF/Chess.xml#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:startingBoard="https://g33kex.github.io/ChessRDF/StartingBoard.xml#">
+  <rdf:Description rdf:nodeID="N1ae34e627cbf470daa19a4eb9d0f4e5c">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Queen"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1ae34e627cbf470daa19a4eb9d0f4e5c">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N348309969bd041b4b8eb86e2e1a7b15e">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Knight"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N348309969bd041b4b8eb86e2e1a7b15e">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N36f6cbab04314c4683a6f2c2a255cae6">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Bishop"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N36f6cbab04314c4683a6f2c2a255cae6">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N401a87945ca2459b8d73ae0769fe41e3">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#King"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N401a87945ca2459b8d73ae0769fe41e3">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N425c719f3a3d42868b4ddda59c7401c9">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Pawn"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N425c719f3a3d42868b4ddda59c7401c9">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N47c03c59a4514e63b42034396339cad2">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Pawn"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N47c03c59a4514e63b42034396339cad2">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N511fd01ed49e41e78757ffad871ba07e">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#King"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N511fd01ed49e41e78757ffad871ba07e">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N54c2ae86d8fd454aaef9ab9875ff4d6b">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Rook"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N54c2ae86d8fd454aaef9ab9875ff4d6b">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N57816c6a4cb84caeae7731285cda4b57">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Queen"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N57816c6a4cb84caeae7731285cda4b57">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5b30112fcea440b7b4ae8f08a727bf70">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Bishop"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5b30112fcea440b7b4ae8f08a727bf70">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5e839019a89e436284e8530821a9dd7a">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Pawn"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5e839019a89e436284e8530821a9dd7a">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N660a631b12c543e29a3f023b42cb2752">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Knight"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N660a631b12c543e29a3f023b42cb2752">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N70d14212504b4890a65f682118df2507">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Pawn"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N70d14212504b4890a65f682118df2507">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N72d2994bc12345148ace4250d414fed9">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Pawn"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N72d2994bc12345148ace4250d414fed9">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7600c3e95c11449f997a23736113b964">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Knight"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7600c3e95c11449f997a23736113b964">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7715682848b6442faac83ec1f96cce6a">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Bishop"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7715682848b6442faac83ec1f96cce6a">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7d802a2b249743ee9ddbb2dcd9b16d0f">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Bishop"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7d802a2b249743ee9ddbb2dcd9b16d0f">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8811cefaa63c460b8eec26aff83c2d02">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Rook"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8811cefaa63c460b8eec26aff83c2d02">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N92cb768c83d349afb0bebbe5d2450a01">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Pawn"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N92cb768c83d349afb0bebbe5d2450a01">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9688a0ffe0a04cda800a453e3bddd6c9">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Pawn"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9688a0ffe0a04cda800a453e3bddd6c9">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na84512184c044757b6e7ef45cf86ffbf">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Pawn"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na84512184c044757b6e7ef45cf86ffbf">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na8e33b9bcb404b45b1a9ef8ca4abd515">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Pawn"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na8e33b9bcb404b45b1a9ef8ca4abd515">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb01a025a4c3444a893707959a78a6ac0">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Pawn"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb01a025a4c3444a893707959a78a6ac0">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb1a4b446c9954c599817e4f9752d865f">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Pawn"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb1a4b446c9954c599817e4f9752d865f">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb4fc591885234612a1ad5b54a33d31fd">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Rook"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb4fc591885234612a1ad5b54a33d31fd">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbf89dc05954143fa93c2f25645a94a1f">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Rook"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbf89dc05954143fa93c2f25645a94a1f">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc414252cdb2b4976850cf0d7fc09511c">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Pawn"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc414252cdb2b4976850cf0d7fc09511c">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc4e362a199ab4b8685936fc410774805">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Pawn"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc4e362a199ab4b8685936fc410774805">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndf1d0cb83884474e9df239910cc7eae1">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Pawn"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndf1d0cb83884474e9df239910cc7eae1">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne4bae1ce74e647c7aa399ffb6a410ee5">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Knight"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne4bae1ce74e647c7aa399ffb6a410ee5">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nee0bc846f9fa4f36b5025afb5a1d9d57">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Pawn"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nee0bc846f9fa4f36b5025afb5a1d9d57">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf13e9ee109fd434089a12bf5980185b6">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Pawn"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf13e9ee109fd434089a12bf5980185b6">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a1">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a1">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a1">
+    <chess:coordinates>a1</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a1">
+    <chess:hasPiece rdf:nodeID="N8811cefaa63c460b8eec26aff83c2d02"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a1">
+    <chess:left rdf:nodeID="b1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a1">
+    <chess:top rdf:nodeID="a2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a8">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a8">
+    <chess:bottom rdf:nodeID="a7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a8">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a8">
+    <chess:coordinates>a8</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a8">
+    <chess:hasPiece rdf:nodeID="Nb4fc591885234612a1ad5b54a33d31fd"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a8">
+    <chess:left rdf:nodeID="b8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h1">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h1">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h1">
+    <chess:coordinates>h1</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h1">
+    <chess:hasPiece rdf:nodeID="Nbf89dc05954143fa93c2f25645a94a1f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h1">
+    <chess:right rdf:nodeID="g1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h1">
+    <chess:top rdf:nodeID="h2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h8">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h8">
+    <chess:bottom rdf:nodeID="h7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h8">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h8">
+    <chess:coordinates>h8</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h8">
+    <chess:hasPiece rdf:nodeID="N54c2ae86d8fd454aaef9ab9875ff4d6b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h8">
+    <chess:right rdf:nodeID="g8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a2">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a2">
+    <chess:bottom rdf:nodeID="a1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a2">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a2">
+    <chess:coordinates>a2</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a2">
+    <chess:hasPiece rdf:nodeID="N5e839019a89e436284e8530821a9dd7a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a2">
+    <chess:left rdf:nodeID="b2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a2">
+    <chess:top rdf:nodeID="a3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a3">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a3">
+    <chess:bottom rdf:nodeID="a2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a3">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a3">
+    <chess:coordinates>a3</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a3">
+    <chess:left rdf:nodeID="b3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a3">
+    <chess:top rdf:nodeID="a4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a4">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a4">
+    <chess:bottom rdf:nodeID="a3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a4">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a4">
+    <chess:coordinates>a4</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a4">
+    <chess:left rdf:nodeID="b4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a4">
+    <chess:top rdf:nodeID="a5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a5">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a5">
+    <chess:bottom rdf:nodeID="a4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a5">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a5">
+    <chess:coordinates>a5</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a5">
+    <chess:left rdf:nodeID="b5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a5">
+    <chess:top rdf:nodeID="a6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a6">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a6">
+    <chess:bottom rdf:nodeID="a5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a6">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a6">
+    <chess:coordinates>a6</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a6">
+    <chess:left rdf:nodeID="b6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a6">
+    <chess:top rdf:nodeID="a7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a7">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a7">
+    <chess:bottom rdf:nodeID="a6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a7">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a7">
+    <chess:coordinates>a7</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a7">
+    <chess:hasPiece rdf:nodeID="N70d14212504b4890a65f682118df2507"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a7">
+    <chess:left rdf:nodeID="b7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="a7">
+    <chess:top rdf:nodeID="a8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b1">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b1">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b1">
+    <chess:coordinates>b1</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b1">
+    <chess:hasPiece rdf:nodeID="N660a631b12c543e29a3f023b42cb2752"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b1">
+    <chess:left rdf:nodeID="c1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b1">
+    <chess:right rdf:nodeID="a1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b1">
+    <chess:top rdf:nodeID="b2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b8">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b8">
+    <chess:bottom rdf:nodeID="b7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b8">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b8">
+    <chess:coordinates>b8</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b8">
+    <chess:hasPiece rdf:nodeID="N7600c3e95c11449f997a23736113b964"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b8">
+    <chess:left rdf:nodeID="c8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b8">
+    <chess:right rdf:nodeID="a8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c1">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c1">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c1">
+    <chess:coordinates>c1</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c1">
+    <chess:hasPiece rdf:nodeID="N7715682848b6442faac83ec1f96cce6a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c1">
+    <chess:left rdf:nodeID="d1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c1">
+    <chess:right rdf:nodeID="b1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c1">
+    <chess:top rdf:nodeID="c2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c8">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c8">
+    <chess:bottom rdf:nodeID="c7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c8">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c8">
+    <chess:coordinates>c8</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c8">
+    <chess:hasPiece rdf:nodeID="N7d802a2b249743ee9ddbb2dcd9b16d0f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c8">
+    <chess:left rdf:nodeID="d8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c8">
+    <chess:right rdf:nodeID="b8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d1">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d1">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d1">
+    <chess:coordinates>d1</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d1">
+    <chess:hasPiece rdf:nodeID="N1ae34e627cbf470daa19a4eb9d0f4e5c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d1">
+    <chess:left rdf:nodeID="e1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d1">
+    <chess:right rdf:nodeID="c1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d1">
+    <chess:top rdf:nodeID="d2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d8">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d8">
+    <chess:bottom rdf:nodeID="d7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d8">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d8">
+    <chess:coordinates>d8</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d8">
+    <chess:hasPiece rdf:nodeID="N57816c6a4cb84caeae7731285cda4b57"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d8">
+    <chess:left rdf:nodeID="e8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d8">
+    <chess:right rdf:nodeID="c8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e1">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e1">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e1">
+    <chess:coordinates>e1</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e1">
+    <chess:hasPiece rdf:nodeID="N511fd01ed49e41e78757ffad871ba07e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e1">
+    <chess:left rdf:nodeID="f1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e1">
+    <chess:right rdf:nodeID="d1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e1">
+    <chess:top rdf:nodeID="e2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e8">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e8">
+    <chess:bottom rdf:nodeID="e7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e8">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e8">
+    <chess:coordinates>e8</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e8">
+    <chess:hasPiece rdf:nodeID="N401a87945ca2459b8d73ae0769fe41e3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e8">
+    <chess:left rdf:nodeID="f8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e8">
+    <chess:right rdf:nodeID="d8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f1">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f1">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f1">
+    <chess:coordinates>f1</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f1">
+    <chess:hasPiece rdf:nodeID="N36f6cbab04314c4683a6f2c2a255cae6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f1">
+    <chess:left rdf:nodeID="g1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f1">
+    <chess:right rdf:nodeID="e1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f1">
+    <chess:top rdf:nodeID="f2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f8">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f8">
+    <chess:bottom rdf:nodeID="f7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f8">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f8">
+    <chess:coordinates>f8</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f8">
+    <chess:hasPiece rdf:nodeID="N5b30112fcea440b7b4ae8f08a727bf70"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f8">
+    <chess:left rdf:nodeID="g8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f8">
+    <chess:right rdf:nodeID="e8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g1">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g1">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g1">
+    <chess:coordinates>g1</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g1">
+    <chess:hasPiece rdf:nodeID="N348309969bd041b4b8eb86e2e1a7b15e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g1">
+    <chess:left rdf:nodeID="h1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g1">
+    <chess:right rdf:nodeID="f1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g1">
+    <chess:top rdf:nodeID="g2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g8">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g8">
+    <chess:bottom rdf:nodeID="g7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g8">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g8">
+    <chess:coordinates>g8</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g8">
+    <chess:hasPiece rdf:nodeID="Ne4bae1ce74e647c7aa399ffb6a410ee5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g8">
+    <chess:left rdf:nodeID="h8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g8">
+    <chess:right rdf:nodeID="f8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h2">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h2">
+    <chess:bottom rdf:nodeID="h1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h2">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h2">
+    <chess:coordinates>h2</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h2">
+    <chess:hasPiece rdf:nodeID="N92cb768c83d349afb0bebbe5d2450a01"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h2">
+    <chess:right rdf:nodeID="g2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h2">
+    <chess:top rdf:nodeID="h3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h3">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h3">
+    <chess:bottom rdf:nodeID="h2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h3">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h3">
+    <chess:coordinates>h3</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h3">
+    <chess:right rdf:nodeID="g3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h3">
+    <chess:top rdf:nodeID="h4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h4">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h4">
+    <chess:bottom rdf:nodeID="h3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h4">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h4">
+    <chess:coordinates>h4</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h4">
+    <chess:right rdf:nodeID="g4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h4">
+    <chess:top rdf:nodeID="h5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h5">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h5">
+    <chess:bottom rdf:nodeID="h4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h5">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h5">
+    <chess:coordinates>h5</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h5">
+    <chess:right rdf:nodeID="g5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h5">
+    <chess:top rdf:nodeID="h6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h6">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h6">
+    <chess:bottom rdf:nodeID="h5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h6">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h6">
+    <chess:coordinates>h6</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h6">
+    <chess:right rdf:nodeID="g6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h6">
+    <chess:top rdf:nodeID="h7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h7">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h7">
+    <chess:bottom rdf:nodeID="h6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h7">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h7">
+    <chess:coordinates>h7</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h7">
+    <chess:hasPiece rdf:nodeID="Ndf1d0cb83884474e9df239910cc7eae1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h7">
+    <chess:right rdf:nodeID="g7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="h7">
+    <chess:top rdf:nodeID="h8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b2">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b2">
+    <chess:bottom rdf:nodeID="b1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b2">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b2">
+    <chess:coordinates>b2</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b2">
+    <chess:hasPiece rdf:nodeID="Nc414252cdb2b4976850cf0d7fc09511c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b2">
+    <chess:left rdf:nodeID="c2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b2">
+    <chess:right rdf:nodeID="a2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b2">
+    <chess:top rdf:nodeID="b3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b3">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b3">
+    <chess:bottom rdf:nodeID="b2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b3">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b3">
+    <chess:coordinates>b3</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b3">
+    <chess:left rdf:nodeID="c3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b3">
+    <chess:right rdf:nodeID="a3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b3">
+    <chess:top rdf:nodeID="b4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b4">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b4">
+    <chess:bottom rdf:nodeID="b3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b4">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b4">
+    <chess:coordinates>b4</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b4">
+    <chess:left rdf:nodeID="c4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b4">
+    <chess:right rdf:nodeID="a4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b4">
+    <chess:top rdf:nodeID="b5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b5">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b5">
+    <chess:bottom rdf:nodeID="b4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b5">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b5">
+    <chess:coordinates>b5</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b5">
+    <chess:left rdf:nodeID="c5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b5">
+    <chess:right rdf:nodeID="a5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b5">
+    <chess:top rdf:nodeID="b6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b6">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b6">
+    <chess:bottom rdf:nodeID="b5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b6">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b6">
+    <chess:coordinates>b6</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b6">
+    <chess:left rdf:nodeID="c6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b6">
+    <chess:right rdf:nodeID="a6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b6">
+    <chess:top rdf:nodeID="b7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b7">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b7">
+    <chess:bottom rdf:nodeID="b6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b7">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b7">
+    <chess:coordinates>b7</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b7">
+    <chess:hasPiece rdf:nodeID="Nc4e362a199ab4b8685936fc410774805"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b7">
+    <chess:left rdf:nodeID="c7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b7">
+    <chess:right rdf:nodeID="a7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b7">
+    <chess:top rdf:nodeID="b8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c2">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c2">
+    <chess:bottom rdf:nodeID="c1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c2">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c2">
+    <chess:coordinates>c2</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c2">
+    <chess:hasPiece rdf:nodeID="N72d2994bc12345148ace4250d414fed9"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c2">
+    <chess:left rdf:nodeID="d2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c2">
+    <chess:right rdf:nodeID="b2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c2">
+    <chess:top rdf:nodeID="c3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c3">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c3">
+    <chess:bottom rdf:nodeID="c2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c3">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c3">
+    <chess:coordinates>c3</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c3">
+    <chess:left rdf:nodeID="d3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c3">
+    <chess:right rdf:nodeID="b3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c3">
+    <chess:top rdf:nodeID="c4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c4">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c4">
+    <chess:bottom rdf:nodeID="c3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c4">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c4">
+    <chess:coordinates>c4</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c4">
+    <chess:left rdf:nodeID="d4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c4">
+    <chess:right rdf:nodeID="b4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c4">
+    <chess:top rdf:nodeID="c5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c5">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c5">
+    <chess:bottom rdf:nodeID="c4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c5">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c5">
+    <chess:coordinates>c5</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c5">
+    <chess:left rdf:nodeID="d5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c5">
+    <chess:right rdf:nodeID="b5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c5">
+    <chess:top rdf:nodeID="c6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c6">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c6">
+    <chess:bottom rdf:nodeID="c5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c6">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c6">
+    <chess:coordinates>c6</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c6">
+    <chess:left rdf:nodeID="d6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c6">
+    <chess:right rdf:nodeID="b6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c6">
+    <chess:top rdf:nodeID="c7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c7">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c7">
+    <chess:bottom rdf:nodeID="c6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c7">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c7">
+    <chess:coordinates>c7</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c7">
+    <chess:hasPiece rdf:nodeID="Nb1a4b446c9954c599817e4f9752d865f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c7">
+    <chess:left rdf:nodeID="d7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c7">
+    <chess:right rdf:nodeID="b7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="c7">
+    <chess:top rdf:nodeID="c8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d2">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d2">
+    <chess:bottom rdf:nodeID="d1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d2">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d2">
+    <chess:coordinates>d2</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d2">
+    <chess:hasPiece rdf:nodeID="Na8e33b9bcb404b45b1a9ef8ca4abd515"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d2">
+    <chess:left rdf:nodeID="e2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d2">
+    <chess:right rdf:nodeID="c2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d2">
+    <chess:top rdf:nodeID="d3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d3">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d3">
+    <chess:bottom rdf:nodeID="d2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d3">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d3">
+    <chess:coordinates>d3</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d3">
+    <chess:left rdf:nodeID="e3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d3">
+    <chess:right rdf:nodeID="c3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d3">
+    <chess:top rdf:nodeID="d4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d4">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d4">
+    <chess:bottom rdf:nodeID="d3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d4">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d4">
+    <chess:coordinates>d4</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d4">
+    <chess:left rdf:nodeID="e4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d4">
+    <chess:right rdf:nodeID="c4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d4">
+    <chess:top rdf:nodeID="d5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d5">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d5">
+    <chess:bottom rdf:nodeID="d4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d5">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d5">
+    <chess:coordinates>d5</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d5">
+    <chess:left rdf:nodeID="e5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d5">
+    <chess:right rdf:nodeID="c5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d5">
+    <chess:top rdf:nodeID="d6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d6">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d6">
+    <chess:bottom rdf:nodeID="d5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d6">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d6">
+    <chess:coordinates>d6</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d6">
+    <chess:left rdf:nodeID="e6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d6">
+    <chess:right rdf:nodeID="c6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d6">
+    <chess:top rdf:nodeID="d7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d7">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d7">
+    <chess:bottom rdf:nodeID="d6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d7">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d7">
+    <chess:coordinates>d7</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d7">
+    <chess:hasPiece rdf:nodeID="N9688a0ffe0a04cda800a453e3bddd6c9"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d7">
+    <chess:left rdf:nodeID="e7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d7">
+    <chess:right rdf:nodeID="c7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="d7">
+    <chess:top rdf:nodeID="d8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e2">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e2">
+    <chess:bottom rdf:nodeID="e1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e2">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e2">
+    <chess:coordinates>e2</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e2">
+    <chess:hasPiece rdf:nodeID="N425c719f3a3d42868b4ddda59c7401c9"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e2">
+    <chess:left rdf:nodeID="f2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e2">
+    <chess:right rdf:nodeID="d2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e2">
+    <chess:top rdf:nodeID="e3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e3">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e3">
+    <chess:bottom rdf:nodeID="e2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e3">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e3">
+    <chess:coordinates>e3</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e3">
+    <chess:left rdf:nodeID="f3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e3">
+    <chess:right rdf:nodeID="d3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e3">
+    <chess:top rdf:nodeID="e4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e4">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e4">
+    <chess:bottom rdf:nodeID="e3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e4">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e4">
+    <chess:coordinates>e4</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e4">
+    <chess:left rdf:nodeID="f4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e4">
+    <chess:right rdf:nodeID="d4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e4">
+    <chess:top rdf:nodeID="e5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e5">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e5">
+    <chess:bottom rdf:nodeID="e4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e5">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e5">
+    <chess:coordinates>e5</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e5">
+    <chess:left rdf:nodeID="f5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e5">
+    <chess:right rdf:nodeID="d5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e5">
+    <chess:top rdf:nodeID="e6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e6">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e6">
+    <chess:bottom rdf:nodeID="e5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e6">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e6">
+    <chess:coordinates>e6</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e6">
+    <chess:left rdf:nodeID="f6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e6">
+    <chess:right rdf:nodeID="d6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e6">
+    <chess:top rdf:nodeID="e7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e7">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e7">
+    <chess:bottom rdf:nodeID="e6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e7">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e7">
+    <chess:coordinates>e7</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e7">
+    <chess:hasPiece rdf:nodeID="Nb01a025a4c3444a893707959a78a6ac0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e7">
+    <chess:left rdf:nodeID="f7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e7">
+    <chess:right rdf:nodeID="d7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="e7">
+    <chess:top rdf:nodeID="e8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f2">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f2">
+    <chess:bottom rdf:nodeID="f1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f2">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f2">
+    <chess:coordinates>f2</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f2">
+    <chess:hasPiece rdf:nodeID="Nf13e9ee109fd434089a12bf5980185b6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f2">
+    <chess:left rdf:nodeID="g2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f2">
+    <chess:right rdf:nodeID="e2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f2">
+    <chess:top rdf:nodeID="f3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f3">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f3">
+    <chess:bottom rdf:nodeID="f2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f3">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f3">
+    <chess:coordinates>f3</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f3">
+    <chess:left rdf:nodeID="g3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f3">
+    <chess:right rdf:nodeID="e3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f3">
+    <chess:top rdf:nodeID="f4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f4">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f4">
+    <chess:bottom rdf:nodeID="f3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f4">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f4">
+    <chess:coordinates>f4</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f4">
+    <chess:left rdf:nodeID="g4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f4">
+    <chess:right rdf:nodeID="e4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f4">
+    <chess:top rdf:nodeID="f5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f5">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f5">
+    <chess:bottom rdf:nodeID="f4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f5">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f5">
+    <chess:coordinates>f5</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f5">
+    <chess:left rdf:nodeID="g5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f5">
+    <chess:right rdf:nodeID="e5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f5">
+    <chess:top rdf:nodeID="f6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f6">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f6">
+    <chess:bottom rdf:nodeID="f5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f6">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f6">
+    <chess:coordinates>f6</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f6">
+    <chess:left rdf:nodeID="g6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f6">
+    <chess:right rdf:nodeID="e6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f6">
+    <chess:top rdf:nodeID="f7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f7">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f7">
+    <chess:bottom rdf:nodeID="f6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f7">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f7">
+    <chess:coordinates>f7</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f7">
+    <chess:hasPiece rdf:nodeID="N47c03c59a4514e63b42034396339cad2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f7">
+    <chess:left rdf:nodeID="g7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f7">
+    <chess:right rdf:nodeID="e7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f7">
+    <chess:top rdf:nodeID="f8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g2">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g2">
+    <chess:bottom rdf:nodeID="g1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g2">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g2">
+    <chess:coordinates>g2</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g2">
+    <chess:hasPiece rdf:nodeID="Nee0bc846f9fa4f36b5025afb5a1d9d57"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g2">
+    <chess:left rdf:nodeID="h2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g2">
+    <chess:right rdf:nodeID="f2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g2">
+    <chess:top rdf:nodeID="g3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g3">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g3">
+    <chess:bottom rdf:nodeID="g2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g3">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g3">
+    <chess:coordinates>g3</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g3">
+    <chess:left rdf:nodeID="h3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g3">
+    <chess:right rdf:nodeID="f3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g3">
+    <chess:top rdf:nodeID="g4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g4">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g4">
+    <chess:bottom rdf:nodeID="g3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g4">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g4">
+    <chess:coordinates>g4</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g4">
+    <chess:left rdf:nodeID="h4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g4">
+    <chess:right rdf:nodeID="f4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g4">
+    <chess:top rdf:nodeID="g5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g5">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g5">
+    <chess:bottom rdf:nodeID="g4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g5">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g5">
+    <chess:coordinates>g5</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g5">
+    <chess:left rdf:nodeID="h5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g5">
+    <chess:right rdf:nodeID="f5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g5">
+    <chess:top rdf:nodeID="g6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g6">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g6">
+    <chess:bottom rdf:nodeID="g5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g6">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g6">
+    <chess:coordinates>g6</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g6">
+    <chess:left rdf:nodeID="h6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g6">
+    <chess:right rdf:nodeID="f6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g6">
+    <chess:top rdf:nodeID="g7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g7">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Square"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g7">
+    <chess:bottom rdf:nodeID="g6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g7">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g7">
+    <chess:coordinates>g7</chess:coordinates>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g7">
+    <chess:hasPiece rdf:nodeID="Na84512184c044757b6e7ef45cf86ffbf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g7">
+    <chess:left rdf:nodeID="h7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g7">
+    <chess:right rdf:nodeID="f7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="g7">
+    <chess:top rdf:nodeID="g8"/>
+  </rdf:Description>
+</rdf:RDF>

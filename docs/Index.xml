@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:chess="https://g33kex.github.io/ChessRDF/Chess.xml#" xmlns:example="https://g33kex.github.io/ChessRDF/Example.xml#" xmlns:foaf="http://xmlns.com/foaf/spec/#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:startingBoard="https://g33kex.github.io/ChessRDF/StartingBoard.xml#" xmlns="https://g33kex.github.io/ChessRDF/Index.xml#">
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Chess.xml#Chess">
+    <rdfs:comment xml:lang="en">Describes the ontology of a game of chess.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/StartingBoard.xml#StartingBoard">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Board"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/StartingBoard.xml#StartingBoard">
+    <rdfs:comment xml:lang="en">Describes the board with all pieces at their starting positions</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Example.xml#ExampleBoard">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Board"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Example.xml#ExampleBoard">
+    <rdfs:comment xml:lang="en">Describes an example board with only 6 squares.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Example.xml#ExampleSequence">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Sequence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Example.xml#ExampleSequence">
+    <rdfs:comment xml:lang="en">Describes an example sequence of two moves on the example board.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid1">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/spec/#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid1">
+    <foaf:name>Pierre Lasalle</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid1">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#White"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid2">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/spec/#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid2">
+    <foaf:name>Michel Gagnon</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid2">
+    <chess:color rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Black"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Index.xml#ExampleGame">
+    <rdf:type rdf:resource="https://g33kex.github.io/ChessRDF/Chess.xml#Game"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Index.xml#ExampleGame">
+    <rdfs:comment>Describes an example game using the example sequence</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Index.xml#ExampleGame">
+    <chess:whitePlayer rdf:nodeID="genid1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Index.xml#ExampleGame">
+    <chess:blackPlayer rdf:nodeID="genid2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://g33kex.github.io/ChessRDF/Index.xml#ExampleGame">
+    <chess:moves rdf:resource="https://g33kex.github.io/ChessRDF/Example.xml#ExampleSequence"/>
+  </rdf:Description>
+</rdf:RDF>
