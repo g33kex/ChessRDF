@@ -1,0 +1,195 @@
+@prefix chess: <https://g33kex.github.io/ChessRDF/chess.json#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix wiki: <https://www.wikidata.org/wiki/>.
+@prefix foaf: <http://xmlns.com/foaf/spec/#> .
+
+
+# Chess Ontology
+
+# ColoredElement Class
+chess:ColoredElement a rdfs:Class ;
+	rdfs:comment "The ColoredElement class contains colors that can be associated with squares, pieces or players."@en .
+
+chess:color a rdfs:Property ;
+	rdfs:comment "The color property allows you to assign a color to an element in the chess game (square, piece or player).The color can be black or white."@en ;
+	rdfs:domain chess:ColoredElement ;
+	rdfs:range chess:Color .
+
+# Color Class
+chess:Color a rdfs:Class ;
+	rdfs:comment "The Color class represents the color of an element of the chess game (square, piece or player)."@en .
+
+chess:White a chess:Color .
+chess:Black a chess:Color .
+
+# Piece Class
+chess:Piece a rdfs:Class ;
+	rdfs:comment "The Piece class represents the pieces available in the chess set. There are six pieces in the chess game which are (Knight, Pawn, Bishop, Rook, Queen, King)."@en ;
+	rdfs:subClassOf chess:ColoredElement ; 
+	schema:sameAs wiki:Q208440 ;
+	rdfs:label  "Chess piece."@en .
+
+chess:Knight a rdfs:Class ;
+	rdfs:comment "The Knight class represents a piece of the chess game. Each player has two knights who are placed at b1 and g1 for white and b8 and g8 for black. The Knight can only move in L, i.e. 2 cases in one direction combined with one case perpendicularly."@en ;
+	rdfs:subClassOf chess:Piece ; 
+	schema:sameAs wiki:Q136 ;
+	rdfs:label "Knight."@en .
+
+chess:Pawn a rdfs:Class ;
+	rdfs:comment "The Pawn class represents a type of piece in a chess game. Each player has eight pawns placed in the second row in front of the other pieces. From its initial position, the pawn can advance one or two squares. Then, the pawn can only advance one space. The pawn can only move forward and take a diagonal grip forward."@en ;
+	rdfs:subClassOf chess:Piece ;
+	schema:sameAs wiki:Q135 ;
+	rdfs:label "Pawn."@en .
+
+chess:Bishop a rdfs:Class ;
+	rdfs:comment "The Bishop class represents a type of piece in chess games. The Bishop only moves diagonally."@en ;
+	rdfs:subClassOf chess:Piece .
+
+chess:Rook a rdfs:Class ;
+	rdfs:comment "The Rook class represents a type of chess piece. Each player has two rounds placed at a1 and h1 for white and a8 and h8 for black. A rook can move horizontally or vertically."@en ;
+	rdfs:subClassOf chess:Piece; 
+	schema:sameAs wiki:Q137 ; 
+	rdfs:label "Rook."@en .
+
+chess:Queen a rdfs:Class;
+	rdfs:comment "The Queen class represents a type of chess piece. Each player has a single queen placed at d1 for white and d8 for black. The queen can move vertically, horizontally or diagonally on any number of empty spaces."@en ;
+	rdfs:subClassOf chess:Piece .
+
+chess:King a rdfs:Class ;
+	rdfs:comment "The King class represents a type of chess piece. Each day has a single king placed at a1 for white and e8 for black. The object of the game is to protect your King. When the king is threatened with being caught in the next turn, it is a failure. However, if the king is unquestionably taken on the next turn, it is a checkmate. The King can only move one square in any direction."@en ;
+	rdfs:subClassOf chess:Piece .
+
+# Square Class
+chess:Square a rdfs:Class ;
+	rdfs:comment "The Square class represents a square of the chess game. Each box is alternated color between white and black."@en ;
+	rdfs:subClassOf chess:ColoredElement .
+
+chess:hasPiece a rdfs:Property ;
+	rdfs:comment "The hasPiece property is used to indicate whether the box is video or contains a part."@en ;
+	rdfs:domain chess:Square ;
+	rdfs:range chess:Piece .
+
+chess:left a rdfs:Property ;
+	rdfs:comment "The left property indicates the box to the left of a box."@en ;
+	rdfs:domain chess:Square ;
+	rdfs:range chess:Square .
+
+chess:right a rdfs:Property ;
+	rdfs:comment "The right property indicates the box to the right of a box."@en ;
+	rdfs:domain chess:Square ;
+	rdfs:range chess:Square .
+
+chess:top a rdfs:Property ;
+	rdfs:comment "The top property indicates the box to the top of a box."@en ;
+	rdfs:domain chess:Square ;
+	rdfs:range chess:Square .
+
+chess:bottom a rdfs:Property ;
+	rdfs:comment "The bottom property indicates the box to the bottom of a box."@en ;
+	rdfs:domain chess:Square ;
+	rdfs:range chess:Square .
+
+chess:coordinates a rdfs:Property ;
+	rdfs:comment "The coordinates property indicates the position of the box in the chess set. The first letter is a letter located from a to h and a second a number from 1 to 8."@en ;
+	rdfs:domain chess:Square ;
+	rdfs:range xsd:string .
+
+# Game Class
+chess:Game a rdfs:Class ;
+	rdfs:comment "The Game class represents a game of chess. Each game is played between two people who can be humans or computers. Each player takes turns playing with 16 pieces each. The object of the game is to take the king from the other player."@en .
+
+chess:whitePlayer a rdfs:Property ;
+	rdfs:comment "The whitePlayer property represents the player who plays with the white pieces"@en ;
+	rdfs:domain chess:Game ;
+	rdfs:range chess:Player .
+
+chess:blackPlayer a rdfs:Property ;
+	rdfs:comment "The blackPlayer property represents the player who plays with the black pieces"@en ;
+	rdfs:domain chess:Game ;
+	rdfs:range chess:Player .
+
+chess:moves a rdfs:Property ;
+	rdfs:comment "The moves property represents several sequences."@en ;
+	rdfs:domain chess:Game ;
+	rdfs:range chess:Sequence .
+
+# Player Class
+chess:Player a rdfs:Class ;
+	rdfs:comment "The Player class represents a player in the chess game. A player can be a human or a computer. Each player has a color (white or black) which defines which color of the piece he plays with."@en ;
+	rdfs:subClassOf foaf:Agent ;
+	rdfs:subClassOf chess:ColoredElement .
+
+# Sequence Class
+chess:Sequence a rdfs:Class ;
+	rdfs:comment "The Sequence class represents a sequence of motion."@en ;
+	rdfs:subClassOf rdf:List .
+
+chess:startingBoard a rdfs:Property ;
+	rdfs:comment "The startingBoard property represents a board with the starting positions of the parts."@en ;
+	rdfs:domain chess:Sequence ;
+	rdfs:range chess:Board .
+
+# Board Class
+chess:Board a rdfs:Class ;
+	rdfs:comment "The class Board represents the chessboard"@en .
+
+# Move class
+chess:Move a rdfs:Class ;
+	rdfs:comment "The class Move represents the movement of a piece in the chess game."@en ;
+	rdfs:subClassOf chess:ColoredElement .
+
+chess:notation a rdfs:Property ;
+	rdfs:comment "The rating property is a sequence of letters that designates the move in the chess standards."@en ;
+	rdfs:domain chess:Move ;
+	rdfs:range xsd:string .
+
+chess:check a rdfs:Property ;
+	rdfs:comment "The check property is a boolean that indicates whether there is a check in the game."@en ;
+	rdfs:domain chess:Move ;
+	rdfs:range xsd:boolean .
+
+chess:checkmate a rdfs:Property ;
+	rdfs:comment "The check property is a boolean which indicates if there is a checkmate in the game."@en ;
+	rdfs:domain chess:Move ;
+	rdfs:range xsd:boolean .
+
+chess:castle a rdfs:Property ;
+	rdfs:comment "The castle property is a boolean which indicates whether there has been a castle movement."@en ;
+	rdfs:domain chess:Move ;
+	rdfs:range xsd:boolean .
+
+chess:castleQueenSide a rdfs:Property ;
+	rdfs:comment "The castleQueenSide property is a boolean that indicates whether there is a castleQueenSide in the game. A castleQueenSide is a special move that moves a queen move and one of the towers. In one hit, the Queen and the tower are moved."@en ;
+	rdfs:subPropertyOf chess:castle .
+
+chess:castleKingSide a rdfs:Property ;
+	rdfs:comment "The castleKingSide property is a boolean that indicates whether there is a castleKingSide in the game. A castleKingSide is a special move that moves a king move and one of the rooks. In one hit, the king and the rook are moved."@en ;
+	rdfs:subPropertyOf chess:castle .
+
+chess:pieceTaken a rdfs:Property ;
+	rdfs:comment "The pieceTaken property represents the pieces that were taken during the game."@en ;
+	rdfs:domain chess:Move ;
+	rdfs:range chess:Piece .
+
+chess:pieceTakenEnPassant a rdfs:Property ;
+	rdfs:comment "The pieceTakenEnPassant property represents the pieces that were taken through a pawns."@en ;
+	rdfs:subPropertyOf chess:pieceTaken .
+
+chess:pawnPromotion a rdfs:Property ;
+	rdfs:comment "The pawnPromotion property represents when a pawn arrives from the other side and is replaced by another piece from the game."@en ;
+	rdfs:domain chess:Move ;
+	rdfs:range chess:Piece .
+
+chess:piece a rdfs:Property ;
+	rdfs:comment "The piece property represents the piece that has moved in the game."@en ;
+	rdfs:domain chess:Move ;
+	rdfs:range chess:Piece .
+
+chess:destinationSquare a rdfs:Property ;
+	rdfs:comment "The destinationSquare property represents the final square of the part that has to move."@en ;
+	rdfs:domain chess:Move ;
+	rdfs:range chess:Square .

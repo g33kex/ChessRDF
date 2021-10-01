@@ -1,5 +1,5 @@
-SOURCE=chess.ttl
-SITE=chess.json
+SOURCE=Chess.ttl
+SITE=Chess.json
 OUT=out.png
 FORMAT=trig
 
