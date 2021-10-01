@@ -7,8 +7,8 @@
 @prefix wiki: <https://www.wikidata.org/wiki/>.
 @prefix foaf: <http://xmlns.com/foaf/spec/#> .
 
-
 # Chess Ontology
+chess:Chess {
 
 # ColoredElement Class
 chess:ColoredElement a rdfs:Class ;
@@ -193,3 +193,5 @@ chess:destinationSquare a rdfs:Property ;
 	rdfs:comment "The destinationSquare property represents the final square of the part that has to move."@en ;
 	rdfs:domain chess:Move ;
 	rdfs:range chess:Square .
+
+}

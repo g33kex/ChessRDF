@@ -1,6 +1,6 @@
 
 {
-  "https://g33kex.github.io/ChessRDF/chess.json#Bishop" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#Bishop" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
         "type" : "uri"
@@ -15,23 +15,23 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Piece",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Piece",
         "type" : "uri"
         }
       
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#Black" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#Black" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Color",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Color",
         "type" : "uri"
         }
       
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#Board" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#Board" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
         "type" : "uri"
@@ -47,7 +47,7 @@
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#Color" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#Color" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
         "type" : "uri"
@@ -63,7 +63,7 @@
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#ColoredElement" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#ColoredElement" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
         "type" : "uri"
@@ -79,7 +79,7 @@
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#Game" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#Game" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
         "type" : "uri"
@@ -95,7 +95,7 @@
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#King" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#King" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
         "type" : "uri"
@@ -110,14 +110,14 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Piece",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Piece",
         "type" : "uri"
         }
       
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#Knight" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#Knight" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
         "type" : "uri"
@@ -139,7 +139,7 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Piece",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Piece",
         "type" : "uri"
         }
       
@@ -152,7 +152,7 @@
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#Move" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#Move" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
         "type" : "uri"
@@ -167,14 +167,14 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#ColoredElement",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#ColoredElement",
         "type" : "uri"
         }
       
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#Pawn" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#Pawn" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
         "type" : "uri"
@@ -196,7 +196,7 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Piece",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Piece",
         "type" : "uri"
         }
       
@@ -209,7 +209,7 @@
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#Piece" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#Piece" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
         "type" : "uri"
@@ -231,7 +231,7 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#ColoredElement",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#ColoredElement",
         "type" : "uri"
         }
       
@@ -244,7 +244,7 @@
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#Player" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#Player" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
         "type" : "uri"
@@ -264,14 +264,14 @@
         }
       ,
       {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#ColoredElement",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#ColoredElement",
         "type" : "uri"
         }
       
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#Queen" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#Queen" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
         "type" : "uri"
@@ -286,14 +286,14 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Piece",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Piece",
         "type" : "uri"
         }
       
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#Rook" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#Rook" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
         "type" : "uri"
@@ -315,7 +315,7 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Piece",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Piece",
         "type" : "uri"
         }
       
@@ -328,7 +328,7 @@
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#Sequence" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#Sequence" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
         "type" : "uri"
@@ -350,7 +350,7 @@
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#Square" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#Square" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
         "type" : "uri"
@@ -365,23 +365,23 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#ColoredElement",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#ColoredElement",
         "type" : "uri"
         }
       
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#White" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#White" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Color",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Color",
         "type" : "uri"
         }
       
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#blackPlayer" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#blackPlayer" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
         "type" : "uri"
@@ -396,20 +396,20 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Game",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Game",
         "type" : "uri"
         }
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Player",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Player",
         "type" : "uri"
         }
       
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#bottom" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#bottom" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
         "type" : "uri"
@@ -424,20 +424,20 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Square",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Square",
         "type" : "uri"
         }
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Square",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Square",
         "type" : "uri"
         }
       
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#castle" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#castle" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
         "type" : "uri"
@@ -452,7 +452,7 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Move",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Move",
         "type" : "uri"
         }
       
@@ -465,7 +465,7 @@
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#castleKingSide" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#castleKingSide" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
         "type" : "uri"
@@ -480,14 +480,14 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#castle",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#castle",
         "type" : "uri"
         }
       
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#castleQueenSide" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#castleQueenSide" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
         "type" : "uri"
@@ -502,14 +502,14 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#castle",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#castle",
         "type" : "uri"
         }
       
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#check" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#check" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
         "type" : "uri"
@@ -524,7 +524,7 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Move",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Move",
         "type" : "uri"
         }
       
@@ -537,7 +537,7 @@
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#checkmate" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#checkmate" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
         "type" : "uri"
@@ -552,7 +552,7 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Move",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Move",
         "type" : "uri"
         }
       
@@ -565,7 +565,7 @@
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#color" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#color" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
         "type" : "uri"
@@ -580,20 +580,20 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#ColoredElement",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#ColoredElement",
         "type" : "uri"
         }
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Color",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Color",
         "type" : "uri"
         }
       
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#coordinates" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#coordinates" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
         "type" : "uri"
@@ -608,7 +608,7 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Square",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Square",
         "type" : "uri"
         }
       
@@ -621,7 +621,7 @@
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#destinationSquare" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#destinationSquare" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
         "type" : "uri"
@@ -636,20 +636,20 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Move",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Move",
         "type" : "uri"
         }
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Square",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Square",
         "type" : "uri"
         }
       
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#hasPiece" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#hasPiece" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
         "type" : "uri"
@@ -664,20 +664,20 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Square",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Square",
         "type" : "uri"
         }
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Piece",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Piece",
         "type" : "uri"
         }
       
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#left" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#left" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
         "type" : "uri"
@@ -692,20 +692,20 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Square",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Square",
         "type" : "uri"
         }
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Square",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Square",
         "type" : "uri"
         }
       
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#moves" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#moves" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
         "type" : "uri"
@@ -720,20 +720,20 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Game",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Game",
         "type" : "uri"
         }
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Sequence",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Sequence",
         "type" : "uri"
         }
       
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#notation" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#notation" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
         "type" : "uri"
@@ -748,7 +748,7 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Move",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Move",
         "type" : "uri"
         }
       
@@ -761,7 +761,7 @@
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#pawnPromotion" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#pawnPromotion" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
         "type" : "uri"
@@ -776,20 +776,20 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Move",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Move",
         "type" : "uri"
         }
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Piece",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Piece",
         "type" : "uri"
         }
       
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#piece" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#piece" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
         "type" : "uri"
@@ -804,20 +804,20 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Move",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Move",
         "type" : "uri"
         }
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Piece",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Piece",
         "type" : "uri"
         }
       
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#pieceTaken" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#pieceTaken" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
         "type" : "uri"
@@ -832,20 +832,20 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Move",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Move",
         "type" : "uri"
         }
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Piece",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Piece",
         "type" : "uri"
         }
       
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#pieceTakenEnPassant" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#pieceTakenEnPassant" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
         "type" : "uri"
@@ -860,14 +860,14 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#pieceTaken",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#pieceTaken",
         "type" : "uri"
         }
       
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#right" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#right" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
         "type" : "uri"
@@ -882,20 +882,20 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Square",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Square",
         "type" : "uri"
         }
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Square",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Square",
         "type" : "uri"
         }
       
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#startingBoard" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#startingBoard" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
         "type" : "uri"
@@ -910,20 +910,20 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Sequence",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Sequence",
         "type" : "uri"
         }
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Board",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Board",
         "type" : "uri"
         }
       
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#top" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#top" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
         "type" : "uri"
@@ -938,20 +938,20 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Square",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Square",
         "type" : "uri"
         }
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Square",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Square",
         "type" : "uri"
         }
       
       ]
     }
   ,
-  "https://g33kex.github.io/ChessRDF/chess.json#whitePlayer" : {
+  "https://g33kex.github.io/ChessRDF/Chess.json#whitePlayer" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
         "type" : "uri"
@@ -966,13 +966,13 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Game",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Game",
         "type" : "uri"
         }
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-        "value" : "https://g33kex.github.io/ChessRDF/chess.json#Player",
+        "value" : "https://g33kex.github.io/ChessRDF/Chess.json#Player",
         "type" : "uri"
         }
       

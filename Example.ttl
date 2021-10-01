@@ -1,102 +1,84 @@
-@prefix chess: <https://g33kex.github.io/ChessRDF/chess.json#> .
+@prefix chess: <https://g33kex.github.io/ChessRDF/Chess.json#> .
+@prefix example: <https://g33kex.github.io/ChessRDF/Example.json#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix foaf: <http://xmlns.com/foaf/spec/#> .
-
-# Main Graph
-
-chess:Chess rdfs:comment "Describes the ontology of a game of chess."@en .
-:ExampleBoard a :Board ;
-	rdfs:comment "Describes an example board with only 6 squares."@en .
-:ExampleSequence a :Sequence ;
-	rdfs:comment "Describes an example sequence of two moves on the example board."@en .
-
-:ExampleGame a :Game ;
-	:whitePlayer [ a foaf:Person ; 
-								foaf:name "Pierre" ;
-								:color :White ] ;
-	:blackPlayer [ a foaf:Person ;
-								foaf:name "Michel" ;
-								:color :Black ]  ;
-	:moves :ExampleSequence .
-
 
 # Example Board
 
-:ExampleBoard {
+example:ExampleBoard {
 
-_:a1 a :Square ;
-	:color :Black ;
-	:hasPiece _:KW ;
-	:coordinates "a1" ;
-	:right _:b1 ;
-	:top _:a2 .
+_:a1 a chess:Square ;
+	chess:color chess:Black ;
+	chess:hasPiece _:KW ;
+	chess:coordinates "a1" ;
+	chess:right _:b1 ;
+	chess:top _:a2 .
 
-_:KW a :King ;
-	:color :White .
+_:KW a chess:King ;
+	chess:color chess:White .
 
-_:b1 a :Square ;
-	:color :White ;
-	:coordinates "b1" ;
-	:left _:a1 ;
-	:right _:c1 ;
-	:top _:b2 .
+_:b1 a chess:Square ;
+	chess:color chess:White ;
+	chess:coordinates "b1" ;
+	chess:left _:a1 ;
+	chess:right _:c1 ;
+	chess:top _:b2 .
 
-_:c1 a :Square ;
-	:color :Black ;
-	:hasPiece _:NB ;
-	:coordinates "c1" ;
-	:left _:b1 .
+_:c1 a chess:Square ;
+	chess:color chess:Black ;
+	chess:hasPiece _:NB ;
+	chess:coordinates "c1" ;
+	chess:left _:b1 .
 
-_:NB a :Knight ;
-	:color :Black .
+_:NB a chess:Knight ;
+	chess:color chess:Black .
 	
-_:a2 a :Square ;
-	:color :White ;
-	:coordinates "a2" ;
-	:bottom _:a1 ;
-	:right _:b2 .
+_:a2 a chess:Square ;
+	chess:color chess:White ;
+	chess:coordinates "a2" ;
+	chess:bottom _:a1 ;
+	chess:right _:b2 .
 
-_:a3 a :Square ;
-	:color :Black ;
-	:hasPiece _:QB ;
-	:coordinates "a3" ;
-	:bottom _:a2 .
+_:a3 a chess:Square ;
+	chess:color chess:Black ;
+	chess:hasPiece _:QB ;
+	chess:coordinates "a3" ;
+	chess:bottom _:a2 .
 
-_:QB a :Queen ;
-	:color :Black .
+_:QB a chess:Queen ;
+	chess:color chess:Black .
 
-_:b2 a :Square ;
-	:color :Black ;
-	:hasPiece _:RW ;
-	:coordinates "b2" ;
-	:left _:a2 ;
-	:bottom _:b1 .
+_:b2 a chess:Square ;
+	chess:color chess:Black ;
+	chess:hasPiece _:RW ;
+	chess:coordinates "b2" ;
+	chess:left _:a2 ;
+	chess:bottom _:b1 .
 
-_:RW a :Rook ;
-	:color :White .
+_:RW a chess:Rook ;
+	chess:color chess:White .
 
 }
 
 # Example Sequence
 
-:ExampleSequence {
+example:ExampleSequence {
 
-_:m1 a :Sequence ;
-	:startingBoard :ExampleBoard ;
-	rdf:first [ a :Move ;
-							:color :White ;
-							:piece _:RW ;
-							:destinationSquare _:a2 ] ;
+_:m1 a chess:Sequence ;
+	chess:startingBoard example:ExampleBoard ;
+	rdf:first [ a chess:Move ;
+							chess:color chess:White ;
+							chess:piece _:RW ;
+							chess:destinationSquare _:a2 ] ;
 	rdf:rest _:m2 .
 
-_:m2 a :Sequence ;
-	rdf:first [ a :Move ;
-							:color :Black ;
-							:piece _:QB ;
-							:destinationSquare _:a2 ;
-							:pieceTaken _:KW ;
-							:checkmate true ] ;
+_:m2 a chess:Sequence ;
+	rdf:first [ a chess:Move ;
+							chess:color chess:Black ;
+							chess:piece _:QB ;
+							chess:destinationSquare _:a2 ;
+							chess:pieceTaken _:KW ;
+							chess:checkmate true ] ;
 	rdf:rest rdf:nil .
 
 }
