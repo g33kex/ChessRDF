@@ -1,8 +1,71 @@
 
 {
+  "http://localhost/Bishop" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The Bishop class represents a type of piece in chess games. The Bishop only moves diagonally.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+        "value" : "http://localhost/Piece",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/Black" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://localhost/Color",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/Board" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The class Board represents the chessboard",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
   "http://localhost/Chess" : {
     "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
         "value" : "Describes the ontology of a game of chess.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/Color" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The Color class represents the color of an element of the chess game (square, piece or player).",
         "lang" : "en",
         "type" : "literal"
         }
@@ -14,6 +77,13 @@
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
         "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The ColoredElement class contains colors that can be associated with squares, pieces or players.",
+        "lang" : "en",
+        "type" : "literal"
         }
       
       ]
@@ -78,6 +148,1182 @@
       ]
     }
   ,
+  "http://localhost/Game" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The Game class represents a game of chess. Each game is played between two people who can be humans or computers. Each player takes turns playing with 16 pieces each. The object of the game is to take the king from the other player.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/King" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The King class represents a type of chess piece. Each day has a single king placed at a1 for white and e8 for black. The object of the game is to protect your King. When the king is threatened with being caught in the next turn, it is a failure. However, if the king is unquestionably taken on the next turn, it is a checkmate. The King can only move one square in any direction.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+        "value" : "http://localhost/Piece",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/Knight" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The Knight class represents a piece of the chess game. Each player has two knights who are placed at b1 and g1 for white and b8 and g8 for black. The Knight can only move in L, i.e. 2 cases in one direction combined with one case perpendicularly.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+        "value" : "Knight.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+        "value" : "http://localhost/Piece",
+        "type" : "uri"
+        }
+      
+      ],
+    "https://schema.org/sameAs" : [ {
+        "value" : "https://www.wikidata.org/wiki/Q136",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/Move" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The class Move represents the movement of a piece in the chess game.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+        "value" : "http://localhost/ColoredElement",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/Pawn" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The Pawn class represents a type of piece in a chess game. Each player has eight pawns placed in the second row in front of the other pieces. From its initial position, the pawn can advance one or two squares. Then, the pawn can only advance one space. The pawn can only move forward and take a diagonal grip forward.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+        "value" : "Pawn.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+        "value" : "http://localhost/Piece",
+        "type" : "uri"
+        }
+      
+      ],
+    "https://schema.org/sameAs" : [ {
+        "value" : "https://www.wikidata.org/wiki/Q135",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/Piece" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The Piece class represents the pieces available in the chess set. There are six pieces in the chess game which are (Knight, Pawn, Bishop, Rook, Queen, King).",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+        "value" : "Chess piece.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+        "value" : "http://localhost/ColoredElement",
+        "type" : "uri"
+        }
+      
+      ],
+    "https://schema.org/sameAs" : [ {
+        "value" : "https://www.wikidata.org/wiki/Q208440",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/Player" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The Player class represents a player in the chess game. A player can be a human or a computer. Each player has a color (white or black) which defines which color of the piece he plays with.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+        "value" : "http://localhost/ColoredElement",
+        "type" : "uri"
+        }
+      ,
+      {
+        "value" : "http://xmlns.com/foaf/spec/#Agent",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/Queen" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The Queen class represents a type of chess piece. Each player has a single queen placed at d1 for white and d8 for black. The queen can move vertically, horizontally or diagonally on any number of empty spaces.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+        "value" : "http://localhost/Piece",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/Rook" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The Rook class represents a type of chess piece. Each player has two rounds placed at a1 and h1 for white and a8 and h8 for black. A rook can move horizontally or vertically.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+        "value" : "Rook.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+        "value" : "http://localhost/Piece",
+        "type" : "uri"
+        }
+      
+      ],
+    "https://schema.org/sameAs" : [ {
+        "value" : "https://www.wikidata.org/wiki/Q137",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/Sequence" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The Sequence class represents a sequence of motion.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/Square" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The Square class represents a square of the chess game. Each box is alternated color between white and black.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+        "value" : "http://localhost/ColoredElement",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/White" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://localhost/Color",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/blackPlayer" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The blackPlayer property represents the player who plays with the black pieces",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+        "value" : "http://localhost/Game",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+        "value" : "http://localhost/Player",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/bottom" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The bottom property indicates the box to the bottom of a box.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+        "value" : "http://localhost/Square",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+        "value" : "http://localhost/Square",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/castle" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The castle property is a boolean which indicates whether there has been a castle movement.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+        "value" : "http://localhost/Move",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+        "value" : "http://www.w3.org/2001/XMLSchema#boolean",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/castleKingSide" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The castleKingSide property is a boolean that indicates whether there is a castleKingSide in the game. A castleKingSide is a special move that moves a king move and one of the rooks. In one hit, the king and the rook are moved.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+        "value" : "http://localhost/castle",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/castleQueenSide" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The castleQueenSide property is a boolean that indicates whether there is a castleQueenSide in the game. A castleQueenSide is a special move that moves a queen move and one of the towers. In one hit, the Queen and the tower are moved.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+        "value" : "http://localhost/castle",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/check" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The check property is a boolean that indicates whether there is a check in the game.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+        "value" : "http://localhost/Move",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+        "value" : "http://www.w3.org/2001/XMLSchema#boolean",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/checkmate" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The check property is a boolean which indicates if there is a checkmate in the game.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+        "value" : "http://localhost/Move",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+        "value" : "http://www.w3.org/2001/XMLSchema#boolean",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/color" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The color property allows you to assign a color to an element in the chess game (square, piece or player).The color can be black or white.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+        "value" : "http://localhost/ColoredElement",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+        "value" : "http://localhost/Color",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/coordinates" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The coordinates property indicates the position of the box in the chess set. The first letter is a letter located from a to h and a second a number from 1 to 8.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+        "value" : "http://localhost/Square",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+        "value" : "http://www.w3.org/2001/XMLSchema#string",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/destinationSquare" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The destinationSquare property represents the final square of the part that has to move.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+        "value" : "http://localhost/Move",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+        "value" : "http://localhost/Square",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/hasPiece" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The hasPiece property is used to indicate whether the box is video or contains a part.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+        "value" : "http://localhost/Square",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+        "value" : "http://localhost/Piece",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/left" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The left property indicates the box to the left of a box.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+        "value" : "http://localhost/Square",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+        "value" : "http://localhost/Square",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/moves" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The moves property represents several sequences.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+        "value" : "http://localhost/Game",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+        "value" : "http://localhost/Sequence",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/notation" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The rating property is a sequence of letters that designates the move in the chess standards.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+        "value" : "http://localhost/Move",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+        "value" : "http://www.w3.org/2001/XMLSchema#string",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/pawnPromotion" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The pawnPromotion property represents when a pawn arrives from the other side and is replaced by another piece from the game.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+        "value" : "http://localhost/Move",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+        "value" : "http://localhost/Piece",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/piece" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The piece property represents the piece that has moved in the game.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+        "value" : "http://localhost/Move",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+        "value" : "http://localhost/Piece",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/pieceTaken" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The pieceTaken property represents the pieces that were taken during the game.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+        "value" : "http://localhost/Move",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+        "value" : "http://localhost/Piece",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/pieceTakenEnPassant" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The pieceTakenEnPassant property represents the pieces that were taken through a pawns.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+        "value" : "http://localhost/pieceTaken",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/right" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The right property indicates the box to the right of a box.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+        "value" : "http://localhost/Square",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+        "value" : "http://localhost/Square",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/startingBoard" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The startingBoard property represents a board with the starting positions of the parts.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+        "value" : "http://localhost/Sequence",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+        "value" : "http://localhost/Board",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/top" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The top property indicates the box to the top of a box.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+        "value" : "http://localhost/Square",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+        "value" : "http://localhost/Square",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "http://localhost/whitePlayer" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Property",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "The whitePlayer property represents the player who plays with the white pieces",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+        "value" : "http://localhost/Game",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+        "value" : "http://localhost/Player",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "_:KW" : {
+    "http://localhost/color" : [ {
+        "value" : "http://localhost/White",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://localhost/King",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "_:NB" : {
+    "http://localhost/color" : [ {
+        "value" : "http://localhost/Black",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://localhost/Knight",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "_:QB" : {
+    "http://localhost/color" : [ {
+        "value" : "http://localhost/Black",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://localhost/Queen",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "_:RW" : {
+    "http://localhost/color" : [ {
+        "value" : "http://localhost/White",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://localhost/Rook",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "_:a1" : {
+    "http://localhost/color" : [ {
+        "value" : "http://localhost/Black",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://localhost/coordinates" : [ {
+        "value" : "a1",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://localhost/hasPiece" : [ {
+        "value" : "_:KW",
+        "type" : "bnode"
+        }
+      
+      ],
+    "http://localhost/right" : [ {
+        "value" : "_:b1",
+        "type" : "bnode"
+        }
+      
+      ],
+    "http://localhost/top" : [ {
+        "value" : "_:a2",
+        "type" : "bnode"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://localhost/Square",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "_:a2" : {
+    "http://localhost/bottom" : [ {
+        "value" : "_:a1",
+        "type" : "bnode"
+        }
+      
+      ],
+    "http://localhost/color" : [ {
+        "value" : "http://localhost/White",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://localhost/coordinates" : [ {
+        "value" : "a2",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://localhost/right" : [ {
+        "value" : "_:b2",
+        "type" : "bnode"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://localhost/Square",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "_:a3" : {
+    "http://localhost/bottom" : [ {
+        "value" : "_:a2",
+        "type" : "bnode"
+        }
+      
+      ],
+    "http://localhost/color" : [ {
+        "value" : "http://localhost/Black",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://localhost/coordinates" : [ {
+        "value" : "a3",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://localhost/hasPiece" : [ {
+        "value" : "_:QB",
+        "type" : "bnode"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://localhost/Square",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "_:b1" : {
+    "http://localhost/color" : [ {
+        "value" : "http://localhost/White",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://localhost/coordinates" : [ {
+        "value" : "b1",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://localhost/left" : [ {
+        "value" : "_:a1",
+        "type" : "bnode"
+        }
+      
+      ],
+    "http://localhost/right" : [ {
+        "value" : "_:c1",
+        "type" : "bnode"
+        }
+      
+      ],
+    "http://localhost/top" : [ {
+        "value" : "_:b2",
+        "type" : "bnode"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://localhost/Square",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "_:b2" : {
+    "http://localhost/bottom" : [ {
+        "value" : "_:b1",
+        "type" : "bnode"
+        }
+      
+      ],
+    "http://localhost/color" : [ {
+        "value" : "http://localhost/Black",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://localhost/coordinates" : [ {
+        "value" : "b2",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://localhost/hasPiece" : [ {
+        "value" : "_:RW",
+        "type" : "bnode"
+        }
+      
+      ],
+    "http://localhost/left" : [ {
+        "value" : "_:a2",
+        "type" : "bnode"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://localhost/Square",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "_:c1" : {
+    "http://localhost/color" : [ {
+        "value" : "http://localhost/Black",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://localhost/coordinates" : [ {
+        "value" : "c1",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://localhost/hasPiece" : [ {
+        "value" : "_:NB",
+        "type" : "bnode"
+        }
+      
+      ],
+    "http://localhost/left" : [ {
+        "value" : "_:b1",
+        "type" : "bnode"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://localhost/Square",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
   "_:genid1" : {
     "http://localhost/color" : [ {
         "value" : "http://localhost/White",
@@ -115,6 +1361,121 @@
     "http://xmlns.com/foaf/spec/#name" : [ {
         "value" : "Michel",
         "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
+  "_:genid3" : {
+    "http://localhost/color" : [ {
+        "value" : "http://localhost/White",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://localhost/destinationSquare" : [ {
+        "value" : "_:a2",
+        "type" : "bnode"
+        }
+      
+      ],
+    "http://localhost/piece" : [ {
+        "value" : "_:RW",
+        "type" : "bnode"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://localhost/Move",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "_:genid4" : {
+    "http://localhost/checkmate" : [ {
+        "value" : "true",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#boolean",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://localhost/color" : [ {
+        "value" : "http://localhost/Black",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://localhost/destinationSquare" : [ {
+        "value" : "_:a2",
+        "type" : "bnode"
+        }
+      
+      ],
+    "http://localhost/piece" : [ {
+        "value" : "_:QB",
+        "type" : "bnode"
+        }
+      
+      ],
+    "http://localhost/pieceTaken" : [ {
+        "value" : "_:KW",
+        "type" : "bnode"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://localhost/Move",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "_:m1" : {
+    "http://localhost/startingBoard" : [ {
+        "value" : "http://localhost/ExampleBoard",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ {
+        "value" : "_:genid3",
+        "type" : "bnode"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ {
+        "value" : "_:m2",
+        "type" : "bnode"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://localhost/Sequence",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
+  "_:m2" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ {
+        "value" : "_:genid4",
+        "type" : "bnode"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://localhost/Sequence",
+        "type" : "uri"
         }
       
       ]
