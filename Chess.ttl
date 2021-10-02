@@ -79,7 +79,7 @@ chess:hasPiece a rdfs:Property ;
 	rdfs:comment "The hasPiece property is used to indicate whether the square is empty or contains a piece."@en ;
 	rdfs:domain chess:Square ;
 	rdfs:range chess:Piece ;
-        rdfs:label "hasPiece"@en .
+        rdfs:label "has piece"@en .
 
 chess:left a rdfs:Property ;
 	rdfs:comment "The left property indicates the square to the left of a square."@en ;
@@ -120,13 +120,13 @@ chess:whitePlayer a rdfs:Property ;
 	rdfs:comment "The whitePlayer property represents the player who plays with the white pieces"@en ;
 	rdfs:domain chess:Game ;
 	rdfs:range chess:Player ;
-        rdfs:label "white Player"@en .
+        rdfs:label "white player"@en .
 
 chess:blackPlayer a rdfs:Property ;
 	rdfs:comment "The blackPlayer property represents the player who plays with the black pieces"@en ;
 	rdfs:domain chess:Game ;
 	rdfs:range chess:Player ; 
-        rdfs:label "black Player"@en .
+        rdfs:label "black player"@en .
 
 chess:moves a rdfs:Property ;
 	rdfs:comment "The moves property represents the moves that happened during a game."@en ;
@@ -139,19 +139,19 @@ chess:Player a rdfs:Class ;
 	rdfs:comment "The Player class represents a player in the chess game. A player can be a human or a computer. Each player has a color (white or black) which defines which color of the piece he plays with."@en ;
 	rdfs:subClassOf foaf:Agent ;
 	rdfs:subClassOf chess:ColoredElement ;
-	rdfs:label "Player"@en .
+	rdfs:label "player"@en .
 
 # Sequence Class
 chess:Sequence a rdfs:Class ;
 	rdfs:comment "The Sequence class represents a sequence of moves."@en ;
 	rdfs:subClassOf rdf:List ; 
-        rdfs:label "Sequence"@en .
+        rdfs:label "sequence"@en .
 
 chess:startingBoard a rdfs:Property ;
 	rdfs:comment "The startingBoard property represents a board with the starting positions of the pieces before any moves."@en ;
 	rdfs:domain chess:Sequence ;
 	rdfs:range chess:Board ;
-	rdfs:label "startingBoard"@en .  	     
+	rdfs:label "starting board"@en .  	     
 
 # Board Class
 chess:Board a rdfs:Class ;
@@ -163,7 +163,7 @@ chess:Board a rdfs:Class ;
 chess:Move a rdfs:Class ;
 	rdfs:comment "The class Move represents the movement of a piece in the chess game."@en ;
 	rdfs:subClassOf chess:ColoredElement ;
-	rdfs:label "Move"@en .
+	rdfs:label "move"@en .
 
 chess:notation a rdfs:Property ;
 	rdfs:comment "The notation property is a sequence of letters that designates the move in the chess standards."@en ;
@@ -208,18 +208,18 @@ chess:pieceTaken a rdfs:Property ;
 	rdfs:comment "The pieceTaken property represents the piece that was taken during the current move."@en ;
 	rdfs:domain chess:Move ;
 	rdfs:range chess:Piece ;
-        rdfs:label "pieceTaken"@en .
+        rdfs:label "piece taken"@en .
 
 chess:pieceTakenEnPassant a rdfs:Property ;
 	rdfs:comment "The pieceTakenEnPassant property represents the piece that was taken en passant during the current move."@en ;
 	rdfs:subPropertyOf chess:pieceTaken ;
-	rdfs:label "pieceTakenEnPassant"@en .	    
+	rdfs:label "piece taken en passant"@en .	    
 
 chess:pawnPromotion a rdfs:Property ;
 	rdfs:comment "The pawnPromotion property represents the piece that a pawn promotes to when arriving on the other side of the chess board."@en ;
 	rdfs:domain chess:Move ;
 	rdfs:range chess:Piece ;
-	rdfs:label "pawnPromotion"@en .	      
+	rdfs:label "pawn promotion"@en .	      
 
 chess:piece a rdfs:Property ;
 	rdfs:comment "The piece property represents the piece that has moved during that particular move. It is undefined if the move was a castle."@en ;
@@ -231,6 +231,6 @@ chess:destinationSquare a rdfs:Property ;
 	rdfs:comment "The destinationSquare property represents the final square of the part that moves."@en ;
 	rdfs:domain chess:Move ;
 	rdfs:range chess:Square ;
-	rdfs:label "destinationSquare"@en .	
+	rdfs:label "destination square"@en .	
 
 }
