@@ -60,41 +60,41 @@ chess:Queen a rdfs:Class;
 	rdfs:subClassOf chess:Piece .
 
 chess:King a rdfs:Class ;
-	rdfs:comment "The King class represents a type of chess piece. Each day has a single king placed at a1 for white and e8 for black. The object of the game is to protect your King. When the king is threatened with being caught in the next turn, it is a failure. However, if the king is unquestionably taken on the next turn, it is a checkmate. The King can only move one square in any direction."@en ;
+	rdfs:comment "The King class represents a type of chess piece. Each player has a single king placed at a1 for white and e8 for black. The object of the game is to protect your King. When the king is threatened with being caught in the next turn, it is a check. However, if the king is unquestionably taken on the next turn, it is a checkmate. The King can only move one square in any direction."@en ;
 	rdfs:subClassOf chess:Piece .
 
 # Square Class
 chess:Square a rdfs:Class ;
-	rdfs:comment "The Square class represents a square of the chess game. Each box is alternated color between white and black."@en ;
+	rdfs:comment "The Square class represents a square of the chess game. Each square is in alternated color between white and black."@en ;
 	rdfs:subClassOf chess:ColoredElement .
 
 chess:hasPiece a rdfs:Property ;
-	rdfs:comment "The hasPiece property is used to indicate whether the box is video or contains a part."@en ;
+	rdfs:comment "The hasPiece property is used to indicate whether the square is empty or contains a piece."@en ;
 	rdfs:domain chess:Square ;
 	rdfs:range chess:Piece .
 
 chess:left a rdfs:Property ;
-	rdfs:comment "The left property indicates the box to the left of a box."@en ;
+	rdfs:comment "The left property indicates the square to the left of a square."@en ;
 	rdfs:domain chess:Square ;
 	rdfs:range chess:Square .
 
 chess:right a rdfs:Property ;
-	rdfs:comment "The right property indicates the box to the right of a box."@en ;
+	rdfs:comment "The right property indicates the square to the right of a square."@en ;
 	rdfs:domain chess:Square ;
 	rdfs:range chess:Square .
 
 chess:top a rdfs:Property ;
-	rdfs:comment "The top property indicates the box to the top of a box."@en ;
+	rdfs:comment "The top property indicates the square to the top of a square."@en ;
 	rdfs:domain chess:Square ;
 	rdfs:range chess:Square .
 
 chess:bottom a rdfs:Property ;
-	rdfs:comment "The bottom property indicates the box to the bottom of a box."@en ;
+	rdfs:comment "The bottom property indicates the square to the bottom of a square."@en ;
 	rdfs:domain chess:Square ;
 	rdfs:range chess:Square .
 
 chess:coordinates a rdfs:Property ;
-	rdfs:comment "The coordinates property indicates the position of the box in the chess set. The first letter is a letter located from a to h and a second a number from 1 to 8."@en ;
+	rdfs:comment "The coordinates property indicates the position of the square in the chess set. The first character is a letter located from a to h and the second a number from 1 to 8."@en ;
 	rdfs:domain chess:Square ;
 	rdfs:range xsd:string .
 
@@ -113,7 +113,7 @@ chess:blackPlayer a rdfs:Property ;
 	rdfs:range chess:Player .
 
 chess:moves a rdfs:Property ;
-	rdfs:comment "The moves property represents several sequences."@en ;
+	rdfs:comment "The moves property represents the moves that happened during a game."@en ;
 	rdfs:domain chess:Game ;
 	rdfs:range chess:Sequence .
 
@@ -125,11 +125,11 @@ chess:Player a rdfs:Class ;
 
 # Sequence Class
 chess:Sequence a rdfs:Class ;
-	rdfs:comment "The Sequence class represents a sequence of motion."@en ;
+	rdfs:comment "The Sequence class represents a sequence of moves."@en ;
 	rdfs:subClassOf rdf:List .
 
 chess:startingBoard a rdfs:Property ;
-	rdfs:comment "The startingBoard property represents a board with the starting positions of the parts."@en ;
+	rdfs:comment "The startingBoard property represents a board with the starting positions of the pieces before any moves."@en ;
 	rdfs:domain chess:Sequence ;
 	rdfs:range chess:Board .
 
@@ -143,54 +143,54 @@ chess:Move a rdfs:Class ;
 	rdfs:subClassOf chess:ColoredElement .
 
 chess:notation a rdfs:Property ;
-	rdfs:comment "The rating property is a sequence of letters that designates the move in the chess standards."@en ;
+	rdfs:comment "The notation property is a sequence of letters that designates the move in the chess standards."@en ;
 	rdfs:domain chess:Move ;
 	rdfs:range xsd:string .
 
 chess:check a rdfs:Property ;
-	rdfs:comment "The check property is a boolean that indicates whether there is a check in the game."@en ;
+	rdfs:comment "The check property is a boolean that indicates whether the move put the opposing king in check."@en ;
 	rdfs:domain chess:Move ;
 	rdfs:range xsd:boolean .
 
 chess:checkmate a rdfs:Property ;
-	rdfs:comment "The check property is a boolean which indicates if there is a checkmate in the game."@en ;
+	rdfs:comment "The check property is a boolean which indicates whether the move put the opposing king in checkmate."@en ;
 	rdfs:domain chess:Move ;
 	rdfs:range xsd:boolean .
 
 chess:castle a rdfs:Property ;
-	rdfs:comment "The castle property is a boolean which indicates whether there has been a castle movement."@en ;
+	rdfs:comment "The castle property is a boolean which indicates whether there has been a castle movement (king switching place with the rook)."@en ;
 	rdfs:domain chess:Move ;
 	rdfs:range xsd:boolean .
 
 chess:castleQueenSide a rdfs:Property ;
-	rdfs:comment "The castleQueenSide property is a boolean that indicates whether there is a castleQueenSide in the game. A castleQueenSide is a special move that moves a queen move and one of the towers. In one hit, the Queen and the tower are moved."@en ;
+	rdfs:comment "The castleQueenSide property is a boolean that indicates whether there is a castle on the queen side in the game. A castle on the queen side is a special move that swaps the king and the rook on the side of the queen."@en ;
 	rdfs:subPropertyOf chess:castle .
 
 chess:castleKingSide a rdfs:Property ;
-	rdfs:comment "The castleKingSide property is a boolean that indicates whether there is a castleKingSide in the game. A castleKingSide is a special move that moves a king move and one of the rooks. In one hit, the king and the rook are moved."@en ;
+	rdfs:comment "The castleKingSide property is a boolean that indicates whether there is a castle on the king side in the game. A castle on the king side is a special move that swaps the king and the rook on the side of the king."@en ;
 	rdfs:subPropertyOf chess:castle .
 
 chess:pieceTaken a rdfs:Property ;
-	rdfs:comment "The pieceTaken property represents the pieces that were taken during the game."@en ;
+	rdfs:comment "The pieceTaken property represents the piece that was taken during the current move."@en ;
 	rdfs:domain chess:Move ;
 	rdfs:range chess:Piece .
 
 chess:pieceTakenEnPassant a rdfs:Property ;
-	rdfs:comment "The pieceTakenEnPassant property represents the pieces that were taken through a pawns."@en ;
+	rdfs:comment "The pieceTakenEnPassant property represents the pice that was taken en passant during the current move."@en ;
 	rdfs:subPropertyOf chess:pieceTaken .
 
 chess:pawnPromotion a rdfs:Property ;
-	rdfs:comment "The pawnPromotion property represents when a pawn arrives from the other side and is replaced by another piece from the game."@en ;
+	rdfs:comment "The pawnPromotion property represents the piece that a pawn promotes to when arriving on the other side of the chess board."@en ;
 	rdfs:domain chess:Move ;
 	rdfs:range chess:Piece .
 
 chess:piece a rdfs:Property ;
-	rdfs:comment "The piece property represents the piece that has moved in the game."@en ;
+	rdfs:comment "The piece property represents the piece that has moved during that particular move. It is undefined if the move was a castle."@en ;
 	rdfs:domain chess:Move ;
 	rdfs:range chess:Piece .
 
 chess:destinationSquare a rdfs:Property ;
-	rdfs:comment "The destinationSquare property represents the final square of the part that has to move."@en ;
+	rdfs:comment "The destinationSquare property represents the final square of the part that moves."@en ;
 	rdfs:domain chess:Move ;
 	rdfs:range chess:Square .
 
