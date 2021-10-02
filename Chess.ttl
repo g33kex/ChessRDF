@@ -102,7 +102,7 @@ chess:top a rdfs:Property ;
 chess:bottom a rdfs:Property ;
 	rdfs:comment "The bottom property indicates the square to the bottom of a square."@en ;
 	rdfs:domain chess:Square ;
-	rdfs:label "bottom"@en .
+	rdfs:label "bottom"@en ;
 	rdfs:range chess:Square .
 
 chess:coordinates a rdfs:Property ;
