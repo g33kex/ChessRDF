@@ -31,19 +31,19 @@ chess:Piece a rdfs:Class ;
 	rdfs:comment "The Piece class represents the pieces available in the chess set. There are six pieces in the chess game which are (Knight, Pawn, Bishop, Rook, Queen, King)."@en ;
 	rdfs:subClassOf chess:ColoredElement ; 
 	schema:sameAs wiki:Q208440 ;
-	rdfs:label  "Chess piece"@en .
+	rdfs:label  "chess piece"@en .
 
 chess:Knight a rdfs:Class ;
 	rdfs:comment "The Knight class represents a piece of the chess game. Each player has two knights who are placed at b1 and g1 for white and b8 and g8 for black. The Knight can only move in L, i.e. 2 cases in one direction combined with one case perpendicularly."@en ;
 	rdfs:subClassOf chess:Piece ; 
 	schema:sameAs wiki:Q136 ;
-	rdfs:label "Knigh."@en .
+	rdfs:label "knight"@en .
 
 chess:Pawn a rdfs:Class ;
 	rdfs:comment "The Pawn class represents a type of piece in a chess game. Each player has eight pawns placed in the second row in front of the other pieces. From its initial position, the pawn can advance one or two squares. Then, the pawn can only advance one space. The pawn can only move forward and take a diagonal grip forward."@en ;
 	rdfs:subClassOf chess:Piece ;
 	schema:sameAs wiki:Q135 ;
-	rdfs:label "Pawn"@en .
+	rdfs:label "pawn"@en .
 
 chess:Bishop a rdfs:Class ;
 	rdfs:comment "The Bishop class represents a type of piece in chess games. The Bishop only moves diagonally."@en ;
@@ -55,7 +55,7 @@ chess:Rook a rdfs:Class ;
 	rdfs:comment "The Rook class represents a type of chess piece. Each player has two rounds placed at a1 and h1 for white and a8 and h8 for black. A rook can move horizontally or vertically."@en ;
 	rdfs:subClassOf chess:Piece; 
 	schema:sameAs wiki:Q137 ; 
-	rdfs:label "Rook."@en .
+	rdfs:label "rook"@en .
 
 chess:Queen a rdfs:Class;
 	rdfs:comment "The Queen class represents a type of chess piece. Each player has a single queen placed at d1 for white and d8 for black. The queen can move vertically, horizontally or diagonally on any number of empty spaces."@en ;
@@ -102,6 +102,7 @@ chess:top a rdfs:Property ;
 chess:bottom a rdfs:Property ;
 	rdfs:comment "The bottom property indicates the square to the bottom of a square."@en ;
 	rdfs:domain chess:Square ;
+	rdfs:label "bottom"@en .
 	rdfs:range chess:Square .
 
 chess:coordinates a rdfs:Property ;
@@ -113,7 +114,7 @@ chess:coordinates a rdfs:Property ;
 # Game Class
 chess:Game a rdfs:Class ;
 	rdfs:comment "The Game class represents a game of chess. Each game is played between two people who can be humans or computers. Each player takes turns playing with 16 pieces each. The object of the game is to take the king from the other player."@en ;
-	rdfs:label "Game"@en.
+	rdfs:label "game"@en.
 
 chess:whitePlayer a rdfs:Property ;
 	rdfs:comment "The whitePlayer property represents the player who plays with the white pieces"@en ;
