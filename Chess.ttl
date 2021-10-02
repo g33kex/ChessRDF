@@ -31,23 +31,25 @@ chess:Piece a rdfs:Class ;
 	rdfs:comment "The Piece class represents the pieces available in the chess set. There are six pieces in the chess game which are (Knight, Pawn, Bishop, Rook, Queen, King)."@en ;
 	rdfs:subClassOf chess:ColoredElement ; 
 	schema:sameAs wiki:Q208440 ;
-	rdfs:label  "Chess piece."@en .
+	rdfs:label  "Chess piece"@en .
 
 chess:Knight a rdfs:Class ;
 	rdfs:comment "The Knight class represents a piece of the chess game. Each player has two knights who are placed at b1 and g1 for white and b8 and g8 for black. The Knight can only move in L, i.e. 2 cases in one direction combined with one case perpendicularly."@en ;
 	rdfs:subClassOf chess:Piece ; 
 	schema:sameAs wiki:Q136 ;
-	rdfs:label "Knight."@en .
+	rdfs:label "Knigh."@en .
 
 chess:Pawn a rdfs:Class ;
 	rdfs:comment "The Pawn class represents a type of piece in a chess game. Each player has eight pawns placed in the second row in front of the other pieces. From its initial position, the pawn can advance one or two squares. Then, the pawn can only advance one space. The pawn can only move forward and take a diagonal grip forward."@en ;
 	rdfs:subClassOf chess:Piece ;
 	schema:sameAs wiki:Q135 ;
-	rdfs:label "Pawn."@en .
+	rdfs:label "Pawn"@en .
 
 chess:Bishop a rdfs:Class ;
 	rdfs:comment "The Bishop class represents a type of piece in chess games. The Bishop only moves diagonally."@en ;
-	rdfs:subClassOf chess:Piece .
+	rdfs:subClassOf chess:Piece ; 
+	schema:sameAs wiki:Q134 ; 
+	rdfs:label "bishop"@en.
 
 chess:Rook a rdfs:Class ;
 	rdfs:comment "The Rook class represents a type of chess piece. Each player has two rounds placed at a1 and h1 for white and a8 and h8 for black. A rook can move horizontally or vertically."@en ;
@@ -57,11 +59,16 @@ chess:Rook a rdfs:Class ;
 
 chess:Queen a rdfs:Class;
 	rdfs:comment "The Queen class represents a type of chess piece. Each player has a single queen placed at d1 for white and d8 for black. The queen can move vertically, horizontally or diagonally on any number of empty spaces."@en ;
-	rdfs:subClassOf chess:Piece .
+	rdfs:subClassOf chess:Piece ; 
+	schema:sameAs wiki:Q139 ; 
+	rdfs:label "queen"@en .
+	
 
 chess:King a rdfs:Class ;
 	rdfs:comment "The King class represents a type of chess piece. Each player has a single king placed at a1 for white and e8 for black. The object of the game is to protect your King. When the king is threatened with being caught in the next turn, it is a check. However, if the king is unquestionably taken on the next turn, it is a checkmate. The King can only move one square in any direction."@en ;
-	rdfs:subClassOf chess:Piece .
+	rdfs:subClassOf chess:Piece;
+	schema:sameAs wiki:Q138 ; 
+	rdfs:label "king"@en .
 
 # Square Class
 chess:Square a rdfs:Class ;
@@ -135,7 +142,9 @@ chess:startingBoard a rdfs:Property ;
 
 # Board Class
 chess:Board a rdfs:Class ;
-	rdfs:comment "The class Board represents the chessboard"@en .
+	rdfs:comment "The class Board represents the chessboard"@en ; 
+	schema:sameAs wiki:Q110079 ; 
+	rdfs:label "chessboard"@en .
 
 # Move class
 chess:Move a rdfs:Class ;
