@@ -175,29 +175,34 @@ chess:check a rdfs:Property ;
 	rdfs:comment "The check property is a boolean that indicates whether the move put the opposing king in check."@en ;
 	rdfs:domain chess:Move ;
 	rdfs:range xsd:boolean ;
+	schema:sameAs wiki:Q842046 ;
 	rdfs:label "check"@en .
 
 chess:checkmate a rdfs:Property ;
 	rdfs:comment "The check property is a boolean which indicates whether the move put the opposing king in checkmate."@en ;
 	rdfs:domain chess:Move ;
 	rdfs:range xsd:boolean ;
-        rdfs:label "check mate"@en . 
+        schema:sameAs wiki:Q20819848 ;
+        rdfs:label "checkmate"@en . 
 
 chess:castle a rdfs:Property ;
 	rdfs:comment "The castle property is a boolean which indicates whether there has been a castle movement (king switching place with the rook)."@en ;
 	rdfs:domain chess:Move ;
 	rdfs:range xsd:boolean ;
+	schema:sameAs wiki:Q102877 ;
 	rdfs:label "castle"@en .
 
 chess:castleQueenSide a rdfs:Property ;
 	rdfs:comment "The castleQueenSide property is a boolean that indicates whether there is a castle on the queen side in the game. A castle on the queen side is a special move that swaps the king and the rook on the side of the queen."@en ;
 	rdfs:subPropertyOf chess:castle ;
-	rdfs:label "castleQueenSide"@en .		
+        schema:sameAs wiki:Q54881278 ;
+	rdfs:label "castling on the queenside "@en .		
 
 chess:castleKingSide a rdfs:Property ;
 	rdfs:comment "The castleKingSide property is a boolean that indicates whether there is a castle on the king side in the game. A castle on the king side is a special move that swaps the king and the rook on the side of the king."@en ;
 	rdfs:subPropertyOf chess:castle ;
-	rdfs:label "castleKingSide"@en .	       
+        schema:sameAs wiki:Q54881052 ;
+	rdfs:label "castling on the kingside"@en .	       
 
 chess:pieceTaken a rdfs:Property ;
 	rdfs:comment "The pieceTaken property represents the piece that was taken during the current move."@en ;
