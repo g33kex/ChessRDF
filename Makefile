@@ -11,5 +11,9 @@ publish: ${SITE}
 %.xml: %.ttl
 	 rapper $< -i ${FORMAT} -o rdfxml > docs/$@
 
+validate: 
+	python3 -c "import rdflib.graph; graph = rdflib.graph.ConjunctiveGraph(); graph.parse('Chess.ttl', format='trig'); print(graph.serialize(format='json-ld'))" > Chess.jsonld
+	pyshacl -f turtle -df json-ld Chess.jsonld
+
 clean:
 	rm ${OUT}
