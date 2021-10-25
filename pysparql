@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+import rdflib
+import sys
+from pprint import pprint
+import json
+
+if len(sys.argv)!=2:
+    print("Usage: pysparql <graph.ttl>")
+    exit(1)
+
+graph_path = sys.argv[1]
+sparql_query = sys.stdin.read()
+
+graph = rdflib.Graph()
+graph.parse(graph_path)
+
+try:
+    results = json.loads(graph.query(sparql_query).serialize(format='json'))
+except Exception as e:
+    print("Could not run query:", e)
+    exit(1)
+
+pprint(results['results']['bindings'])
+
