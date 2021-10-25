@@ -1,0 +1,624 @@
+# baseURI: http://www.exemple.org/
+# imports: http://exemple.org/rules
+# imports: http://exemple.org/shacl
+# prefix: exemple
+
+@prefix : <http://www.exemple.org/> .
+@prefix exemple: <http://www.exemple.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+exemple:
+  a owl:Ontology ;
+  owl:imports <http://exemple.org/rules> ;
+  owl:imports <http://exemple.org/shacl> ;
+.
+exemple:AUT18
+  a exemple:Session ;
+  exemple:season "Automne" ;
+  exemple:year 2018 ;
+.
+exemple:AUT19
+  a exemple:Session ;
+  exemple:season "Automne" ;
+  exemple:year 2019 ;
+.
+exemple:BusyTeacher
+  a rdfs:Class ;
+  rdfs:subClassOf exemple:Teacher ;
+.
+exemple:Class
+  a rdfs:Class ;
+  rdfs:label "Cours"@fr ;
+.
+exemple:Danilo
+  a exemple:Student ;
+  exemple:matricule 0000009 ;
+  exemple:name "Danilo" ;
+  exemple:takesClass exemple:INF2705AUT18 ;
+  exemple:takesClass exemple:INF3005AUT18 ;
+  exemple:takesClass exemple:INF6405AUT18 ;
+  exemple:takesClass exemple:INF6405HIV19 ;
+  exemple:takesClass exemple:INF8225AUT19 ;
+  exemple:takesClass exemple:INF8225HIV19 ;
+  exemple:takesClass exemple:INF8405AUT18 ;
+  exemple:takesClass exemple:INF8405AUT19 ;
+  exemple:takesClass exemple:INF8410HIV19 ;
+  exemple:takesClass exemple:INF8460HIV19 ;
+  exemple:takesClass exemple:LOG2420AUT18 ;
+  exemple:takesClass exemple:LOG2420HIV19 ;
+  exemple:takesClass exemple:MTH1110AUT19 ;
+  exemple:takesClass exemple:MTH1110HIV19 ;
+  exemple:takesClass exemple:MTH1210AUT19 ;
+  exemple:takesClass exemple:MTH1210HIV19 ;
+  exemple:takesClass exemple:PHS1102AUT19 ;
+  exemple:takesClass exemple:PHS1102HIV19 ;
+.
+exemple:Deborah
+  a exemple:Teacher ;
+  exemple:givesClass exemple:INF8460AUT19 ;
+  exemple:givesClass exemple:MTH1110AUT18 ;
+  exemple:name "Deborah" ;
+.
+exemple:Ethel
+  a exemple:Teacher ;
+  exemple:givesClass exemple:INF8460AUT19 ;
+  exemple:givesClass exemple:PHS1102AUT18 ;
+  exemple:name "Ethel" ;
+.
+exemple:Etta
+  a exemple:Teacher ;
+  exemple:givesClass exemple:INF8410AUT19 ;
+  exemple:name "Etta" ;
+.
+exemple:GivenClass
+  a rdfs:Class ;
+  rdfs:comment "Représente la notion d'un cours pour une session donnée, permet de faire le lien entre le cours, la session, les étudiants prennant ce cours et le professeur le donnant."@fr ;
+  rdfs:label "Cours donné durant une session"@fr ;
+.
+exemple:HIV19
+  a exemple:Session ;
+  exemple:season "Hiver" ;
+  exemple:year 2019 ;
+.
+exemple:Harold
+  a exemple:Teacher ;
+  exemple:givesClass exemple:LOG2420AUT18 ;
+  exemple:givesClass exemple:LOG2420HIV19 ;
+  exemple:givesClass exemple:MTH1110AUT19 ;
+  exemple:givesClass exemple:MTH1210AUT19 ;
+  exemple:name "Harold" ;
+.
+exemple:INF2705
+  a exemple:Class ;
+  exemple:numberCredits 4 ;
+  exemple:sigleClass "INF2705" ;
+  exemple:titleClass "Infographie" ;
+.
+exemple:INF2705AUT18
+  a exemple:GivenClass ;
+  exemple:class exemple:INF2705 ;
+  exemple:session exemple:AUT18 ;
+.
+exemple:INF2705AUT19
+  a exemple:GivenClass ;
+  exemple:class exemple:INF2705 ;
+  exemple:session exemple:AUT19 ;
+.
+exemple:INF2705HIV19
+  a exemple:GivenClass ;
+  exemple:class exemple:INF2705 ;
+  exemple:session exemple:HIV19 ;
+.
+exemple:INF3005
+  a exemple:Class ;
+  exemple:numberCredits 3 ;
+  exemple:sigleClass "INF3005" ;
+  exemple:titleClass "Communication écrite et orale" ;
+.
+exemple:INF3005AUT18
+  a exemple:GivenClass ;
+  exemple:class exemple:INF3005 ;
+  exemple:session exemple:AUT18 ;
+.
+exemple:INF3005AUT19
+  a exemple:GivenClass ;
+  exemple:class exemple:INF3005 ;
+  exemple:session exemple:AUT19 ;
+.
+exemple:INF3005HIV19
+  a exemple:GivenClass ;
+  exemple:class exemple:INF3005 ;
+  exemple:session exemple:HIV19 ;
+.
+exemple:INF6405
+  a exemple:Class ;
+  exemple:numberCredits 3 ;
+  exemple:sigleClass "INF6405" ;
+  exemple:titleClass "Systèmes informatiques mobiles" ;
+.
+exemple:INF6405AUT18
+  a exemple:GivenClass ;
+  exemple:class exemple:INF6405 ;
+  exemple:session exemple:AUT18 ;
+.
+exemple:INF6405AUT19
+  a exemple:GivenClass ;
+  exemple:class exemple:INF6405 ;
+  exemple:session exemple:AUT19 ;
+.
+exemple:INF6405HIV19
+  a exemple:GivenClass ;
+  exemple:class exemple:INF6405 ;
+  exemple:session exemple:HIV19 ;
+.
+exemple:INF8225
+  a exemple:Class ;
+  exemple:numberCredits 3 ;
+  exemple:sigleClass "INF8225" ;
+  exemple:titleClass "I.A.:tech. probabilistes et d'apprentissage et web sémantique" ;
+.
+exemple:INF8225AUT18
+  a exemple:GivenClass ;
+  exemple:class exemple:INF8225 ;
+  exemple:session exemple:AUT18 ;
+.
+exemple:INF8225AUT19
+  a exemple:GivenClass ;
+  exemple:class exemple:INF8225 ;
+  exemple:session exemple:AUT19 ;
+.
+exemple:INF8225HIV19
+  a exemple:GivenClass ;
+  exemple:class exemple:INF8225 ;
+  exemple:session exemple:HIV19 ;
+.
+exemple:INF8405
+  a exemple:Class ;
+  exemple:numberCredits 3 ;
+  exemple:sigleClass "INF8405" ;
+  exemple:titleClass "Analyse et conception d'algorithmes" ;
+.
+exemple:INF8405AUT18
+  a exemple:GivenClass ;
+  exemple:class exemple:INF8405 ;
+  exemple:session exemple:AUT18 ;
+.
+exemple:INF8405AUT19
+  a exemple:GivenClass ;
+  exemple:class exemple:INF8405 ;
+  exemple:session exemple:AUT19 ;
+.
+exemple:INF8410
+  a exemple:Class ;
+  exemple:numberCredits 3 ;
+  exemple:sigleClass "INF8410" ;
+  exemple:titleClass "Ontologie et web sémantique" ;
+.
+exemple:INF8410AUT18
+  a exemple:GivenClass ;
+  exemple:class exemple:INF8410 ;
+  exemple:session exemple:AUT18 ;
+.
+exemple:INF8410AUT19
+  a exemple:GivenClass ;
+  exemple:class exemple:INF8410 ;
+  exemple:session exemple:AUT19 ;
+.
+exemple:INF8410HIV19
+  a exemple:GivenClass ;
+  exemple:class exemple:INF8410 ;
+  exemple:session exemple:HIV19 ;
+.
+exemple:INF8460
+  a exemple:Class ;
+  exemple:numberCredits 3 ;
+  exemple:sigleClass "INF8460" ;
+  exemple:titleClass "Traitement automatique de la langue naturelle" ;
+.
+exemple:INF8460AUT18
+  a exemple:GivenClass ;
+  exemple:class exemple:INF8460 ;
+  exemple:session exemple:AUT18 ;
+.
+exemple:INF8460AUT19
+  a exemple:GivenClass ;
+  exemple:class exemple:INF8460 ;
+  exemple:session exemple:AUT19 ;
+.
+exemple:INF8460HIV19
+  a exemple:GivenClass ;
+  exemple:class exemple:INF8460 ;
+  exemple:session exemple:HIV19 ;
+.
+exemple:Jack
+  a exemple:Student ;
+  exemple:matricule 0000010 ;
+  exemple:name "Jack" ;
+  exemple:takesClass exemple:INF2705AUT19 ;
+  exemple:takesClass exemple:INF3005HIV19 ;
+  exemple:takesClass exemple:INF6405AUT19 ;
+  exemple:takesClass exemple:INF8225AUT18 ;
+  exemple:takesClass exemple:INF8225AUT19 ;
+  exemple:takesClass exemple:INF8405AUT18 ;
+  exemple:takesClass exemple:INF8405AUT19 ;
+  exemple:takesClass exemple:INF8410HIV19 ;
+  exemple:takesClass exemple:INF8460HIV19 ;
+  exemple:takesClass exemple:LOG2420AUT18 ;
+  exemple:takesClass exemple:MTH1110HIV19 ;
+  exemple:takesClass exemple:MTH1210HIV19 ;
+  exemple:takesClass exemple:PHS1102AUT18 ;
+  exemple:takesClass exemple:PHS1102HIV19 ;
+.
+exemple:Jesse
+  a exemple:Student ;
+  exemple:matricule 0000006 ;
+  exemple:name "Jesse" ;
+  exemple:takesClass exemple:INF2705AUT19 ;
+  exemple:takesClass exemple:INF3005AUT19 ;
+  exemple:takesClass exemple:INF6405AUT19 ;
+  exemple:takesClass exemple:INF8225AUT18 ;
+  exemple:takesClass exemple:INF8225HIV19 ;
+  exemple:takesClass exemple:INF8405AUT19 ;
+  exemple:takesClass exemple:INF8410AUT18 ;
+  exemple:takesClass exemple:INF8460AUT18 ;
+  exemple:takesClass exemple:INF8460HIV19 ;
+  exemple:takesClass exemple:MTH1110AUT18 ;
+  exemple:takesClass exemple:MTH1110HIV19 ;
+  exemple:takesClass exemple:MTH1210AUT18 ;
+  exemple:takesClass exemple:MTH1210HIV19 ;
+  exemple:takesClass exemple:PHS1102AUT18 ;
+  exemple:takesClass exemple:PHS1102HIV19 ;
+.
+exemple:Joshua
+  a exemple:Student ;
+  exemple:matricule 0000001 ;
+  exemple:name "Joshua" ;
+  exemple:takesClass exemple:INF2705AUT19 ;
+  exemple:takesClass exemple:INF3005AUT19 ;
+  exemple:takesClass exemple:INF6405AUT19 ;
+  exemple:takesClass exemple:INF8225HIV19 ;
+  exemple:takesClass exemple:INF8410AUT18 ;
+  exemple:takesClass exemple:INF8460AUT18 ;
+  exemple:takesClass exemple:LOG2420HIV19 ;
+  exemple:takesClass exemple:MTH1110AUT18 ;
+  exemple:takesClass exemple:MTH1210AUT18 ;
+  exemple:takesClass exemple:PHS1102HIV19 ;
+.
+exemple:Kristin
+  a exemple:Teacher ;
+  exemple:givesClass exemple:INF2705AUT18 ;
+  exemple:givesClass exemple:INF6405AUT18 ;
+  exemple:givesClass exemple:INF8225HIV19 ;
+  exemple:givesClass exemple:INF8405AUT18 ;
+  exemple:givesClass exemple:MTH1210HIV19 ;
+  exemple:givesClass exemple:PHS1102HIV19 ;
+  exemple:name "Kristin" ;
+.
+exemple:LOG2420
+  a exemple:Class ;
+  exemple:numberCredits 3 ;
+  exemple:sigleClass "LOG242" ;
+  exemple:titleClass "Anal. et conc. des interfaces utilisateurs" ;
+.
+exemple:LOG2420AUT18
+  a exemple:GivenClass ;
+  exemple:class exemple:LOG2420 ;
+  exemple:session exemple:AUT18 ;
+.
+exemple:LOG2420HIV19
+  a exemple:GivenClass ;
+  exemple:class exemple:LOG2420 ;
+  exemple:session exemple:HIV19 ;
+.
+exemple:Leonard
+  a exemple:Student ;
+  exemple:matricule 0000003 ;
+  exemple:name "Leonard" ;
+  exemple:takesClass exemple:INF2705AUT19 ;
+  exemple:takesClass exemple:INF3005AUT19 ;
+  exemple:takesClass exemple:INF8225HIV19 ;
+  exemple:takesClass exemple:INF8405AUT18 ;
+  exemple:takesClass exemple:INF8410AUT18 ;
+  exemple:takesClass exemple:INF8410AUT19 ;
+  exemple:takesClass exemple:INF8460AUT18 ;
+  exemple:takesClass exemple:LOG2420HIV19 ;
+  exemple:takesClass exemple:MTH1110AUT18 ;
+  exemple:takesClass exemple:MTH1210AUT18 ;
+  exemple:takesClass exemple:PHS1102HIV19 ;
+.
+exemple:Leroy
+  a exemple:Teacher ;
+  exemple:givesClass exemple:INF8460AUT18 ;
+  exemple:name "Leroy " ;
+.
+exemple:Loree
+  a exemple:Teacher ;
+  exemple:givesClass exemple:INF2705AUT19 ;
+  exemple:givesClass exemple:INF2705HIV19 ;
+  exemple:givesClass exemple:INF3005AUT18 ;
+  exemple:givesClass exemple:INF3005AUT19 ;
+  exemple:givesClass exemple:INF3005HIV19 ;
+  exemple:givesClass exemple:INF6405AUT19 ;
+  exemple:givesClass exemple:INF6405HIV19 ;
+  exemple:givesClass exemple:INF8225AUT18 ;
+  exemple:name "Loree" ;
+.
+exemple:MTH1110
+  a exemple:Class ;
+  exemple:numberCredits 2 ;
+  exemple:sigleClass "MTH1110" ;
+  exemple:titleClass "Équations différentielles ordinaires" ;
+.
+exemple:MTH1110AUT18
+  a exemple:GivenClass ;
+  exemple:class exemple:MTH1110 ;
+  exemple:session exemple:AUT18 ;
+.
+exemple:MTH1110AUT19
+  a exemple:GivenClass ;
+  exemple:class exemple:MTH1110 ;
+  exemple:session exemple:AUT19 ;
+.
+exemple:MTH1110HIV19
+  a exemple:GivenClass ;
+  exemple:class exemple:MTH1110 ;
+  exemple:session exemple:HIV19 ;
+.
+exemple:MTH1210
+  a exemple:Class ;
+  exemple:numberCredits 1 ;
+  exemple:sigleClass "MTH1210" ;
+  exemple:titleClass "Méth. numér. pour équations diff. ordinaires" ;
+.
+exemple:MTH1210AUT18
+  a exemple:GivenClass ;
+  exemple:class exemple:MTH1210 ;
+  exemple:session exemple:AUT18 ;
+.
+exemple:MTH1210AUT19
+  a exemple:GivenClass ;
+  exemple:class exemple:MTH1210 ;
+  exemple:session exemple:AUT19 ;
+.
+exemple:MTH1210HIV19
+  a exemple:GivenClass ;
+  exemple:class exemple:MTH1210 ;
+  exemple:session exemple:HIV19 ;
+.
+exemple:Marie
+  a exemple:Teacher ;
+  exemple:givesClass exemple:INF8410AUT18 ;
+  exemple:givesClass exemple:INF8410HIV19 ;
+  exemple:givesClass exemple:INF8460HIV19 ;
+  exemple:givesClass exemple:MTH1110HIV19 ;
+  exemple:name "Marie" ;
+.
+exemple:Michael
+  a exemple:Student ;
+  exemple:matricule 0000008 ;
+  exemple:name "Michael" ;
+  exemple:takesClass exemple:INF6405AUT19 ;
+  exemple:takesClass exemple:INF8225AUT18 ;
+  exemple:takesClass exemple:INF8225AUT19 ;
+  exemple:takesClass exemple:INF8405AUT18 ;
+  exemple:takesClass exemple:INF8405AUT19 ;
+  exemple:takesClass exemple:INF8410AUT18 ;
+  exemple:takesClass exemple:INF8410HIV19 ;
+  exemple:takesClass exemple:INF8460AUT18 ;
+  exemple:takesClass exemple:INF8460HIV19 ;
+  exemple:takesClass exemple:LOG2420AUT18 ;
+  exemple:takesClass exemple:MTH1110AUT18 ;
+  exemple:takesClass exemple:MTH1110HIV19 ;
+  exemple:takesClass exemple:MTH1210AUT18 ;
+  exemple:takesClass exemple:MTH1210HIV19 ;
+  exemple:takesClass exemple:PHS1102AUT18 ;
+  exemple:takesClass exemple:PHS1102AUT19 ;
+  exemple:takesClass exemple:PHS1102HIV19 ;
+.
+exemple:PHS1102
+  a exemple:Class ;
+  exemple:numberCredits 3 ;
+  exemple:sigleClass "PHS1102" ;
+  exemple:titleClass "Champs électromagnétiques" ;
+.
+exemple:PHS1102AUT18
+  a exemple:GivenClass ;
+  exemple:class exemple:PHS1102 ;
+  exemple:session exemple:AUT18 ;
+.
+exemple:PHS1102AUT19
+  a exemple:GivenClass ;
+  exemple:class exemple:PHS1102 ;
+  exemple:session exemple:AUT19 ;
+.
+exemple:PHS1102HIV19
+  a exemple:GivenClass ;
+  exemple:class exemple:PHS1102 ;
+  exemple:session exemple:HIV19 ;
+.
+exemple:Perry
+  a exemple:Student ;
+  exemple:matricule 0000002 ;
+  exemple:takesClass exemple:INF2705AUT19 ;
+  exemple:takesClass exemple:INF6405AUT18 ;
+  exemple:takesClass exemple:INF8225AUT19 ;
+  exemple:takesClass exemple:INF8405AUT18 ;
+  exemple:takesClass exemple:INF8410AUT18 ;
+  exemple:takesClass exemple:INF8410AUT19 ;
+  exemple:takesClass exemple:INF8460HIV19 ;
+  exemple:takesClass exemple:MTH1110HIV19 ;
+  exemple:takesClass exemple:MTH1210HIV19 ;
+  exemple:takesClass exemple:PHS1102HIV19 ;
+.
+exemple:Person
+  a rdfs:Class, sh:NodeShape ;
+  rdfs:label "Personne"@fr ;
+	sh:property [
+		sh:path exemple:name ;
+		sh:datatype xsd:string ;
+		sh:maxCount 1 ;
+		sh:minCount 1 ;
+	] .
+
+
+exemple:Robert
+  a exemple:Student ;
+  exemple:name "Robert" ;
+  exemple:takesClass exemple:INF2705AUT18 ;
+  exemple:takesClass exemple:INF3005HIV19 ;
+  exemple:takesClass exemple:INF6405AUT18 ;
+  exemple:takesClass exemple:INF6405AUT19 ;
+  exemple:takesClass exemple:INF8225AUT18 ;
+  exemple:takesClass exemple:INF8225AUT19 ;
+  exemple:takesClass exemple:INF8405AUT18 ;
+  exemple:takesClass exemple:INF8405AUT19 ;
+  exemple:takesClass exemple:INF8410HIV19 ;
+  exemple:takesClass exemple:LOG2420AUT18 ;
+  exemple:takesClass exemple:MTH1110AUT19 ;
+  exemple:takesClass exemple:MTH1210AUT19 ;
+  exemple:takesClass exemple:PHS1102AUT18 ;
+  exemple:takesClass exemple:PHS1102AUT19 ;
+.
+exemple:Rose
+  a exemple:Student ;
+  exemple:matricule 0000007 ;
+  exemple:name "Rose" ;
+  exemple:takesClass exemple:INF2705AUT18 ;
+  exemple:takesClass exemple:INF2705AUT19 ;
+  exemple:takesClass exemple:INF2705HIV19 ;
+  exemple:takesClass exemple:INF6405AUT18 ;
+  exemple:takesClass exemple:INF6405AUT19 ;
+  exemple:takesClass exemple:INF6405HIV19 ;
+  exemple:takesClass exemple:INF8225AUT18 ;
+  exemple:takesClass exemple:INF8405AUT18 ;
+  exemple:takesClass exemple:INF8410AUT19 ;
+  exemple:takesClass exemple:INF8410HIV19 ;
+  exemple:takesClass exemple:INF8460AUT19 ;
+  exemple:takesClass exemple:INF8460HIV19 ;
+  exemple:takesClass exemple:LOG2420AUT18 ;
+  exemple:takesClass exemple:LOG2420HIV19 ;
+  exemple:takesClass exemple:MTH1110HIV19 ;
+  exemple:takesClass exemple:PHS1102AUT18 ;
+  exemple:takesClass exemple:PHS1102AUT19 ;
+.
+exemple:Session
+  a rdfs:Class ;
+  rdfs:label "Session"@fr ;
+.
+exemple:Stanley
+  a exemple:Teacher ;
+  exemple:givesClass exemple:INF8225AUT19 ;
+  exemple:givesClass exemple:INF8405AUT19 ;
+  exemple:givesClass exemple:MTH1210AUT18 ;
+  exemple:givesClass exemple:PHS1102AUT19 ;
+  exemple:name "Stanley" ;
+.
+exemple:Student
+  a rdfs:Class ;
+  rdfs:label "Etudiant"@fr ;
+  rdfs:subClassOf exemple:Person ;
+.
+exemple:Tabitha
+  a exemple:Teacher ;
+  exemple:name "Tabitha" ;
+.
+exemple:Teacher
+  a rdfs:Class ;
+  rdfs:label "Professeur"@fr ;
+  rdfs:subClassOf exemple:Person ;
+.
+exemple:Violet
+  a exemple:Student ;
+  exemple:matricule 0000004 ;
+  exemple:matricule 0000005 ;
+  exemple:name "Violet" ;
+  exemple:takesClass exemple:INF2705HIV19 ;
+  exemple:takesClass exemple:INF3005HIV19 ;
+  exemple:takesClass exemple:INF6405AUT18 ;
+  exemple:takesClass exemple:INF6405HIV19 ;
+  exemple:takesClass exemple:INF8225AUT18 ;
+  exemple:takesClass exemple:INF8225HIV19 ;
+  exemple:takesClass exemple:INF8410AUT18 ;
+  exemple:takesClass exemple:INF8410AUT19 ;
+  exemple:takesClass exemple:INF8460AUT19 ;
+  exemple:takesClass exemple:LOG2420HIV19 ;
+  exemple:takesClass exemple:MTH1110AUT18 ;
+  exemple:takesClass exemple:MTH1110AUT19 ;
+  exemple:takesClass exemple:MTH1210AUT18 ;
+  exemple:takesClass exemple:MTH1210AUT19 ;
+  exemple:takesClass exemple:PHS1102AUT19 ;
+.
+exemple:class
+  a rdf:Property ;
+  rdfs:comment "fait le lien entre un cours et son instance de :GivenClass durant une session donnée"@fr ;
+  rdfs:domain exemple:GivenClass ;
+  rdfs:label "instance du cours durant une session"@fr ;
+  rdfs:range exemple:Class ;
+.
+exemple:givesClass
+  a rdf:Property ;
+  rdfs:domain exemple:Teacher ;
+  rdfs:label "donne le cours"@fr ;
+  rdfs:range exemple:GivenClass ;
+.
+exemple:matricule
+  a rdf:Property ;
+  rdfs:domain exemple:Student ;
+  rdfs:label "matricule d'un étudiant"@fr ;
+  rdfs:range xsd:integer ;
+.
+exemple:name
+  a rdf:Property ;
+  rdfs:domain exemple:Person ;
+  rdfs:label "nom d'une personne"@fr ;
+  rdfs:range xsd:string ;
+.
+exemple:numberCredits
+  a rdf:Property ;
+  rdfs:comment "nombre de credits offerts pour un cours"@fr ;
+  rdfs:domain exemple:Class ;
+  rdfs:label "nombre de credits"@fr ;
+  rdfs:range xsd:integer ;
+.
+exemple:season
+  a rdf:Property ;
+  rdfs:domain exemple:Session ;
+  rdfs:label "saison d'une session"@fr ;
+  rdfs:range xsd:string ;
+.
+exemple:session
+  a rdf:Property ;
+  rdfs:comment "fait le lien entre une session et son instance de :GivenClass pour un cours donné"@fr ;
+  rdfs:domain exemple:GivenClass ;
+  rdfs:label "instance d'une session pour un cours donné"@fr ;
+  rdfs:range exemple:Session ;
+.
+exemple:sigleClass
+  a rdf:Property ;
+  rdfs:domain exemple:Class ;
+  rdfs:label "sigle d'un cours"@fr ;
+  rdfs:range xsd:string ;
+.
+exemple:takesClass
+  a rdf:Property ;
+  rdfs:domain exemple:Student ;
+  rdfs:label "suis le cours"@fr ;
+  rdfs:range exemple:GivenClass ;
+.
+exemple:titleClass
+  a rdf:Property ;
+  rdfs:domain exemple:Class ;
+  rdfs:label "titre d'un cours"@fr ;
+  rdfs:range xsd:string ;
+.
+exemple:year
+  a rdf:Property ;
+  rdfs:domain exemple:Session ;
+  rdfs:label "année d'une session"@fr ;
+  rdfs:range xsd:integer ;
+.
+
