@@ -39,18 +39,30 @@ WHERE {
   GROUP BY ?teacher
 }
 }
-
 ```
 
-```sparql
-SELECT ?name (MAX(?tot) AS ?max)
-WHERE{
-{
-SELECT ?name (COUNT(?class) AS ?tot)
+## 4.  L’étudiant nommé ”Leonard” a-t-il  suivi  les  11  cours  offerts  au  moins  une  fois chacun ? 
+
+ASK
 WHERE {
-    ?teacher exemple:name ?name;
-    exemple:givesClass ?class .
-     }GROUP BY ?teacher
+  ?student exemple:name "Leonard" ;
+  exemple:takesClass/exemple:class ?class .
+
+}
+HAVING(COUNT(distinct ?class) = 11)
+
+## 5. Quelle est la moyenne du nombre de crédits suivis par les étudiants pour chaque session ?
+
+SELECT (AVG(?sum) AS ?avg) 
+WHERE {
+{
+  SELECT ?session (SUM(?nbcredit) AS ?sum) 
+  WHERE {
+    ?etudiant exemple:takesClass ?class .
+    ?class exemple:class/exemple:numberCredits ?nbcredit .
+    ?class exemple:session ?session .
+  }
+  GROUP BY ?etudiant
 }
 }
-```
+GROUP BY ?session

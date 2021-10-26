@@ -20,5 +20,5 @@ except Exception as e:
     print("Could not run query:", e)
     exit(1)
 
-pprint(results['results']['bindings'])
+pprint(results)
 
