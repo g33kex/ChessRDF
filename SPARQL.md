@@ -1,6 +1,6 @@
 Example SPARQL requests on `academic.ttl` database
 
-## 1. Quel est le nom de l’enseignant(e) ayant offert le cours de sigle  ”INF8410” à l’étudiant nommé ”Jesse” et à quelle session ?
+## a. Quel est le nom de l’enseignant(e) ayant offert le cours de sigle  ”INF8410” à l’étudiant nommé ”Jesse” et à quelle session ?
 
 ```sparql
 SELECT DISTINCT ?name ?session
@@ -12,7 +12,7 @@ WHERE {
   exemple:session ?session.
 }
 ```
-## 2. Quel  sont  les  noms  des  étudiants  ayant  suivis  le  cours  intitulé  ”Champs électromagnétiques” avec l’étudiante nommée ”Violet”? (Violet peut elle-même se retrouver dans cette liste).  
+## b. Quel  sont  les  noms  des  étudiants  ayant  suivis  le  cours  intitulé  ”Champs électromagnétiques” avec l’étudiante nommée ”Violet”? (Violet peut elle-même se retrouver dans cette liste).  
 
 ```sparql
 SELECT DISTINCT ?name
@@ -25,7 +25,7 @@ WHERE {
 
 ```
 
-## 3. Quel est l’enseignant(e) ayant offert le plus de cours au total sur toutes les sessions et combien en a-t-il(elle) offert(e) ?
+## c. Quel est l’enseignant(e) ayant offert le plus de cours au total sur toutes les sessions et combien en a-t-il(elle) offert(e) ?
 
 ```sparql
 SELECT ?name (MAX(?tot) AS ?max)
@@ -41,7 +41,7 @@ WHERE {
 }
 ```
 
-## 4.  L’étudiant nommé ”Leonard” a-t-il  suivi  les  11  cours  offerts  au  moins  une  fois chacun ? 
+## d.  L’étudiant nommé ”Leonard” a-t-il  suivi  les  11  cours  offerts  au  moins  une  fois chacun ? 
 
 ASK
 WHERE {
@@ -51,7 +51,7 @@ WHERE {
 }
 HAVING(COUNT(distinct ?class) = 11)
 
-## 5. Quelle est la moyenne du nombre de crédits suivis par les étudiants pour chaque session ?
+## e. Quelle est la moyenne du nombre de crédits suivis par les étudiants pour chaque session ?
 
 SELECT (AVG(?sum) AS ?avg) 
 WHERE {

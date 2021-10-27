@@ -455,15 +455,8 @@ exemple:Perry
   exemple:takesClass exemple:PHS1102HIV19 ;
 .
 exemple:Person
-  a rdfs:Class, sh:NodeShape ;
-  rdfs:label "Personne"@fr ;
-	sh:property [
-		sh:path exemple:name ;
-		sh:datatype xsd:string ;
-		sh:maxCount 1 ;
-		sh:minCount 1 ;
-	] .
-
+  a rdfs:Class ;
+  rdfs:label "Personne"@fr .
 
 exemple:Robert
   a exemple:Student ;
