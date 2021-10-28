@@ -59,11 +59,17 @@ exemple:GivenClassShape a sh:NodeShape ;
 
 # e. Le cours MTH1110 ne peut pas être donné à la même session que le cours PHS1102.  
 
-exemple:DisjointShape a sh:NodeShape ;
-  sh:targetClass exemple:MTH1110, exemple:PHS1102 ;
-  sh:property [
-    sh:path ( [ sh:inversePath exemple:class ] exemple:session ) .
-    ???
-
-
+exemple:SessionShape a sh:NodeShape ;
+  sh:targetClass exemple:Session ;
+  sh:not [
+    sh:and (
+      [
+        sh:path ( [ sh:inversePath exemple:session ] exemple:class ) ;
+        sh:hasValue exemple:MTH1110 ;
+      ]
+      [
+        sh:path ( [ sh:inversePath exemple:session ] exemple:class ) ;
+        sh:hasValue exemple:PHS1102 ;
+      ]
+    )
   ] .
