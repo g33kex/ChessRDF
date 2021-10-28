@@ -73,3 +73,21 @@ exemple:SessionShape a sh:NodeShape ;
       ]
     )
   ] .
+
+# Représentation de la classe BusyTeacher
+
+exemple:TeacherShape a sh:NodeShape ;
+  sh:targetClass exemple:Teacher  ;
+  sh:rule [
+    a sh:TripleRule ;
+    sh:subject sh:this ;
+    sh:predicate rdf:type ;
+    sh:object sh:BusyTeacher ;
+    sh:condition exemple:Teacher ;
+    sh:condition [
+      sh:property [
+        sh:path ( exemple:givesClass exemple:class ) ;
+        sh:minCount 1 ;
+      ]
+    ]
+  ] .
