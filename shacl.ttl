@@ -1,0 +1,93 @@
+# Exemple Shacl graph to validate `academic.ttl`
+@prefix exemple: <http://www.exemple.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# a. Une personne doit avoir exactement un nom qui est un string.
+
+exemple:PersonShape a sh:NodeShape ;
+  sh:targetClass exemple:Person ;
+  sh:property [
+    sh:path exemple:name ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+  ] .
+
+# b. Un  cours  doit  avoir  un  nombre  de  crédits  qui  lui  est attribué  entre  1  et  3, inclusivement, et son sigle doit avoir une longueur exacte de 7 caractères. 
+
+exemple:ClassShape a sh:NodeShape ;
+  sh:targetClass exemple:Class ;
+  sh:property [
+    sh:path exemple:numberCredits ;
+    sh:datatype xsd:integer ;
+    sh:minInclusive 1 ;
+    sh:maxInclusive 3 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+  ] ;
+  sh:property [
+    sh:path exemple:sigleClass ;
+    sh:datatype xsd:string ;
+    sh:minLength 7 ;
+    sh:maxLength 7 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+  ] .
+
+# c. Un étudiant doit avoir suivi au moins une fois le cours INF3005. 
+
+exemple:StudentShape a sh:NodeShape ;
+  sh:targetClass exemple:Student ;
+  sh:property [
+    sh:path ( exemple:takesClass exemple:class ) ;
+    sh:hasValue exemple:INF3005 ;
+    sh:minCount 1 ;
+  ] .
+
+# d. À chaque session, il ne peut pas y avoir plus d'un professeur qui enseigne le même cours.
+
+exemple:GivenClassShape a sh:NodeShape ;
+  sh:targetClass exemple:GivenClass ;
+  sh:property [
+    sh:path [ sh:inversePath exemple:givesClass ] ;
+    sh:maxCount 1 ;
+  ] .
+
+# e. Le cours MTH1110 ne peut pas être donné à la même session que le cours PHS1102.  
+
+exemple:SessionShape a sh:NodeShape ;
+  sh:targetClass exemple:Session ;
+  sh:not [
+    sh:and (
+      [
+        sh:path ( [ sh:inversePath exemple:session ] exemple:class ) ;
+        sh:hasValue exemple:MTH1110 ;
+      ]
+      [
+        sh:path ( [ sh:inversePath exemple:session ] exemple:class ) ;
+        sh:hasValue exemple:PHS1102 ;
+      ]
+    )
+  ] .
+
+# Représentation de la classe BusyTeacher
+
+exemple:TeacherShape a sh:NodeShape ;
+  sh:targetClass exemple:Teacher  ;
+  sh:rule [
+    a sh:TripleRule ;
+    sh:subject sh:this ;
+    sh:predicate rdf:type ;
+    sh:object sh:BusyTeacher ;
+    sh:condition exemple:Teacher ;
+    sh:condition [
+      sh:property [
+        sh:path ( exemple:givesClass exemple:class ) ;
+        sh:minCount 1 ;
+      ]
+    ]
+  ] .
