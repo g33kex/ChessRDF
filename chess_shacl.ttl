@@ -9,7 +9,7 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-chess:Piece a sh:NodeShape ;
+chess:PieceShape a sh:NodeShape ;
   sh:targetClass chess:Piece ;
   sh:property [
     sh:path chess:color ;
@@ -17,5 +17,4 @@ chess:Piece a sh:NodeShape ;
     sh:maxCount 1;
     sh:in (chess:Black chess:White) ;
   ] .
-
 

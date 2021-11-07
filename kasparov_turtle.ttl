@@ -5,9 +5,9 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:Kasparov%20vs%20the%20World a chess:Game ;
+:KasparovvstheWorld a chess:Game ;
     chess:blackPlayer [ foaf:name "The World" ] ;
-    chess:moves games:Kasparov%20vs%20the%20World_sequences ;
+    chess:moves games:KasparovvstheWorld_sequences ;
     chess:whitePlayer [ foaf:name "Garry Kasparov" ] .
 
 [] a chess:Sequence ;
@@ -16,7 +16,7 @@
             chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b95 ;
             chess:notation "e2e4" ;
             chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b28 ] ;
-    chess:startingBoard games:Kasparov%20vs%20the%20World_board .
+    chess:startingBoard games:KasparovvstheWorld_board .
 
 _:n54fbee7fbd9c44d589341c2dfe9c4d54b100 rdf:first [ a chess:Move ;
             chess:color chess:Black ;
