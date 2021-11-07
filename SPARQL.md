@@ -53,6 +53,7 @@ HAVING(COUNT(distinct ?class) = 11)
 
 ## e. Quelle est la moyenne du nombre de crédits suivis par les étudiants pour chaque session ?
 
+```
 SELECT (AVG(?sum) AS ?avg) 
 WHERE {
 {
@@ -66,3 +67,15 @@ WHERE {
 }
 }
 GROUP BY ?session
+```
+
+```
+SELECT ?session (SUM(?nbcredit)/COUNT(DISTINCT $etudiant) AS ?sum)
+WHERE {
+  ?etudiant exemple:takesClass ?class .
+  ?class exemple:class/exemple:numberCredits ?nbcredit .
+  ?class exemple:session ?session .
+}
+GROUP BY ?session
+ORDER BY DESC (?session)
+```

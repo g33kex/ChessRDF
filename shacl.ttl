@@ -77,7 +77,7 @@ exemple:SessionShape a sh:NodeShape ;
 # Représentation de la classe BusyTeacher
 
 exemple:TeacherShape a sh:NodeShape ;
-  sh:targetClass exemple:Teacher  ;
+sh:targetClass exemple:Teacher  ;
   sh:rule [
     a sh:TripleRule ;
     sh:subject sh:this ;

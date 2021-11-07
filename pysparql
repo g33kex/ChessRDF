@@ -11,8 +11,8 @@ if len(sys.argv)!=2:
 graph_path = sys.argv[1]
 sparql_query = sys.stdin.read()
 
-graph = rdflib.Graph()
-graph.parse(graph_path)
+graph = rdflib.ConjunctiveGraph()
+graph.parse(graph_path, format="trig")
 
 try:
     results = json.loads(graph.query(sparql_query).serialize(format='json'))

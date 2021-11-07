@@ -1,0 +1,97 @@
+[
+  {
+    "@graph": [
+      {
+        "@id": "_:n5d0f2279601b46ebb0ddda1a9fc4f1bfb98",
+        "@type": [
+          "https://g33kex.github.io/ChessRDF/Chess.xml#Sequence"
+        ],
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+          {
+            "@id": "_:n5d0f2279601b46ebb0ddda1a9fc4f1bfb99"
+          }
+        ],
+        "https://g33kex.github.io/ChessRDF/Chess.xml#startingBoard": [
+          {
+            "@id": "https://g33kex.github.io/ChessRDF/Games.xml#Kasparov%20vs%20the%20World_board"
+          }
+        ]
+      },
+      {
+        "@id": "_:n5d0f2279601b46ebb0ddda1a9fc4f1bfb99",
+        "@type": [
+          "https://g33kex.github.io/ChessRDF/Chess.xml#Move"
+        ],
+        "https://g33kex.github.io/ChessRDF/Chess.xml#color": [
+          {
+            "@id": "https://g33kex.github.io/ChessRDF/Chess.xml#White"
+          }
+        ],
+        "https://g33kex.github.io/ChessRDF/Chess.xml#destinationSquare": [
+          {
+            "@id": "_:n5d0f2279601b46ebb0ddda1a9fc4f1bfb95"
+          }
+        ],
+        "https://g33kex.github.io/ChessRDF/Chess.xml#notation": [
+          {
+            "@value": "e2e4"
+          }
+        ],
+        "https://g33kex.github.io/ChessRDF/Chess.xml#piece": [
+          {
+            "@id": "_:n5d0f2279601b46ebb0ddda1a9fc4f1bfb28"
+          }
+        ]
+      },
+      {
+        "@id": "_:n5d0f2279601b46ebb0ddda1a9fc4f1bfb95"
+      },
+      {
+        "@id": "_:n5d0f2279601b46ebb0ddda1a9fc4f1bfb28"
+      }
+    ],
+    "@id": "https://g33kex.github.io/ChessRDF/Games.xml#Kasparov%20vs%20the%20World_sequences"
+  },
+  {
+    "@graph": [
+      {
+        "@id": "https://g33kex.github.io/ChessRDF/Index.xml#Kasparov%20vs%20the%20World",
+        "@type": [
+          "https://g33kex.github.io/ChessRDF/Chess.xml#Game"
+        ],
+        "https://g33kex.github.io/ChessRDF/Chess.xml#blackPlayer": [
+          {
+            "@id": "_:n5d0f2279601b46ebb0ddda1a9fc4f1bfb370"
+          }
+        ],
+        "https://g33kex.github.io/ChessRDF/Chess.xml#moves": [
+          {
+            "@id": "https://g33kex.github.io/ChessRDF/Games.xml#Kasparov%20vs%20the%20World_sequences"
+          }
+        ],
+        "https://g33kex.github.io/ChessRDF/Chess.xml#whitePlayer": [
+          {
+            "@id": "_:n5d0f2279601b46ebb0ddda1a9fc4f1bfb371"
+          }
+        ]
+      },
+      {
+        "@id": "_:n5d0f2279601b46ebb0ddda1a9fc4f1bfb370",
+        "http://xmlns.com/foaf/spec/#name": [
+          {
+            "@value": "The World"
+          }
+        ]
+      },
+      {
+        "@id": "_:n5d0f2279601b46ebb0ddda1a9fc4f1bfb371",
+        "http://xmlns.com/foaf/spec/#name": [
+          {
+            "@value": "Garry Kasparov"
+          }
+        ]
+      }
+    ],
+    "@id": "file:///home/g33kex/Documents/Poly/INF8410/lab/Kasparov_vs_the_world.ttl"
+  }
+]

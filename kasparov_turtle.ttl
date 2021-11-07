@@ -1,0 +1,1644 @@
+@prefix : <https://g33kex.github.io/ChessRDF/Index.xml#> .
+@prefix chess: <https://g33kex.github.io/ChessRDF/Chess.xml#> .
+@prefix foaf: <http://xmlns.com/foaf/spec/#> .
+@prefix games: <https://g33kex.github.io/ChessRDF/Games.xml#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Kasparov%20vs%20the%20World a chess:Game ;
+    chess:blackPlayer [ foaf:name "The World" ] ;
+    chess:moves games:Kasparov%20vs%20the%20World_sequences ;
+    chess:whitePlayer [ foaf:name "Garry Kasparov" ] .
+
+[] a chess:Sequence ;
+    rdf:first [ a chess:Move ;
+            chess:color chess:White ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b95 ;
+            chess:notation "e2e4" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b28 ] ;
+    chess:startingBoard games:Kasparov%20vs%20the%20World_board .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b100 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare [ ] ;
+            chess:notation "d3d2" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b100 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b103 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b82 ;
+            chess:notation "d5c4" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b27 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b103 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b105 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b46 ;
+            chess:notation "e5b2" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b9 ;
+            chess:pieceTaken _:n54fbee7fbd9c44d589341c2dfe9c4d54b28 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b105 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b107 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b69 ;
+            chess:notation "e8d7" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b27 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b107 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b109 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare [ ] ;
+    chess:notation "h4h5" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b28 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b11 a chess:Pawn ;
+    chess:color chess:White .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b111 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b91 ;
+    chess:notation "f5f4" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b112 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b46 ;
+    chess:notation "b3b2" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b113 rdf:first [ a chess:Move ;
+            chess:color chess:White ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b94 ;
+            chess:notation "c3d5" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b12 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b113 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b115 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b96 ;
+            chess:notation "g7e5" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b9 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b115 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b117 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b89 ;
+            chess:notation "d1f3" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b32 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b117 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b119 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b59 ;
+    chess:notation "b5b4" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b120 rdf:first [ a chess:Move ;
+            chess:color chess:White ;
+            chess:destinationSquare [ ] ;
+            chess:notation "g3g4" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b28 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b120 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b123 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b92 ;
+    chess:notation "f7f5" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b124 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b93 ;
+            chess:notation "e5d4" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b9 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b124 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b126 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare [ ] ;
+    chess:notation "c3c2" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b27 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b128 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b95 ;
+    chess:notation "f3e4" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b30 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b129 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare [ ] ;
+            chess:notation "b8c6" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b7 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b129 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b13 a chess:Pawn ;
+    chess:color chess:Black .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b132 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b62 ;
+    chess:notation "a7b6" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 ;
+    chess:pieceTaken _:n54fbee7fbd9c44d589341c2dfe9c4d54b18 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b133 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b109 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b133 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b134 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b61 ;
+    chess:notation "b7b5" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b135 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b57 ;
+            chess:notation "b4b3" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b135 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b137 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b93 ;
+            chess:notation "b2d4" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b9 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b137 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b139 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b58 ;
+            chess:notation "b4a4" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b32 ;
+            chess:pieceTaken _:n54fbee7fbd9c44d589341c2dfe9c4d54b10 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b139 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b14 a chess:Pawn ;
+    chess:color chess:Black .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b141 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b95 ;
+            chess:notation "f6e4" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b7 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b141 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b143 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b55 ;
+            chess:notation "f8g7" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b9 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b143 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b145 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b43 ;
+    chess:notation "f7h7" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b1 ;
+    chess:pieceTaken _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b146 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b88 ;
+    chess:notation "d7e6" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b32 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b147 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b57 ;
+    chess:notation "d1b3" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b1 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b148 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b95 ;
+            chess:notation "e6e4" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b32 ;
+            chess:pieceTaken _:n54fbee7fbd9c44d589341c2dfe9c4d54b28 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b148 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b15 a chess:Pawn ;
+    chess:color chess:White .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b150 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare [ ] ;
+    chess:notation "d5c7" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b12 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b152 rdf:first [ a chess:Move ;
+            chess:color chess:White ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b74 ;
+            chess:notation "g6f7" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b1 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b152 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b154 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b96 ;
+    chess:notation "d4e5" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b9 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b155 rdf:first [ a chess:Move ;
+            chess:color chess:White ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b75 ;
+            chess:notation "f2g3" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b28 ;
+            chess:pieceTaken _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b155 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b157 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b34 ;
+    chess:notation "a1b1" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b27 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b158 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b82 ;
+    chess:notation "c2c4" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b28 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b159 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b81 ;
+    chess:notation "e2c3" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b18 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b16 a chess:Pawn ;
+    chess:color chess:Black .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b160 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b36 ;
+    chess:notation "h8a8" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b31 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b161 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b93 ;
+    chess:notation "e5d4" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 ;
+    chess:pieceTaken _:n54fbee7fbd9c44d589341c2dfe9c4d54b23 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b162 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b63 ;
+    chess:notation "d2d1q" ;
+    chess:pawnPromotion [ a chess:Queen ] ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b164 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b132 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b164 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b165 rdf:first [ a chess:Move ;
+            chess:color chess:White ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b74 ;
+            chess:notation "b3f7" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b1 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b165 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b167 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b82 ;
+    chess:notation "e4c4" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b32 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b168 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b80 ;
+    chess:notation "e7g6" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b7 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b169 rdf:first [ a chess:Move ;
+            chess:color chess:White ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b93 ;
+            chess:notation "f3d4" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b12 ;
+            chess:pieceTaken _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b169 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b171 rdf:first [ a chess:Move ;
+            chess:color chess:White ;
+            chess:destinationSquare [ ] ;
+            chess:notation "d4g1" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b1 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b171 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b174 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b89 ;
+    chess:notation "g1f3" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b12 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b175 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare [ ] ;
+    chess:notation "f4e3" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b23 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b177 rdf:first [ a chess:Move ;
+            chess:color chess:White ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b55 ;
+            chess:notation "g6g7" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b28 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b177 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b179 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b34 ;
+    chess:notation "c2b1" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b27 ;
+    chess:pieceTaken _:n54fbee7fbd9c44d589341c2dfe9c4d54b10 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b180 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b95 ;
+            chess:notation "c4e4" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b32 ;
+            chess:pieceTaken _:n54fbee7fbd9c44d589341c2dfe9c4d54b18 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b180 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b182 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b46 ;
+            chess:notation "b1b2" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b27 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b182 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b184 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b58 ;
+            chess:notation "a8a4" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b31 ;
+            chess:pieceTaken _:n54fbee7fbd9c44d589341c2dfe9c4d54b28 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b184 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b186 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b94 ;
+    chess:notation "d6d5" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b187 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b95 ;
+            chess:notation "f3e4" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b32 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b187 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b189 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b168 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b189 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b19 a chess:Rook ;
+    chess:color chess:White .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b190 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b69 ;
+    chess:notation "b5d7" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b23 ;
+    chess:pieceTaken _:n54fbee7fbd9c44d589341c2dfe9c4d54b9 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b191 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b69 ;
+    chess:notation "d8d7" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b32 ;
+    chess:pieceTaken _:n54fbee7fbd9c44d589341c2dfe9c4d54b23 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b192 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b80 ;
+    chess:notation "f5g6" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b30 ;
+    chess:pieceTaken _:n54fbee7fbd9c44d589341c2dfe9c4d54b7 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b193 rdf:first [ a chess:Move ;
+            chess:color chess:White ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b93 ;
+            chess:notation "d2d4" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b28 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b193 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b195 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b90 ;
+    chess:notation "g7f6" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b30 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b196 a chess:Move ;
+    chess:castleKingSide true ;
+    chess:color chess:White ;
+    chess:notation "e1g1" .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b197 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b147 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b197 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b198 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b55 ;
+    chess:notation "f6g7" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b30 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b199 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b43 ;
+    chess:notation "h6h7" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b28 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b2 a chess:Bishop ;
+    chess:color chess:Black .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b20 a chess:Pawn ;
+    chess:color chess:White .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b200 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b81 ;
+    chess:notation "b1c3" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b12 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b201 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b74 ;
+    chess:notation "b3f7" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b1 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b202 rdf:first [ a chess:Move ;
+            chess:color chess:White ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b92 ;
+            chess:notation "e4f5" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b30 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b202 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b204 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b59 ;
+    chess:notation "b5b4" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b205 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b94 ;
+    chess:notation "e6d5" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b27 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b206 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare [ ] ;
+    chess:notation "g1f2" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b1 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b208 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b157 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b208 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b209 rdf:first [ a chess:Move ;
+            chess:color chess:White ;
+            chess:destinationSquare [ ] ;
+            chess:notation "h7h2" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b1 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b209 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b21 a chess:Pawn ;
+    chess:color chess:Black .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b212 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b80 ;
+    chess:notation "h7g6" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b1 ;
+    chess:pieceTaken _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b213 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare [ ] ;
+            chess:notation "b2a1" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b27 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b213 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b216 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b90 ;
+    chess:notation "g8f6" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b7 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b217 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b206 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b217 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b218 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b150 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b218 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b219 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b92 ;
+    chess:notation "f7f5" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b1 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b22 a chess:Pawn ;
+    chess:color chess:Black .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b220 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b123 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b220 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b221 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b80 ;
+    chess:notation "g5g6" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b28 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b222 rdf:first [ a chess:Move ;
+            chess:color chess:White ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b91 ;
+            chess:notation "g5f4" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b23 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b222 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b224 a chess:Queen .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b225 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b205 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b225 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b226 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b93 ;
+            chess:notation "d5d4" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b226 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b228 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b198 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b228 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b229 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b57 ;
+    chess:notation "f7b3" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b1 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b230 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b190 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b230 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b231 rdf:first [ a chess:Move ;
+            chess:color chess:White ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b61 ;
+            chess:notation "f1b5" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b23 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b231 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b233 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b59 ;
+            chess:notation "e4b4" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b32 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b233 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b235 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b119 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b235 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b236 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b95 ;
+    chess:notation "c3e4" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b18 ;
+    chess:pieceTaken _:n54fbee7fbd9c44d589341c2dfe9c4d54b7 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b237 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b81 ;
+    chess:notation "c4c3" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b27 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b238 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b61 ;
+            chess:notation "b6b5" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b238 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b24 a chess:Knight ;
+    chess:color chess:Black .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b240 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b95 ;
+            chess:notation "a4e4" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b32 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b240 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b242 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b69 ;
+            chess:notation "c8d7" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b9 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b242 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b244 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b159 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b244 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b245 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b236 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b245 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b246 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare [ ] ;
+            chess:notation "c6e7" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b7 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b246 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b249 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b200 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b249 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b25 a chess:Pawn ;
+    chess:color chess:White .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b250 rdf:first [ a chess:Move ;
+            chess:color chess:White ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b88 ;
+            chess:notation "f5e6" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b1 ;
+            chess:pieceTaken _:n54fbee7fbd9c44d589341c2dfe9c4d54b32 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b250 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b252 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b175 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b252 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b253 rdf:first [ a chess:Move ;
+            chess:color chess:White ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b79 ;
+            chess:notation "c1g5" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b23 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b253 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b255 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b88 ;
+    chess:notation "d7e6" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b27 ;
+    chess:pieceTaken _:n54fbee7fbd9c44d589341c2dfe9c4d54b1 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b256 rdf:first [ a chess:Move ;
+            chess:color chess:White ;
+            chess:destinationSquare [ ] ;
+            chess:notation "h7h8q" ;
+            chess:pawnPromotion _:n54fbee7fbd9c44d589341c2dfe9c4d54b224 ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b28 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b256 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b259 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b196 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b259 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b26 a chess:Pawn ;
+    chess:color chess:White .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b260 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b219 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b260 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b261 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b39 ;
+    chess:notation "g1h1" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b30 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b262 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b96 ;
+            chess:notation "e6e5" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b262 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b264 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b88 ;
+            chess:notation "c4e6" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b32 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b264 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b266 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b75 ;
+            chess:notation "f4g3" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 ;
+            chess:pieceTaken _:n54fbee7fbd9c44d589341c2dfe9c4d54b28 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b266 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b268 rdf:first [ a chess:Move ;
+            chess:color chess:White ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b90 ;
+            chess:notation "g6f6" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b30 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b268 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b270 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b39 ;
+    chess:notation "d1h1" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b10 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b271 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b229 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b271 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b272 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b82 ;
+    chess:notation "e4c4" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b32 ;
+    chess:pieceTaken _:n54fbee7fbd9c44d589341c2dfe9c4d54b28 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b273 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b162 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b273 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b274 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b192 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b274 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b275 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare [ ] ;
+    chess:notation "b2c1" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b27 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b277 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b145 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b277 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b278 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b154 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b278 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b279 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b146 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b279 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b280 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b91 ;
+    chess:notation "h2f4" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b1 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b281 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b195 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b281 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b282 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b160 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b282 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b283 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b186 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b283 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b284 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare [ ] ;
+            chess:notation "c7c5" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b284 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b287 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b88 ;
+    chess:notation "e7e6" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b288 rdf:first [ a chess:Move ;
+            chess:color chess:White ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b75 ;
+            chess:notation "g2g3" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b28 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b288 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b29 a chess:Pawn ;
+    chess:color chess:Black .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b290 rdf:first [ a chess:Move ;
+            chess:color chess:White ;
+            chess:destinationSquare [ ] ;
+            chess:notation "h2h3" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b28 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b290 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b293 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare [ ] ;
+    chess:notation "d4e2" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b12 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b295 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b46 ;
+            chess:notation "b1b2" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b27 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b295 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b297 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare [ ] ;
+            chess:notation "d7d6" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b297 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b3 a chess:Pawn ;
+    chess:color chess:White .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b300 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b293 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b300 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b301 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b59 ;
+    chess:notation "f4b4" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b1 ;
+    chess:pieceTaken _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b302 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b58 ;
+    chess:notation "a1a4" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b10 ;
+    chess:pieceTaken _:n54fbee7fbd9c44d589341c2dfe9c4d54b31 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b303 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b89 ;
+    chess:notation "g2f3" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b30 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b304 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b275 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b304 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b305 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b58 ;
+    chess:notation "a2a4" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b28 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b306 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b174 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b306 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b307 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare [ ] ;
+    chess:notation "h5h6" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b28 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b309 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b221 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b309 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b310 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b34 ;
+            chess:notation "b2b1q" ;
+            chess:pawnPromotion [ a chess:Queen ] ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b310 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b313 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b63 ;
+    chess:notation "f1d1" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b10 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b314 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b272 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b314 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b315 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b128 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b315 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b316 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b80 ;
+    chess:notation "g7g6" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b317 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b62 ;
+    chess:notation "a8b6" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b18 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b318 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b305 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b318 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b319 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b93 ;
+    chess:notation "b4d4" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b1 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b320 rdf:first [ a chess:Move ;
+            chess:color chess:Black ;
+            chess:destinationSquare [ ] ;
+            chess:notation "d4d3" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b320 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b323 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b280 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b323 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b324 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b255 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b324 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b325 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b36 ;
+    chess:notation "c7a8" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b12 ;
+    chess:pieceTaken _:n54fbee7fbd9c44d589341c2dfe9c4d54b18 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b326 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b303 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b326 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b327 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b237 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b327 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b328 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b319 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b328 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b329 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b134 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b329 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b330 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b302 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b330 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b331 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b201 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b331 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b332 rdf:first [ a chess:Move ;
+            chess:color chess:White ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b34 ;
+            chess:notation "h1b1" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b10 ;
+            chess:pieceTaken _:n54fbee7fbd9c44d589341c2dfe9c4d54b32 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b332 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b334 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b313 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b334 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b335 rdf:first [ a chess:Move ;
+            chess:color chess:White ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b79 ;
+            chess:notation "g4g5" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b28 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b335 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b337 rdf:first [ a chess:Move ;
+            chess:color chess:White ;
+            chess:destinationSquare [ ] ;
+            chess:notation "h1g2" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b30 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b337 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b340 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b325 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b340 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b341 rdf:first [ a chess:Move ;
+            chess:color chess:White ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b43 ;
+            chess:notation "h8h7" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b1 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b341 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b343 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b167 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b343 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b344 a chess:Move ;
+    chess:color chess:White ;
+    chess:destinationSquare [ ] ;
+    chess:notation "h3h4" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b28 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b346 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b212 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b346 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b347 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b316 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b347 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b348 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b307 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b348 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b349 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b158 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b349 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b350 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b191 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b350 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b351 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b179 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b351 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b352 a chess:Move ;
+    chess:color chess:Black ;
+    chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b93 ;
+    chess:notation "c5d4" ;
+    chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 ;
+    chess:pieceTaken _:n54fbee7fbd9c44d589341c2dfe9c4d54b28 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b353 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b317 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b353 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b354 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b111 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b354 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b355 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b126 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b355 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b356 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b204 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b356 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b357 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b161 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b357 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b358 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b301 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b358 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b359 rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b359 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b360 rdf:first [ a chess:Move ;
+            chess:color chess:White ;
+            chess:destinationSquare _:n54fbee7fbd9c44d589341c2dfe9c4d54b93 ;
+            chess:notation "e3d4" ;
+            chess:piece _:n54fbee7fbd9c44d589341c2dfe9c4d54b23 ;
+            chess:pieceTaken _:n54fbee7fbd9c44d589341c2dfe9c4d54b9 ] ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b360 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b362 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b344 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b362 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b363 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b261 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b363 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b364 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b216 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b364 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b365 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b287 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b365 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b366 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b352 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b366 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b367 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b270 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b367 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b368 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b199 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b368 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b369 rdf:first _:n54fbee7fbd9c44d589341c2dfe9c4d54b112 ;
+    rdf:rest _:n54fbee7fbd9c44d589341c2dfe9c4d54b369 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b4 a chess:Knight ;
+    chess:color chess:White .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b5 a chess:Pawn ;
+    chess:color chess:Black .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b6 a chess:Pawn ;
+    chess:color chess:White .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b8 a chess:Bishop ;
+    chess:color chess:White .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b33 a chess:Square ;
+    chess:color chess:Black ;
+    chess:coordinates "a1" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b10 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b34 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b35 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b42 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b43 ;
+    chess:color chess:Black ;
+    chess:coordinates "h8" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b31 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b44 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b35 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b33 ;
+    chess:color chess:White ;
+    chess:coordinates "a2" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b3 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b46 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b47 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b37 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b48 ;
+    chess:color chess:Black ;
+    chess:coordinates "a7" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b5 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b49 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b36 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b38 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b49 ;
+    chess:color chess:Black ;
+    chess:coordinates "b8" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b7 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b50 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b36 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b40 a chess:Square ;
+    chess:color chess:Black ;
+    chess:coordinates "g1" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b12 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b39 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b51 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b52 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b41 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b39 ;
+    chess:color chess:Black ;
+    chess:coordinates "h2" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b11 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b52 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b53 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b44 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b55 ;
+    chess:color chess:White ;
+    chess:coordinates "g8" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b24 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b42 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b56 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b45 a chess:Square ;
+    chess:color chess:Black ;
+    chess:coordinates "c1" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b8 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b63 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b34 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b64 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b47 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b35 ;
+    chess:color chess:Black ;
+    chess:coordinates "a3" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b57 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b58 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b48 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b60 ;
+    chess:color chess:White ;
+    chess:coordinates "a6" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b62 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b37 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b50 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b65 ;
+    chess:color chess:White ;
+    chess:coordinates "c8" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b9 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b66 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b38 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b51 a chess:Square ;
+    chess:color chess:White ;
+    chess:coordinates "f1" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b23 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b40 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b67 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b73 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b53 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b41 ;
+    chess:color chess:White ;
+    chess:coordinates "h3" ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b75 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b76 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b54 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b78 ;
+    chess:color chess:Black ;
+    chess:coordinates "h6" ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b80 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b43 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b56 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b74 ;
+    chess:color chess:Black ;
+    chess:coordinates "f8" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b2 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b44 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b70 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b60 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b58 ;
+    chess:color chess:Black ;
+    chess:coordinates "a5" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b61 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b48 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b66 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b69 ;
+    chess:color chess:Black ;
+    chess:coordinates "d8" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b32 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b70 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b50 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b67 a chess:Square ;
+    chess:color chess:Black ;
+    chess:coordinates "e1" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b30 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b51 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b63 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b71 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b70 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b72 ;
+    chess:color chess:White ;
+    chess:coordinates "e8" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b27 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b56 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b66 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b76 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b53 ;
+    chess:color chess:Black ;
+    chess:coordinates "h4" ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b77 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b78 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b78 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b76 ;
+    chess:color chess:White ;
+    chess:coordinates "h5" ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b79 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b54 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b31 a chess:Rook ;
+    chess:color chess:Black .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b36 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b37 ;
+    chess:color chess:White ;
+    chess:coordinates "a8" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b18 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b38 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b39 a chess:Square ;
+    chess:color chess:White ;
+    chess:coordinates "h1" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b19 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b40 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b41 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b49 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b62 ;
+    chess:color chess:White ;
+    chess:coordinates "b7" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b21 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b65 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b37 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b38 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b52 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b40 ;
+    chess:color chess:White ;
+    chess:coordinates "g2" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b25 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b41 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b73 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b75 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b64 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b45 ;
+    chess:color chess:White ;
+    chess:coordinates "c2" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b6 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b68 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b46 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b81 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b65 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b84 ;
+    chess:color chess:Black ;
+    chess:coordinates "c7" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b17 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b69 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b49 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b50 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b68 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b63 ;
+    chess:color chess:Black ;
+    chess:coordinates "d2" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b15 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b71 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b64 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b85 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b71 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b67 ;
+    chess:color chess:White ;
+    chess:coordinates "e2" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b28 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b73 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b68 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b87 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b72 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b88 ;
+    chess:color chess:Black ;
+    chess:coordinates "e7" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b16 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b74 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b69 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b70 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b73 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b51 ;
+    chess:color chess:Black ;
+    chess:coordinates "f2" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b26 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b52 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b71 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b89 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b77 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b75 ;
+    chess:color chess:White ;
+    chess:coordinates "g4" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b76 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b91 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b79 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b83 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b82 ;
+    chess:color chess:Black ;
+    chess:coordinates "c5" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b94 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b61 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b84 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b84 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b83 ;
+    chess:color chess:White ;
+    chess:coordinates "c6" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b86 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b62 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b65 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b85 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b68 ;
+    chess:color chess:White ;
+    chess:coordinates "d3" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b87 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b81 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b93 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b86 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b94 ;
+    chess:color chess:Black ;
+    chess:coordinates "d6" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b88 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b84 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b69 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b87 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b71 ;
+    chess:color chess:Black ;
+    chess:coordinates "e3" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b89 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b85 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b95 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b63 a chess:Square ;
+    chess:color chess:White ;
+    chess:coordinates "d1" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b1 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b67 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b45 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b68 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b43 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b54 ;
+    chess:color chess:White ;
+    chess:coordinates "h7" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b22 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b55 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b42 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b62 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b61 ;
+    chess:color chess:Black ;
+    chess:coordinates "b6" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b84 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b48 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b49 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b79 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b77 ;
+    chess:color chess:Black ;
+    chess:coordinates "g5" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b78 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b92 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b80 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b10 a chess:Rook ;
+    chess:color chess:White .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b18 a chess:Rook ;
+    chess:color chess:Black .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b34 a chess:Square ;
+    chess:color chess:White ;
+    chess:coordinates "b1" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b4 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b45 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b33 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b46 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b55 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b80 ;
+    chess:color chess:Black ;
+    chess:coordinates "g7" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b14 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b43 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b74 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b44 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b57 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b46 ;
+    chess:color chess:White ;
+    chess:coordinates "b3" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b81 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b47 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b59 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b58 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b47 ;
+    chess:color chess:White ;
+    chess:coordinates "a4" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b59 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b60 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b61 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b59 ;
+    chess:color chess:White ;
+    chess:coordinates "b5" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b83 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b60 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b62 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b74 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b90 ;
+    chess:color chess:White ;
+    chess:coordinates "f7" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b29 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b55 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b72 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b56 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b75 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b52 ;
+    chess:color chess:Black ;
+    chess:coordinates "g3" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b53 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b89 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b77 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b81 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b64 ;
+    chess:color chess:Black ;
+    chess:coordinates "c3" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b85 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b57 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b82 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b89 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b73 ;
+    chess:color chess:White ;
+    chess:coordinates "f3" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b75 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b87 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b91 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b90 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b92 ;
+    chess:color chess:Black ;
+    chess:coordinates "f6" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b80 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b88 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b74 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b91 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b89 ;
+    chess:color chess:Black ;
+    chess:coordinates "f4" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b77 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b95 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b92 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b92 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b91 ;
+    chess:color chess:White ;
+    chess:coordinates "f5" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b79 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b96 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b90 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b94 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b93 ;
+    chess:color chess:White ;
+    chess:coordinates "d5" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b96 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b83 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b86 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b96 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b95 ;
+    chess:color chess:Black ;
+    chess:coordinates "e5" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b92 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b94 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b88 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b12 a chess:Knight ;
+    chess:color chess:White .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b46 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b34 ;
+    chess:color chess:Black ;
+    chess:coordinates "b2" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b20 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b64 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b35 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b57 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b59 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b57 ;
+    chess:color chess:Black ;
+    chess:coordinates "b4" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b82 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b58 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b61 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b69 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b86 ;
+    chess:color chess:White ;
+    chess:coordinates "d7" ;
+    chess:hasPiece _:n54fbee7fbd9c44d589341c2dfe9c4d54b13 ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b72 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b65 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b66 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b7 a chess:Knight ;
+    chess:color chess:Black .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b82 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b81 ;
+    chess:color chess:White ;
+    chess:coordinates "c4" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b93 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b59 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b83 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b23 a chess:Bishop ;
+    chess:color chess:White .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b80 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b79 ;
+    chess:color chess:White ;
+    chess:coordinates "g6" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b54 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b90 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b55 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b88 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b96 ;
+    chess:color chess:White ;
+    chess:coordinates "e6" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b90 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b86 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b72 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b30 a chess:King ;
+    chess:color chess:White .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b9 a chess:Bishop ;
+    chess:color chess:Black .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b95 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b87 ;
+    chess:color chess:White ;
+    chess:coordinates "e4" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b91 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b93 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b96 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b27 a chess:King ;
+    chess:color chess:Black .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b93 a chess:Square ;
+    chess:bottom _:n54fbee7fbd9c44d589341c2dfe9c4d54b85 ;
+    chess:color chess:Black ;
+    chess:coordinates "d4" ;
+    chess:left _:n54fbee7fbd9c44d589341c2dfe9c4d54b95 ;
+    chess:right _:n54fbee7fbd9c44d589341c2dfe9c4d54b82 ;
+    chess:top _:n54fbee7fbd9c44d589341c2dfe9c4d54b94 .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b32 a chess:Queen ;
+    chess:color chess:Black .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b1 a chess:Queen ;
+    chess:color chess:White .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b28 a chess:Pawn ;
+    chess:color chess:White .
+
+_:n54fbee7fbd9c44d589341c2dfe9c4d54b17 a chess:Pawn ;
+    chess:color chess:Black .
+
