@@ -87,7 +87,7 @@ sh:targetClass exemple:Teacher  ;
     sh:condition [
       sh:property [
         sh:path ( exemple:givesClass exemple:class ) ;
-        sh:minCount 1 ;
+        sh:minInclusive 5 ;
       ]
     ]
   ] .

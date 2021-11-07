@@ -9,12 +9,77 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-chess:PieceShape a sh:NodeShape ;
-  sh:targetClass chess:Piece ;
+chess:SqureShape a sh:NodeShape ;
+  sh:targetClass chess:Square ;
   sh:property [
-    sh:path chess:color ;
+    sh:path ( chess:hasPiece rdf:type );
+    sh:maxCount 1;
+    sh:in (chess:Knight chess:Pawn chess:Bishop chess:Rook chess:Queen chess:King)
+  ].
+
+#chess:PieceShape a sh:NodeShape ;
+#  sh:targetClass chess:Piece ;
+#  sh:property [
+#    sh:path chess:color ;
+#    sh:minCount 1;
+#    sh:maxCount 1;
+#    sh:in (chess:Black chess:White) ;
+#  ] .
+
+chess:SquareShape a sh:NodeShape ;
+  sh:targetClass chess:Square ;
+  sh:property [
+    sh:path chess:coordinates ;
     sh:minCount 1;
     sh:maxCount 1;
-    sh:in (chess:Black chess:White) ;
+    sh:pattern "^[a-h][1-8]$"
   ] .
 
+#chess:MoveShape a sh:NodeShape ;
+#  sh:rule [
+#    a sh:TripleRule ;
+#    sh:subject sh:this ;
+#    sh:predicate chess:castle ;
+#    sh:object xsd:true ;
+#    sh:condition [
+#      sh:or (
+#        [
+#          sh:path chess:castleQueenSide ;
+#          sh:minCount 1 ;
+#          sh:hasValue xsd:true ; 
+#        ]
+#        [
+#          sh:path chess:castleKingSide ;
+#          sh:minCount 1 ;
+#          sh:hasValue xsd:true ; 
+#
+#        ]
+#      )
+#    ] ;
+#  ] .
+
+#chess:PieceShape a sh:NodeShape ;
+#  sh:rule [
+#    a sh:TripleRule ;
+#    sh:subject sh:this ;
+#    sh:predicate chess:color ;
+#    sh:object chess:White ;
+#    sh:condition [
+#      sh:property [
+#        sh:path ( [ sh:inversePath chess:pawnPromotion ] chess:piece chess:color )
+#        sh:hasValue chess:White ;
+#      ] ;
+#    ] ;
+#  ] ;
+#  sh:rule [
+#    a sh:TripleRule ;
+#    sh:subject sh:this ;
+#    sh:predicate chess:color ;
+#    sh:object chess:Black ;
+#    sh:condition [
+#      sh:property [
+#        sh:path ( [ sh:inversePath chess:pawnPromotion ] chess:piece chess:color )
+#       sh:hasValue chess:Black ;
+#      ] ;
+#    ] ;
+#  ] .
