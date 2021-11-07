@@ -65,6 +65,7 @@ chess:MoveShape2 a sh:NodeShape ;
     sh:datatype xsd:string ;
     sh:pattern "^([a-h][1-8]){2}.?$"
   ] .
+
 chess:MoveShape a sh:NodeShape ;
   sh:rule [
     a sh:TripleRule ;
@@ -109,7 +110,7 @@ chess:PieceShape a sh:NodeShape ;
     sh:condition [
       sh:property [
         sh:path ( [ sh:inversePath chess:pawnPromotion ] chess:piece chess:color ) ;
-       sh:hasValue chess:Black ;
+        sh:hasValue chess:Black ;
       ] ;
     ] ;
   ] .
