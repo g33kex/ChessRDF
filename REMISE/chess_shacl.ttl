@@ -9,6 +9,32 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+## Contraintes
+
+# 1. Une pièce doit avoir une et une seule couleur: blanche ou noire
+
+chess:PieceShape a sh:NodeShape ;
+  sh:targetClass chess:Piece ;
+  sh:property [
+    sh:path chess:color ;
+    sh:minCount 1;
+    sh:maxCount 1;
+    sh:in (chess:Black chess:White) ;
+  ] .
+
+# 2. Les coordonnées des cases de l'échéquier doivent être composées d'une lettre de a à h suivie d'un chiffre de 1 à 8. 
+
+chess:SquareShape a sh:NodeShape ;
+  sh:targetClass chess:Square ;
+  sh:property [
+    sh:path chess:coordinates ;
+    sh:minCount 1;
+    sh:maxCount 1;
+    sh:pattern "^[a-h][1-8]$"
+  ] .
+
+# 3. Une case ne peut avoir qu'une seule pièce maximum, qui doit être un cavalier, un pion, un fou, une tour, une reine ou un roi
+
 chess:SquareShape a sh:NodeShape ;
   sh:targetClass chess:Square ;
   sh:property [
@@ -16,6 +42,8 @@ chess:SquareShape a sh:NodeShape ;
     sh:maxCount 1;
     sh:in (chess:Knight chess:Pawn chess:Bishop chess:Rook chess:Queen chess:King)
   ].
+
+# 4. Une séquence doit être une liste de mouvements
 
 chess:SequenceShape a sh:NodeShape ;
   sh:targetClass chess:Sequence ;
@@ -37,24 +65,7 @@ chess:SequenceShape a sh:NodeShape ;
     ]
   ).
 
-
-chess:PieceShape a sh:NodeShape ;
-  sh:targetClass chess:Piece ;
-  sh:property [
-    sh:path chess:color ;
-    sh:minCount 1;
-    sh:maxCount 1;
-    sh:in (chess:Black chess:White) ;
-  ] .
-
-chess:SquareShape a sh:NodeShape ;
-  sh:targetClass chess:Square ;
-  sh:property [
-    sh:path chess:coordinates ;
-    sh:minCount 1;
-    sh:maxCount 1;
-    sh:pattern "^[a-h][1-8]$"
-  ] .
+# 5. La notation d'un mouvement doit être composé de deux coordonnées de cases, suivi éventuellement d'une lettre s'il y a promotion 
 
 chess:MoveShape2 a sh:NodeShape ;
   sh:targetClass chess:Move ;
@@ -65,6 +76,10 @@ chess:MoveShape2 a sh:NodeShape ;
     sh:datatype xsd:string ;
     sh:pattern "^([a-h][1-8]){2}.?$"
   ] .
+
+## Règles d'inférence
+
+# 1. Un movement castleQueenSide ou castleKingSide est aussi un mouvement castle
 
 chess:MoveShape a sh:NodeShape ;
   sh:rule [
@@ -88,6 +103,8 @@ chess:MoveShape a sh:NodeShape ;
       )
     ] ;
   ] .
+
+# 2. La promotion d'un pion donne une pièce de la même couleur que ce pion
 
 chess:PieceShape a sh:NodeShape ;
   sh:rule [
